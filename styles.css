@@ -50,15 +50,26 @@ a {
 }
 
 .navbar-brand img {
-    width: 5vw;
+    width: 5.5vw;
 }
 
 .navbar {
     font-size: large;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 .dropdown-menu {
     font-size: large;
+}
+
+.navbar-contenedor-li {
+    gap: 2rem;
+}
+
+.iconos-nav {
+    display: flex;
+    gap: 0,5rem;
 }
 
 /** ------------------- Boton menu responsive ------------------- **/
