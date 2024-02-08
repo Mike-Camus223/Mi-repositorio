@@ -50,7 +50,8 @@ a {
 }
 
 .navbar-brand img {
-    width: 5.5vw;
+    width: 13rem;
+    height: auto;
 }
 
 .navbar {
@@ -70,6 +71,14 @@ a {
 .iconos-nav {
     display: flex;
     gap: 0, 5rem;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
 }
 
 /** ------------------- Boton Hamburguesa ------------------- **/
