@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasteleria katyka</title>
+    <title>Catalogo Pasteles</title>
     <!-- Carga de links: Bootstrap, css , fonts e iconos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
@@ -25,8 +25,8 @@
         </div>
         <nav class="navbar navbar-expand-md navbar-light navbar-customizado">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="./assets/logos_y_menus/logo-katyka-3-2.png" alt="logo-katy">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/logos_y_menus/logo-katyka-3-2.png" alt="logo-katy">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -45,7 +45,7 @@
                                 <i class="fa-solid fa-chevron-down"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./pages/pasteleria.html">Pasteleria</a></li>
+                                <li><a class="dropdown-item" href="../pages/pasteleria.html">Pasteleria</a></li>
                                 <li><a class="dropdown-item" href="#">Sandwiches de Miga</a></li>
                                 <li><a class="dropdown-item" href="#">Cajas de Regalo</a></li>
                             </ul>
@@ -143,226 +143,107 @@
     </header>
     <!-- fin del Header -->
     <main>
-        <!-- Comienzo del Hero (main): Carousels y Secciones  -->
-        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img class="carousel-img1" src="./assets/cakes_and_more/slide1.jpg" class="d-block w-100"
-                        alt="Anuncio-1">
-                    <div class="caja-decoracion">
-                        <div class="caja-reli">
-                            <div class="base-titulo1">
-                                <h2>Nuevos Budines de Chocolate!</h2>
-                            </div>
-                            <div class="base-texto1">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione officia
-                                    quam molestias amet deleniti culpa vero velit, perferendis a dolor, laborum est
-                                    reiciendis tempora, repellendus ipsa libero quaerat
-                                </p>
-                            </div>
-                            <div class="base-boton1">
-                                <button type="button" class="btn btn-lg boton-text1">
-                                    <a href="#">Comprar</a>
-                                </button>
-                            </div>
+        <div class="container-fluid p-0">
+            <div class="row row-col-xl-6 g-0">
+                <div class="col banner-part-one">
+                    <div class="banner-text">
+                        <div class="banner-direction">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="../index.html">Otros Productos</a></li>
+                                    <li><i class="fa-solid fa-chevron-right"></i></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Pasteleria</li>
+                                </ol>
+                            </nav>
                         </div>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img class="carousel-img2" src="./assets/cakes_and_more/slide2-4.png" class="d-block w-100"
-                        alt="Anuncio-2">
-                    <div class="caja-decoracion">
-                        <div class="caja-reli2">
-                            <div class="base-titulo2">
-                                <h2>Pasteles Personalizados a Pedido!</h2>
-                            </div>
-                            <div class="base-texto2">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione officia
-                                    quam molestias amet deleniti culpa vero velit, perferendis a dolor, laborum est
-                                    reiciendis tempora, repellendus ipsa libero quaerat
-                                </p>
-                            </div>
-                            <div class="base-boton2">
-                                <button type="button" class="btn btn-lg boton-text2">
-                                    <a href="#">Reservar</a>
-                                </button>
-                            </div>
+                        <div class="banner-tittle">
+                            <h1>Pasteles</h1>
                         </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="carousel-img3" src="./assets/cakes_and_more/slide3.png" class="d-block w-100"
-                        alt="Anuncio-3">
-                    <div class="caja-decoracion">
-                        <div class="caja-reli3">
-                            <div class="base-titulo3">
-                                <h2>Nuevos Cupcakes y Muffins!</h2>
-                            </div>
-                            <div class="base-texto3">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ratione officia
-                                    quam molestias amet deleniti culpa vero velit, perferendis a dolor, laborum est
-                                    reiciendis tempora, repellendus ipsa libero quaerat
-                                </p>
-                            </div>
-                            <div class="base-boton3">
-                                <button type="button" class="btn btn-lg boton-text3">
-                                    <a href="#">Ver Mas</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
-                data-bs-slide="prev">
-                <svg class="circle-chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                        d="M512 256A256 256 0 1 0 0 256a256 256 0 1 0 512 0zM271 135c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-87 87 87 87c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0L167 273c-9.4-9.4-9.4-24.6 0-33.9L271 135z" />
-                </svg>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
-                data-bs-slide="next">
-                <svg class="circle-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                        d="M0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM241 377c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l87-87-87-87c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0L345 239c9.4 9.4 9.4 24.6 0 33.9L241 377z" />
-                </svg>
-            </button>
-        </div>
-        <!-- Seccion principal de productos -->
-        <section class="seccion-productos">
-            <div class="seccion-marco">
-                <div>
-                    <div class="titulo-y-descri">
-                        <h1>Nuestros Productos</h1>
-                        <p class="texto1">Tenemos varios productos para diferentes ocasiones.</p>
-                    </div>
-                    <div class="container card-container">
-                        <div class="row row-cols-4 row-cols-md-4 row-cols-lg-4 g-3">
-                            <div class="col">
-                                <div class="card border-0">
-                                    <a href="#"><img src="./assets/cakes_and_more/sslide1.png"
-                                            class="card-img-top w-100" alt="pasteleria"></a>
-                                    <div class="card-body">
-                                        <a href="#">
-                                            <p class="card-text">Pasteleria</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0">
-                                    <a href="#"><img src="./assets/cakes_and_more/sslide2.jpg"
-                                            class="card-img-top w-100" alt="sandwiches-de-miga"></a>
-                                    <div class="card-body">
-                                        <a href="#">
-                                            <p class="card-text">Sandwiches de Miga</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0">
-                                    <a href="#"><img src="./assets/cakes_and_more/sslide3.jpg"
-                                            class="card-img-top w-100" alt="cajas-de-desayuno"></a>
-                                    <div class="card-body">
-                                        <a href="#">
-                                            <p class="card-text">Cajitas de Regalo</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0">
-                                    <a class="sslide4" href="#"><img src="./assets/cakes_and_more/sslide4.png"
-                                            class="card-img-top w-100" alt="cupcakes-y-muffins"></a>
-                                    <div class="card-body">
-                                        <a href="#">
-                                            <p class="card-text">Cupcakes y Muffins</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- fin de mi Seccion principal | Comienzo de mi Footer: Logo final, redes sociales y misc -->
-    <footer>
-        <div class="footer-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-content">
-                        <img src="./assets/logos_y_menus/logo_katyka4.png" alt="logo-katyka2">
-                    </div>
-                    <div class="col col-content">
-                        <h5>Horarios de atencion:</h5>
-                        <div class="horario-text">
-                            <p class="texto-footer">Nuestros horarios de atencion al cliente son de lunes a viernes, de
-                                9
-                                a.m. a 5 p.m.
+                        <div class="banner-text">
+                            <p>
+                                Our cakes bring layers of joy (and rich buttercream frosting) to any occasion, with
+                                flavors for every type of sweets-lover. From classics to limited-time creations, all of
+                                our beautifully decorated cakes are made the old-fashioned way: from scratch and with
+                                love.
                             </p>
                         </div>
                     </div>
-                    <div class="col col-content">
-                        <h5>Nuestras redes sociales:</h5>
-                        <div class="redes-sociales">
-                            <a class="redes" href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                            <a class="redes" href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                            <a class="redes" href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-                        </div>
-                    </div>
                 </div>
-
-                <div class="row">
-                    <div class="col col-content copyri">
-                        <hr class="separador" />
-                        <p class="copyright-text">Copyright © 2024 · Buenos Aires Katyka Delicias Artesanales</p>
-                    </div>
-                    <div class="col col-content preguntas-texto">
-                        <hr class="separador" />
-                        <h5>¿Preguntas Frecuentes?</h5>
-                        <div class="preguntas-box">
-                            <a href="#">Reembolsos y Devoluciones</a>
-                            <a href="#">Terminos de la Promocion</a>
-                            <a href="#">Ventas al por mayor</a>
-                        </div>
-                    </div>
-                    <div class="col col-content">
-                        <hr class="separador" />
-                        <p>
-                            <i class="fa-brands fa-whatsapp"></i> +54 1112345678
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-phone"></i> 11 1234567890
-                        </p>
-                        <p>
-                            <i class="fa-regular fa-envelope"></i> katykabakery@email.com
-                        </p>
-                        <p>
-                            <i class="fa-solid fa-location-dot"></i> Av. Palermo 3345
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col col-content"></div>
-                    <div class="col"></div>
-                    <div class="col col-content">
-                        <div class="logomarcas">
-                            <i class="fa-brands fa-cc-visa"></i>
-                            <i class="fa-brands fa-cc-mastercard"></i>
-                            <i class="fa-brands fa-cc-amazon-pay"></i>
-                            <i class="fa-solid fa-credit-card"></i>
-                            <i class="fa-brands fa-cc-discover"></i>
-                        </div>
+                <div class="col">
+                    <div class="banner-image">
+                        <img class="banner-pasteleria" src="../assets/logos_y_menus/menu_acerda_de.png"
+                            alt="Pasteleria Katyka">
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- fin de mi Footer -->
-    <!-- Scrips de iconos, fonts y bootstrap -->
+        <!-- seccion de pasteles -->
+        <div class="container">
+            <div class="row fila1">
+                <div class="col">
+                    aaa
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem height: 10rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aperiam
+                                rem ullam asperiores id quisquam, eos error, modi veritatis voluptas magni minima
+                                eligendi iusto vel soluta tenetur architecto molestiae itaque..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem height: 10rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aperiam
+                                rem ullam asperiores id quisquam, eos error, modi veritatis voluptas magni minima
+                                eligendi iusto vel soluta tenetur architecto molestiae itaque..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem height: 10rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aperiam
+                                rem ullam asperiores id quisquam, eos error, modi veritatis voluptas magni minima
+                                eligendi iusto vel soluta tenetur architecto molestiae itaque..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row fila2">
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+            <div class="row fila3">
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="https://kit.fontawesome.com/373dade425.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
@@ -370,4 +251,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
         </script>
+</body>
+
 </html>

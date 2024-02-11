@@ -160,20 +160,21 @@ a {
 .carousel-control-prev,
 .carousel-control-next {
     position: absolute;
-    top: 9vh;
-    width: 4%;
-    padding: 2px;
+    width: 7rem;
     opacity: 2;
+    top: 55%;
+    transform: translateY(-50%);
+    z-index: 10;
 }
 
 .carousel-control-prev {
     position: absolute;
-    left: 12.5vw;
+    left: calc(70% - 57.7%)
 }
 
 .carousel-control-next {
     position: absolute;
-    left: 41vw;
+    right: calc(86.6% - 60rem);
 }
 
 /* caja de texto carousel */
@@ -184,8 +185,8 @@ a {
 
 .caja-reli {
     position: absolute;
-    width: 28.5vw;
-    height: 64vh;
+    width: 53.5rem;
+    height: 60rem;
     top: -70vh;
     left: 14.5vw;
     border-radius: 30px;
@@ -195,8 +196,8 @@ a {
 
 .caja-reli2 {
     position: absolute;
-    width: 28.5vw;
-    height: 64vh;
+    width: 53.5rem;
+    height: 60rem;
     top: -70vh;
     left: 14.5vw;
     border-radius: 30px;
@@ -206,8 +207,8 @@ a {
 
 .caja-reli3 {
     position: absolute;
-    width: 28.5vw;
-    height: 64vh;
+    width: 53.5rem;
+    height: 60rem;
     top: -70vh;
     left: 14.5vw;
     border-radius: 30px;
@@ -413,7 +414,7 @@ a {
 
 .card img {
     height: 25rem;
-    width: 25rem;
+    width: 23%;
 }
 
 .card-text {
@@ -432,7 +433,7 @@ a {
 }
 
 .card-img-top:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .card-body a p:hover {
@@ -533,3 +534,82 @@ a {
     color: #b37287;
     transition: .25s ease;
 }
+
+/* Media Queries */
+
+@media (min-width: 991px) {
+
+    .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+    .card img {
+        height: 25rem;
+        width: 25rem;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+}
+
+/* Pagina de la Pasteleria */
+
+.banner-pasteleria {
+    width: 100%;
+    height: 35.2vh;
+    object-fit: cover;
+}
+
+.banner-part-one {
+    background: #e6a4b5e5;
+    color: #3b1c26;
+    height: 35.2vh;
+}
+
+.banner-direction {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 29.3rem;
+    padding-top: 1.8rem;
+    padding-bottom: 2.5rem;
+    font-size: 2rem;
+}
+
+.breadcrumb {
+    gap: 1rem;
+}
+
+.banner-tittle {
+    padding-left: 29.2rem;
+    padding-bottom: 2.7rem;
+}
+
+.banner-tittle h1 {
+    font-family: 'Prata', serif;
+    transform: scaleY(1.3);
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.banner-text p {
+    text-align:start ;
+    padding-left: 29.2rem;
+    padding-right: 10rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: scaleY(1.1);
+    font-size: 1.56rem;
+    font-weight: 600;
+}
+
+.fila1 {
+    background-color: #1c283b;
+    margin-top: 6.3rem;
+}
+    
