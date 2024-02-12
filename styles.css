@@ -19,6 +19,10 @@ a {
 }
 
 /***** ------------------- Header barra nav------------------- *****/
+header {
+    min-width: 100vw !important;
+}
+
 .anuncio {
     display: flex;
     justify-content: center;
@@ -169,12 +173,12 @@ a {
 
 .carousel-control-prev {
     position: absolute;
-    left: calc(70% - 56.7%)
+    left: 254px;
 }
 
 .carousel-control-next {
     position: absolute;
-    right: calc(86.6% - 60.9rem);
+    right: 1040px;
 }
 
 /* caja de texto carousel */
@@ -534,7 +538,8 @@ a {
 }
 
 .footer-content img {
-    width: 30rem;
+    width: 150px;
+    height: 80px;
 }
 
 .footer-content h5 {
@@ -611,30 +616,6 @@ a {
 .preguntas-texto a:hover {
     color: #b37287;
     transition: .25s ease;
-}
-
-/* Media Queries */
-
-@media (min-width: 991px) {
-
-    .container {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-
-    .card img {
-        height: 25rem;
-        width: 25rem;
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-
 }
 
 /* Pagina de la Pasteleria */
