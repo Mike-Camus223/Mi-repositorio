@@ -174,7 +174,7 @@ a {
 
 .carousel-control-next {
     position: absolute;
-    right: calc(86.6% - 60rem);
+    right: calc(86.6% - 60.8rem);
 }
 
 /* caja de texto carousel */
@@ -608,8 +608,44 @@ a {
     font-weight: 600;
 }
 
+/* lista de pasteles */
+
 .fila1 {
-    background-color: #1c283b;
     margin-top: 6.3rem;
 }
-    
+
+.col .fila-imagen {
+    width: 100%;
+    height: 29.5rem;
+}
+
+.col .fila-imagen:hover {
+    transform: scale(1.055);
+    transition: 0.3s ease-in-out;
+}
+
+.catalogo-titulo h2 {
+    font-family: 'Prata', serif;
+    color: #3b1c26;
+    font-weight: 600;
+}
+
+.catalogo-texto p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: #3b1c26;
+    font-weight: 600;
+    transform: scaleY(0.95);
+}
+
+.catalogo-precio p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    color: #3b1c26;
+    font-weight: 600;
+    transform: scaleY(0.98);
+}
+
+.fila3 {
+    padding-bottom: 6.3rem;
+}
