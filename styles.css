@@ -125,7 +125,7 @@ a {
 /** ------------------- Primer Carousel ------------------- **/
 
 .slide img {
-    height: 83vh;
+    height: 87vh;
     width: 100%;
 }
 
@@ -169,12 +169,12 @@ a {
 
 .carousel-control-prev {
     position: absolute;
-    left: calc(70% - 57.7%)
+    left: calc(70% - 56.7%)
 }
 
 .carousel-control-next {
     position: absolute;
-    right: calc(86.6% - 60.8rem);
+    right: calc(86.6% - 60.9rem);
 }
 
 /* caja de texto carousel */
@@ -185,10 +185,10 @@ a {
 
 .caja-reli {
     position: absolute;
-    width: 53.5rem;
-    height: 60rem;
-    top: -70vh;
-    left: 14.5vw;
+    width: 52rem;
+    height: 62.5rem;
+    top: -74.7vh;
+    left: 15.5vw;
     border-radius: 30px;
     background: #e6a4b5e5;
     box-shadow: 9px 9px 0px #9a6e79e5;
@@ -196,10 +196,10 @@ a {
 
 .caja-reli2 {
     position: absolute;
-    width: 53.5rem;
-    height: 60rem;
-    top: -70vh;
-    left: 14.5vw;
+    width: 52rem;
+    height: 62.5rem;
+    top: -74.7vh;
+    left: 15.5vw;
     border-radius: 30px;
     background: #bdffe9de;
     box-shadow: 9px 9px 0px #7fab9cde;
@@ -207,10 +207,10 @@ a {
 
 .caja-reli3 {
     position: absolute;
-    width: 53.5rem;
-    height: 60rem;
-    top: -70vh;
-    left: 14.5vw;
+    width: 52rem;
+    height: 62.5rem;
+    top: -74.7vh;
+    left: 15.5vw;
     border-radius: 30px;
     background: #addcffde;
     box-shadow: 9px 9px 0px #7493abde;
@@ -222,7 +222,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 11rem;
+    padding-top: 16rem;
 }
 
 .base-titulo1 h2 {
@@ -230,7 +230,7 @@ a {
     font-family: 'Prata', serif;
     font-weight: 600;
     text-align: center;
-    transform: scaleY(1.5);
+    transform: scaleY(1.4);
     color: #3b1c26;
 }
 
@@ -280,7 +280,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 11rem;
+    padding-top: 16rem;
 }
 
 .base-titulo2 h2 {
@@ -288,7 +288,7 @@ a {
     font-family: 'Prata', serif;
     font-weight: 600;
     text-align: center;
-    transform: scaleY(1.5);
+    transform: scaleY(1.4);
     color: #1c3b25;
 }
 
@@ -338,7 +338,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 11rem;
+    padding-top: 16rem;
 }
 
 .base-titulo3 h2 {
@@ -346,7 +346,7 @@ a {
     font-family: 'Prata', serif;
     font-weight: 600;
     text-align: center;
-    transform: scaleY(1.5);
+    transform: scaleY(1.4);
     color: #1c283b;
 }
 
@@ -412,9 +412,10 @@ a {
     padding-top: 1rem;
 }
 
-.card img {
-    height: 25rem;
+.carta img {
+    height: 29.8rem;
     width: 23%;
+    border-radius: 5%;
 }
 
 .card-text {
@@ -443,6 +444,7 @@ a {
 
 .card-container {
     min-height: 43vh;
+    padding-bottom: 11.5rem;
 }
 
 /** -------------------- Footer ------------------- **/
