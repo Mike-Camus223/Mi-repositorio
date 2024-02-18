@@ -1,0 +1,39 @@
+//boton hamburguesa//
+.navbar-toggler {
+    border: none !important;
+    background-color: #CE5A67;
+    color: #fff;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.boton-barrita {
+    width: 3rem;
+    height: 3rem;
+}
+
+//botones dropdown//
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-nav .nav-item.dropdown:hover .nav-link {
+    color: #ff6969;
+}
+
+.navbar-nav .nav-item.dropdown .nav-link i.fa-chevron-down {
+    transition: .25s ease;
+}
+
+.navbar-nav .nav-item.dropdown .nav-link:hover i.fa-chevron-down {
+    color: #e74c3c;
+    transform: rotate(180deg);
+}
+
+.nav-link:hover {
+    color: #ff6969;
+    transition: .25s ease;
+}

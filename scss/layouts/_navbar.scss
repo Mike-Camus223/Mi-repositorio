@@ -1,0 +1,37 @@
+// navbar //
+.navbar-customizado {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.10s ease;
+}
+
+.navbar-brand img {
+    width: 13rem;
+    height: auto;
+}
+
+.navbar {
+    font-size: large;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.dropdown-menu {
+    font-size: large;
+}
+
+.navbar-contenedor-li {
+    gap: 1.5rem;
+}
+
+.iconos-nav {
+    display: flex;
+    gap: 0, 5rem;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}

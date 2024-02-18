@@ -1,0 +1,55 @@
+// seccion de productos index //
+
+.titulo-y-descri {
+    text-align: center;
+    font-family: 'Prata', serif;
+    color: #3b1c26;
+    padding: 7rem 7rem 5.5rem 7rem;
+}
+
+.titulo-y-descri h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    transform: scaleY(1.3);
+}
+
+.titulo-y-descri .texto1 {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.carta img {
+    height: 29.8rem;
+    width: 23%;
+    border-radius: 5%;
+}
+
+.card-text {
+    font-family: 'Prata', serif;
+    font-size: 2rem;
+    color: #3b1c26;
+    font-weight: 600;
+}
+
+.card {
+    overflow: hidden;
+}
+
+.card-img-top {
+    transition: 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+}
+
+.card-body a p:hover {
+    color: #bd5e7f;
+    transition: .25s ease;
+}
+
+.card-container {
+    min-height: 43vh;
+    padding-bottom: 11.5rem;
+}
