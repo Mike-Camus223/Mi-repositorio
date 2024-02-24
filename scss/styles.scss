@@ -1,6 +1,10 @@
 @import "./utilidades/variables";
 @import "./base/tipografias";
 @import "./base/reset";
+@import "./utilidades/mixins";
+@import "./utilidades/animaciones-keyframes";
+
+// layouts // 
 @import "./layouts/header";
 @import "./layouts/navbar";
 @import "./componentes/-botones.scss";

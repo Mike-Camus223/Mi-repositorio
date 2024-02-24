@@ -1,37 +1,193 @@
 // navbar //
-.navbar-customizado {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-    transition: 0.10s ease;
-}
+.navbar-pc {
+  @include medida-navbar (space-around, center, 0);
 
-.navbar-brand img {
-    width: 13rem;
-    height: auto;
-}
+  &__left {
+    @include links-flex-tamano-espacio (flex, large, 1.5rem);
 
-.navbar {
+    &-item:hover .dropdown-menu {
+      display: block;
+    }
+  }
+
+  &__logo {
+    width: 11rem;
+  }
+
+  &__base {
+    @include medida-navbar (null, null, null);
+
+    & .social-icons {
+      @include links-flex-tamano-espacio (flex, null, 1rem);
+
+      &:hover {
+        color: #ff6969;
+      }
+    }
+  }
+
+  &__right {
+    @include links-flex-tamano-espacio (flex, large, 1.5rem);
+
+    &-item:hover .dropdown-menu {
+      display: block;
+    }
+  }
+
+  &__dropdown-menu {
     font-size: large;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    animation: .5s slideup;
+  }
+
+  &__link:hover {
+    @include flecha-color-transfor-transi (#ff6969, rotate(180deg), .25s ease);
+
+    & i.fa-chevron-down {
+      @include flecha-color-transfor-transi (#ff6969, rotate(180deg), .25s ease);
+    }
+  }
+
+  &__link:focus {
+    color: #ff6969;
+
+    & i.fa-chevron-down {
+      @include flecha-color-transfor-transi (#ff6969, rotate(270deg), .25s ease);
+    }
+  }
 }
 
-.dropdown-menu {
-    font-size: large;
-}
+// media queries //
 
-.navbar-contenedor-li {
-    gap: 1.5rem;
-}
-
-.iconos-nav {
-    display: flex;
-    gap: 0, 5rem;
-}
-
-.dropdown-menu {
+@media only screen and (max-width: 5000px) {
+  .navbar {
     display: none;
+  }
 }
 
-.nav-item:hover .dropdown-menu {
-    display: block;
+@media only screen and (min-width: 54px) and (max-width: 991px) {
+
+  .navbar-pc {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+
+    &-brand {
+      & img {
+        width: 11rem;
+      }
+    }
+
+    &-collapse {
+      transform: translateX(-100%);
+      transition: transform 0.2s ease-out;
+
+      &.show {
+        transform: translateX(0);
+        transition: transform 0.2s ease-in-out;
+      }
+    }
+
+    &-toggler {
+      @include boton-burger (none !important, #CE5A67, #fff);
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    &-nav {
+      @include links-flex-tamano-espacio (null, large, null);
+      font-family: $font-menus;
+      padding-top: 2.3rem;
+
+      &:focus {
+        color: #ff6969;
+      }
+
+      .dropdown {
+        &-toggle {
+          &::after {
+            display: none;
+          }
+        }
+
+        &-menu {
+          animation: .5s slideup;
+        }
+
+        &-item {
+          @include links-flex-tamano-espacio (null, large, null);
+
+          &:focus {
+            transition: transform 0.2s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .nav {
+
+      &-item {
+
+        .login-icono {
+          display: flex;
+          margin-top: 36px;
+
+          &__icon {
+            @include boton-search-icono-fondo-border-vertical-marginright (transparent, none, middle, 1.3rem);
+          }
+
+          &__link {
+            font-weight: 500;
+            transform: $letras-especiales-aplastadas;
+            @include text-decoration (underline, auto, 2px);
+
+            &:active {
+              color: #ff6969;
+              transition: $suave-o-semilento;
+            }
+          }
+        }
+      }
+
+      &-link {
+        padding-top: 1.8rem;
+
+        &:focus {
+          color: #ff6969;
+        }
+
+        &:active {
+          color: #ff6969;
+        }
+      }
+    }
+
+    .hr {
+      @include margintop-marginbottom (-2px, -2px);
+    }
+  }
+
+  .boton-barrita {
+    @include ancho-alto (3rem, 3rem);
+  }
+
+  .search-button {
+
+    &__button {
+      @include boton-search-icono-fondo-border-vertical-marginright (transparent, none, middle, 1rem);
+    }
+
+    &__search-bar {
+      transform: $letras-especiales-aplastadas;
+      vertical-align: middle;
+      @include boton-search-borde-tamano-fontfamily-fontweight (none, 2rem, $font-menus, 400);
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
 }

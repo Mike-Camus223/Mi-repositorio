@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+@keyframes slideup {
+  from {
+    transform: translateY(5%);
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+.navbar-pc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+.navbar-pc__left {
+  display: flex;
+  font-size: large;
+  gap: 1.5rem;
+}
+.navbar-pc__left-item:hover .dropdown-menu {
+  display: block;
+}
+.navbar-pc__logo {
+  width: 11rem;
+}
+.navbar-pc__base {
+  display: flex;
+}
+.navbar-pc__base .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+.navbar-pc__base .social-icons:hover {
+  color: #ff6969;
+}
+.navbar-pc__right {
+  display: flex;
+  font-size: large;
+  gap: 1.5rem;
+}
+.navbar-pc__right-item:hover .dropdown-menu {
+  display: block;
+}
+.navbar-pc__dropdown-menu {
+  font-size: large;
+  animation: 0.5s slideup;
+}
+.navbar-pc__link:hover {
+  color: #ff6969;
+  transform: rotate(180deg);
+  transition: 0.25s ease;
+}
+.navbar-pc__link:hover i.fa-chevron-down {
+  color: #ff6969;
+  transform: rotate(180deg);
+  transition: 0.25s ease;
+}
+.navbar-pc__link:focus {
+  color: #ff6969;
+}
+.navbar-pc__link:focus i.fa-chevron-down {
+  color: #ff6969;
+  transform: rotate(270deg);
+  transition: 0.25s ease;
+}
+
+@media only screen and (max-width: 5000px) {
+  .navbar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 54px) and (max-width: 991px) {
+  .navbar-pc {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+  }
+  .navbar-brand img {
+    width: 11rem;
+  }
+  .navbar-collapse {
+    transform: translateX(-100%);
+    transition: transform 0.2s ease-out;
+  }
+  .navbar-collapse.show {
+    transform: translateX(0);
+    transition: transform 0.2s ease-in-out;
+  }
+  .navbar-toggler {
+    border: none !important;
+    background-color: #CE5A67;
+    color: #fff;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navbar-nav {
+    font-size: large;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    padding-top: 2.3rem;
+  }
+  .navbar-nav:focus {
+    color: #ff6969;
+  }
+  .navbar-nav .dropdown-toggle::after {
+    display: none;
+  }
+  .navbar-nav .dropdown-menu {
+    animation: 0.5s slideup;
+  }
+  .navbar-nav .dropdown-item {
+    font-size: large;
+  }
+  .navbar-nav .dropdown-item:focus {
+    transition: transform 0.2s ease-in-out;
+  }
+  .navbar .nav-item .login-icono {
+    display: flex;
+    margin-top: 36px;
+  }
+  .navbar .nav-item .login-icono__icon {
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+    margin-right: 1.3rem;
+  }
+  .navbar .nav-item .login-icono__link {
+    font-weight: 500;
+    transform: scaleY(0.97);
+    text-decoration: underline;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 2px;
+  }
+  .navbar .nav-item .login-icono__link:active {
+    color: #ff6969;
+    transition: 0.2s ease;
+  }
+  .navbar .nav-link {
+    padding-top: 1.8rem;
+  }
+  .navbar .nav-link:focus {
+    color: #ff6969;
+  }
+  .navbar .nav-link:active {
+    color: #ff6969;
+  }
+  .navbar .hr {
+    margin-top: -2px;
+    margin-bottom: -2px;
+  }
+  .boton-barrita {
+    width: 3rem;
+    height: 3rem;
+  }
+  .search-button__button {
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+  .search-button__search-bar {
+    transform: scaleY(0.97);
+    vertical-align: middle;
+    border: none;
+    font-size: 2rem;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 400;
+  }
+  .search-button__search-bar:focus {
+    outline: none;
+  }
+}
+
+/*# sourceMappingURL=stylespri.css.map */

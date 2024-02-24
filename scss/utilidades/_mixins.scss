@@ -1,0 +1,85 @@
+// mixins Globales //
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin ancho-alto ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin margintop-marginbottom ($margintop, $marginbottom) {
+    margin-top: $margintop;
+    margin-bottom: $marginbottom;
+}
+
+
+//parametros mixin //
+
+@mixin flex ($direccion, $justify, $align, $gap) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+// para añadirlo es con @include flex (row o null, center, center, 3rem) es un ejemplo //
+
+// logo mixin //
+
+@mixin logo-size {
+    width: 130px;
+    height: auto;
+}
+
+// mixins del navbar //
+
+@mixin medida-navbar ($justify, $align, $padding) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    padding: $padding;
+}
+
+@mixin links-flex-tamano-espacio ($flex, $tamano ,$espacio) {
+    display: $flex;
+    font-size: $tamano;
+    gap: $espacio;
+}
+
+@mixin flecha-color-transfor-transi ($color, $transfor ,$transi) {
+    color: $color;
+    transform: $transfor;
+    transition: $transi;
+}
+
+// mixins navbar-mobile //
+
+@mixin boton-burger ($border, $fondo ,$color) {
+    border: $border;
+    background-color: $fondo;
+    color: $color;
+}
+
+@mixin boton-search-borde-tamano-fontfamily-fontweight ($borde, $size, $ffamily, $fweight) {
+    border: $borde;
+    font-size: $size;
+    font-family: $ffamily;
+    font-weight: $fweight;
+}
+
+@mixin boton-search-icono-fondo-border-vertical-marginright ($fondo, $borde, $vertical, $margin) {
+    background-color: $fondo;
+    border: $borde;
+    vertical-align: $vertical;
+    margin-right: $margin;
+}
+
+@mixin text-decoration ($text-decoration, $text-decoration-skip, $text-decoration-thickness) {
+    text-decoration: $text-decoration;
+    text-decoration-skip-ink: $text-decoration-skip;
+    text-decoration-thickness: $text-decoration-thickness;
+}
