@@ -15,6 +15,11 @@
     margin-bottom: $marginbottom;
 }
 
+@mixin paddin-left-right ($left, $right) {
+    padding-left: $left;
+    padding-right: $right;
+}
+
 
 //parametros mixin //
 
@@ -83,3 +88,15 @@
     text-decoration-skip-ink: $text-decoration-skip;
     text-decoration-thickness: $text-decoration-thickness;
 }
+
+// position relative // 
+
+@mixin position-relative ($posi, $top, $botom, $left, $right, $zindex) {
+    position: $posi;
+    top: $top;
+    bottom: $botom;
+    left: $left;
+    right: $right;
+    z-index: $zindex;
+}
+
