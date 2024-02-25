@@ -1,6 +1,25 @@
+// anuncio navbar //
+
+.anuncio {
+  @include position-relative (fixed, 0, null, 0, 0, null);
+  @include flex (flex, center, center, null);
+  @include anuncio-barra ($patron-anuncio-escala-de-rosas, null, 0.6rem, 3rem);
+
+  &__letra {
+    @include anuncio-letra (0, medium, scaleY(0.9), 400, #fff);
+    @include fonts (large, $font-parrafo, 500, null);
+    
+    &:hover {
+      color: #F6FDC3;
+      transition: .25s ease;
+    }
+  }
+}
+
 // navbar //
+
 .navbar-pc {
-  @include position-relative (fixed, 0, null, 0, 0, 1001);
+  @include position-relative (fixed, 3rem, null, 0, 0, null);
   background-color: #fff;
   @include medida-navbar (space-around, center, 0);
 
@@ -71,16 +90,11 @@
   }
 }
 
-
 @media (max-width: 174px) {
 
   .navbar-collapse.show {
     top: 0;
     max-height: 100vh;
-  }
-
-  main {
-    margin-top: 0;
   }
 }
 

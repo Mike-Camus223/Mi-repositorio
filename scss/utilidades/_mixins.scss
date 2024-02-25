@@ -1,4 +1,5 @@
 // mixins Globales //
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -20,6 +21,12 @@
     padding-right: $right;
 }
 
+@mixin fonts ($font-size, $font-fa, $font-we, $text-deco) {
+    font-size: $font-size;
+    font-family: $font-fa;
+    font-weight: $font-we;
+    text-decoration: $text-deco;
+}
 
 //parametros mixin //
 
@@ -33,11 +40,21 @@
 
 // para añadirlo es con @include flex (row o null, center, center, 3rem) es un ejemplo //
 
-// logo mixin //
+// mixins navbar anuncio //
 
-@mixin logo-size {
-    width: 130px;
-    height: auto;
+@mixin anuncio-barra ($fondo, $fontfami, $padding, $height) {
+    background: $fondo;
+    font-family: $fontfami;
+    padding: $padding;
+    height: $height;
+}
+ 
+@mixin anuncio-letra ($margin, $fontfami, $transform, $fontweight, $color) {
+    margin: $margin;
+    font-family: $fontfami;
+    transform: $transform;
+    font-weight: $fontweight;
+    color: $color;
 }
 
 // mixins del navbar //
@@ -59,6 +76,13 @@
     color: $color;
     transform: $transfor;
     transition: $transi;
+}
+
+// logo mixin //
+
+@mixin logo-size {
+    width: 130px;
+    height: auto;
 }
 
 // mixins navbar-mobile //

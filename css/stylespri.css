@@ -50,12 +50,39 @@ a {
     -webkit-opacity: 0;
   }
 }
-.navbar-pc {
+.anuncio {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1001;
+  display: flex;
+  flex-direction: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #E97777 5%, #FF9F9F 5% 10%, #E97777 10% 15%, #FF9F9F 15% 20%, #E97777 20% 25%, #FF9F9F 25% 30%, #E97777 30% 35%, #FF9F9F 35% 40%, #E97777 40% 45%, #FF9F9F 45% 50%, #E97777 50% 55%, #FF9F9F 55% 60%, #E97777 60% 65%, #FF9F9F 65% 70%, #E97777 70% 75%, #FF9F9F 75% 80%, #E97777 80% 85%, #FF9F9F 85% 90%, #E97777 90% 95%, #FF9F9F 95% 100%);
+  padding: 0.6rem;
+  height: 3rem;
+}
+.anuncio__letra {
+  margin: 0;
+  font-family: medium;
+  transform: scaleY(0.9);
+  font-weight: 400;
+  color: #fff;
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+.anuncio__letra:hover {
+  color: #F6FDC3;
+  transition: 0.25s ease;
+}
+
+.navbar-pc {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  right: 0;
   background-color: #fff;
   display: flex;
   justify-content: space-around;
@@ -127,9 +154,6 @@ a {
   .navbar-collapse.show {
     top: 0;
     max-height: 100vh;
-  }
-  main {
-    margin-top: 0;
   }
 }
 @media only screen and (min-width: 20px) and (max-width: 991px) {
