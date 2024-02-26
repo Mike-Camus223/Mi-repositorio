@@ -1,9 +1,16 @@
 // mixins Globales //
 
-@mixin flex-center {
+@mixin flex-justify-align ($center, $acenter) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: $center;
+    align-items: $acenter;
+}
+
+@mixin flex-display-direc-justy-alignitem ($flex, $direc, $justy, $align) {
+    display: $flex;
+    flex-direction: $direc;
+    justify-content: $justy;
+    align-items: $align;
 }
 
 @mixin ancho-alto ($ancho, $alto) {
