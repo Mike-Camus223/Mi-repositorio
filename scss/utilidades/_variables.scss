@@ -20,3 +20,10 @@ $letras-especiales-aplastadas: scaleY(0.97);
 
 $suave-o-semilento: 0.2s ease;
 
+// backgrounds //
+
+$seccion-newsletter-background: conic-gradient(#ffffff 25%, #0000 0) 0 0/calc(2*48px) calc(48px/9.5),
+conic-gradient(#ffffff 25%, #0000 0) 0 0/calc(48px/9.5) calc(2*48px),
+repeating-conic-gradient(#0000 0 25%, #ffffff 0 50%) 48px 0 /calc(2*48px) calc(2*48px),
+radial-gradient(50% 50%, #ffdae3 98%, #ffffff) 0 0/48px 48px;
+

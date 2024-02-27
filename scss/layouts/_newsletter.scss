@@ -1,0 +1,77 @@
+// seccion formulario o newsletter //
+
+.newsletter {
+    @include ancho-alto (100%, 56vh);
+    background: $seccion-newsletter-background;
+    @include paddings-all (12rem, 10rem, null, null);
+
+    &__cabeza {
+        @include flex-justify-align (center, null);
+        flex-wrap: wrap;
+        padding-bottom: 1.5rem;
+
+        &__titulo {
+            @include fonts (4.8rem, $font-titulo, 700, none);
+            color: #3b1c26;
+        }
+    }
+
+    &__cuerpo {
+        @include flex-justify-align (center, center);
+        flex-wrap: wrap;
+        padding-bottom: 5.5rem;
+
+        &__texto {
+            @include fonts (2rem, $font-parrafo, 500, none);
+            color: #3b1c26;
+            max-width: 60rem;
+            text-align: center;
+        }
+    }
+
+    &__formulario {
+
+        .input-group {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-control {
+            background: transparent;
+            border: 4px solid $color-marron-texto;
+            height: 4rem;
+            padding-top: 2.5rem;
+            padding-left: 4rem;
+            padding-bottom: 2.5rem;
+            padding-right: 4rem;
+            @include fonts (4rem, $font-parrafo, null, null);
+
+            &:focus {
+                @include fonts (2rem, $font-parrafo, 600, null);
+                background-color: transparent;
+                height: 4rem;
+                box-shadow: none;
+                color: $color-marron-texto;
+            }
+
+            &__button {
+                @include position-relative (absolute, 4px, 0, 45rem, 0, null);
+                border: none;
+                background-color: transparent;
+                width: 4rem;
+                cursor: pointer;
+
+                &__icon {
+                    font-size: 4rem;
+                    color: $color-marron-texto;
+
+                }
+            }
+        }
+    }
+}
+
+// .svg--desktop {
+//     position: absolute;
+//     top: -1.1rem;
+// }

@@ -23,6 +23,7 @@
     justify-content: center;
     gap: 4rem;
     flex-wrap: wrap;
+    margin-bottom: 11.5rem;
 
     &__items {
         @include ancho-alto (31.5rem, 31.2rem);

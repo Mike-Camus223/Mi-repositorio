@@ -1,0 +1,76 @@
+// seccion de catering //
+
+.seccion-catering {
+    display: flex;
+    @include ancho-alto (auto, 45.6rem);
+    background-color: #ffc0cb;
+
+    &__item-1 {
+        @include ancho-alto (50%, 45.6rem);
+        background: linear-gradient(90deg, #8d3e5a 25%, transparent 26%, transparent 49%, #8d3e5a80 50%, #8d3e5a80 75%, transparent 76%);
+        background-size: 6em 6em;
+        background-color: #ffc0cb;
+        opacity: 1;
+
+        .contenedor-catering {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 4rem;
+
+            &__imagen {
+                @include ancho-alto (60%, auto);
+            }
+        }
+    }
+
+    &__item-2 {
+        @include ancho-alto (50%, 45.6rem);
+
+        .contenedor-catering-dos {
+            
+            &__titulo {
+                @include flex-justify-align (center, null);
+                @include fonts (4rem, $font-titulo, 600, null);
+                transform: scaleY(1.3);
+                padding-top: 8rem;
+                color: $color-marron-texto;
+                text-align: center
+
+            }
+
+            &__texto {
+                @include fonts (2rem, $font-parrafo, 500, null);
+                color: $color-marron-texto;
+                text-transform: none;
+                line-height: 1.4em;
+                text-align: center;
+                padding-top: 6rem;
+                padding-right: 9rem;
+                padding-left: 9rem;
+                overflow: hidden;
+                height: 228px;
+                margin-bottom: 0;
+            }
+
+            &__boton {
+                display: flex;
+                justify-content: center;
+                
+                &-prime {
+                    background-color: maroon;
+                    border:none;
+                    width: 200px;
+                    height: 50px;
+                    @include fonts (2rem, $font-parrafo, 500, none);
+
+
+                    &:focus {
+                        background-color: palevioletred;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -28,6 +28,18 @@
     padding-right: $right;
 }
 
+@mixin paddin-top-bottom ($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin paddings-all ($top, $botom, $left, $right) {
+    padding-top: $top;
+    padding-bottom: $botom;
+    padding-left: $left;
+    padding-right: $right;
+}
+
 @mixin fonts ($font-size, $font-fa, $font-we, $text-deco) {
     font-size: $font-size;
     font-family: $font-fa;
