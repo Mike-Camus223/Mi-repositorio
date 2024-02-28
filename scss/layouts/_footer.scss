@@ -1,0 +1,83 @@
+// footer //
+.footer-cuerpo {
+    display: flex;
+    @include ancho-alto (100%, 30rem);
+    background-color: #6d3246;
+
+    &__item-1 {
+        @include flex-justify-align (center, center);
+        flex-direction: column;
+        width: 50%;
+
+        &__imagen {
+            @include ancho-alto (23rem, auto);
+        }
+
+        &__container {
+            @include fonts (1.4rem, $font-parrafo, 600, none);
+
+            &__link {
+                color: #fff;
+
+                &:hover {
+                    color: #de82a6;
+                    transition: .25s ease;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__item-2 {
+        @include flex-justify-align (center, center);
+        flex-direction: column;
+        width: 50%;
+      
+        &__tituredes {
+            @include fonts (1.9rem, $font-parrafo, 600, none);
+            color: #fff;
+        }
+
+        &__redes {
+            @include flex (null, center, center, 1rem);
+            font-size: 4rem;
+
+            &__icon {
+                color: #fff;
+
+                &:hover {
+                    color: #de82a6;
+                    transition: .25s ease;
+                }
+            }
+        }
+
+        &__info {
+            @include flex-justify-align (center, center);
+            flex-direction: column;
+            margin-top: 2rem;
+
+            & i {
+                margin-right: 1rem;
+            }
+            
+            &__icons {
+                font-size: 1.8rem;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: #6d3246; 
+    height: 1.8rem; 
+
+    &__texto {
+        color: #fff;
+        font-size: larger;
+        text-align: center;
+        border-top: none;
+        margin-bottom: 0;
+    }
+}

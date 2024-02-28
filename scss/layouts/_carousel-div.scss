@@ -1,7 +1,7 @@
 // carousel // 
 
 .carousel {
-    display: none;
+    
     &-item {
         &__img {
             @include ancho-alto (100%, 84.5vh);

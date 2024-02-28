@@ -1,6 +1,7 @@
 // seccion formulario o newsletter //
 
 .newsletter {
+    display: none;
     @include ancho-alto (100%, 56vh);
     background: $seccion-newsletter-background;
     @include paddings-all (12rem, 10rem, null, null);
@@ -70,8 +71,3 @@
         }
     }
 }
-
-// .svg--desktop {
-//     position: absolute;
-//     top: -1.1rem;
-// }
