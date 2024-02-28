@@ -32,7 +32,7 @@
         @include flex-justify-align (center, center);
         flex-direction: column;
         width: 50%;
-      
+
         &__tituredes {
             @include fonts (1.9rem, $font-parrafo, 600, none);
             color: #fff;
@@ -60,7 +60,7 @@
             & i {
                 margin-right: 1rem;
             }
-            
+
             &__icons {
                 font-size: 1.8rem;
                 color: #fff;
@@ -70,8 +70,8 @@
 }
 
 .copyright {
-    background-color: #6d3246; 
-    height: 1.8rem; 
+    background-color: #6d3246;
+    height: 1.8rem;
 
     &__texto {
         color: #fff;
@@ -79,5 +79,84 @@
         text-align: center;
         border-top: none;
         margin-bottom: 0;
+    }
+}
+
+// media queries //
+
+@media only screen and (min-width: 60px) and (max-width: 606px) {
+    .footer-cuerpo {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__item-2 {
+            display: flex;
+
+            &__tituredes {
+                padding-top: 2rem;
+            }
+            
+            &__info {
+                padding-top: 0;
+
+                &__icons {
+                    padding-top: 0;
+                }
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (min-width: 60px) and (max-width: 494px) {
+    .footer-cuerpo {
+        &__item-2 {
+
+            &__tituredes {
+                padding-top: 2rem;
+                text-align: center;
+                font-size: 1.6rem;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 469px) {
+    .footer-cuerpo {
+        &__item-2 {
+
+            &__info {
+                
+                &__icons {
+
+                    font-size: 1.6rem;
+                }
+                
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .footer-cuerpo {
+        &__item-2 {
+            &__info {
+                &__icons {
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    font-size: 1.8rem;
+                    align-items: flex-start;
+                }
+                
+            }
+
+        }
     }
 }
