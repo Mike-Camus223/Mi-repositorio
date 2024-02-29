@@ -47,6 +47,11 @@
     text-decoration: $text-deco;
 }
 
+@mixin margin-left-right ($lef, $rig) {
+    margin-left: $lef;
+    margin-right: $rig;
+}
+
 //parametros mixin //
 
 @mixin flex ($direccion, $justify, $align, $gap) {

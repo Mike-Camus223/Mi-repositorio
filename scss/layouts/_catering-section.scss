@@ -2,54 +2,52 @@
 
 .seccion-catering {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     background-color: #ffc0cb;
-    padding: 20px;
 
     &__item-1 {
-        background: linear-gradient(90deg, #8d3e5a 25%, transparent 26%, transparent 49%, #8d3e5a80 50%, #8d3e5a80 75%, transparent 76%);
-        background-size: 6em 6em;
-        background-color: #ffc0cb;
-        opacity: 1;
 
         .contenedor-catering {
             display: flex;
             justify-content: center;
             align-items: center;
+            height: auto;
 
             &__imagen {
-                @include ancho-alto (80%, auto);
+                @include ancho-alto (100%, auto);
+                object-fit: cover;
             }
         }
     }
 
     &__item-2 {
-        display: flex;
+        @include flex-justify-align (center, center);
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
         .contenedor-catering-dos {
+            height: auto;
 
             &__titulo {
                 @include fonts (4rem, $font-titulo, 600, null);
                 transform: scaleY(1.3);
-                padding-top: 8rem;
                 color: $color-marron-texto;
-                text-align: center
+                text-align: center;
+                margin-bottom: 6rem;
+                margin-top: 4rem;
             }
 
             &__texto {
-                @include fonts (1.5rem, $font-parrafo, 500, null);
+                align-items: center;
+                @include fonts (2rem, $font-parrafo, 500, null);
                 color: $color-marron-texto;
                 text-align: center;
+                margin-bottom: 6rem;
             }
 
             &__boton {
                 display: flex;
                 justify-content: center;
-                margin-top: 20px;
 
                 &-prime {
                     background-color: maroon;
@@ -80,6 +78,54 @@
 
         &__item-2 {
             width: 100%;
+
+            .contenedor-catering-dos {
+                margin-bottom: 30px;
+
+                &__titulo {}
+
+                &__texto {
+                    font-size: 1.7rem;
+                    overflow: hidden;
+                }
+
+                &__boton {}
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1236px) {
+
+    .seccion-catering {
+
+        &__item-1 {
+            
+            .contenedor-catering {
+                height: 100%;
+
+                &__imagen {
+                    @include ancho-alto (100%, 100%);
+                }
+            }
+        }
+
+        &__item-2 {
+
+            .contenedor-catering-dos {
+                height: auto;
+
+                &__titulo {
+                    padding-top: 4rem;
+
+                }
+
+                &__texto {}
+
+                &__boton {
+                    padding-bottom: 3rem;
+                }
+            }
         }
     }
 }
