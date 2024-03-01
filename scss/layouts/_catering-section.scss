@@ -54,8 +54,7 @@
                     border: none;
                     width: 200px;
                     height: 50px;
-                    @include fonts (1.5rem, $font-parrafo, 500, none);
-
+                    @include fonts (2rem, $font-parrafo, 500, none);
 
                     &:focus {
                         background-color: palevioletred;
