@@ -72,7 +72,7 @@
     padding: $padding;
     height: $height;
 }
- 
+
 @mixin anuncio-letra ($margin, $fontfami, $transform, $fontweight, $color) {
     margin: $margin;
     font-family: $fontfami;
@@ -90,13 +90,13 @@
     padding: $padding;
 }
 
-@mixin links-flex-tamano-espacio ($flex, $tamano ,$espacio) {
+@mixin links-flex-tamano-espacio ($flex, $tamano , $espacio) {
     display: $flex;
     font-size: $tamano;
     gap: $espacio;
 }
 
-@mixin flecha-color-transfor-transi ($color, $transfor ,$transi) {
+@mixin flecha-color-transfor-transi ($color, $transfor , $transi) {
     color: $color;
     transform: $transfor;
     transition: $transi;
@@ -111,7 +111,7 @@
 
 // mixins navbar-mobile //
 
-@mixin boton-burger ($border, $fondo ,$color) {
+@mixin boton-burger ($border, $fondo , $color) {
     border: $border;
     background-color: $fondo;
     color: $color;
@@ -148,3 +148,10 @@
     z-index: $zindex;
 }
 
+// box-shadows // 
+
+@mixin box-shadow-login {
+    -webkit-box-shadow: $se;
+    -moz-box-shadow: $see;
+    box-shadow: $seee;
+}

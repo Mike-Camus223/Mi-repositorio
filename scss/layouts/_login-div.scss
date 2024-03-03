@@ -1,0 +1,90 @@
+// seccion de inicio de sesion // 
+
+.seccion-login {
+    display: flex;
+
+    &__container {
+        @include ancho-alto (40%, 778px);
+        margin-left: 5rem;
+
+        .carou-login-item {
+
+            &__imagen {
+                @include ancho-alto (40%, 779px);
+
+            }
+        }
+    }
+
+    &__formulario {
+        @include ancho-alto (60%, 778px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__caja {
+            @include ancho-alto (700px, 500px);
+            @include box-shadow-login;
+            border-radius: 2%;
+            @include flex-justify-align (center, center);
+            flex-direction: column;
+
+            h1 {
+                @include fonts (3.5rem, $font-titulo, 600, none);
+                transform: scaleY(1.2);
+                color: $color-marron-texto;
+            }
+
+            &__username {
+                @include fonts (1.5rem, $font-parrafo, 600, none);
+
+                .input-box {
+                    @include ancho-alto (300px, 40px);
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 2px solid $color-marron-texto;
+
+                    &:focus {
+                        -webkit-transition: all 0.4s ease-out;
+                        -moz-transition: all 0.4s ease-out;
+                        -ms-transition: all 0.4s ease-out;
+                        -o-transition: all 0.4s ease-out;
+                        transition: all 0.4s ease-out;
+                        border-bottom: 2px solid green;
+                    }
+                }
+            }
+
+            &__contrasena {
+                @include fonts (1.5rem, $font-parrafo, 600, none);
+
+                .input-box {
+                    @include ancho-alto (300px, 40px);
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 2px solid $color-marron-texto;
+
+
+                    &:focus {
+                        -webkit-transition: all 0.4s ease-out;
+                        -moz-transition: all 0.4s ease-out;
+                        -ms-transition: all 0.4s ease-out;
+                        -o-transition: all 0.4s ease-out;
+                        transition: all 0.4s ease-out;
+                        border-bottom: 2px solid green;
+
+                        
+                    }
+
+                    &::after {
+                        border: none;
+                    }
+                }
+            }
+        }
+
+
+
+
+    }
+}
