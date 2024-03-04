@@ -191,7 +191,7 @@
     }
 
     &__base-grid {
-        
+
         .reponsive_titulo {
             display: none;
         }
@@ -207,13 +207,27 @@
         &__linkbox {
 
             &__basecard {
-                @include ancho-alto (100%, auto);
+                @include ancho-alto (100%, 70%);
                 overflow: hidden;
                 border-radius: 3%;
 
-
                 &__imagencard {
                     @include ancho-alto (100%, 100%);
+
+                    &-muss {
+                        @include ancho-alto (100%, 100%);
+                        object-fit: cover;
+
+                        &:hover {
+                            transform: scale(1.1);
+
+                            &:hover {
+                                transform: scale(1.1);
+                                @include transicion-3segun;
+                                filter: brightness(60%);
+                            }
+                        }
+                    }
 
                     &:hover {
                         transform: scale(1.1);
@@ -229,11 +243,15 @@
 
             &__cajatext {
                 padding-top: 1.5rem;
+                min-height: 10rem;
 
                 &__titu {
                     @include fonts (2rem, $font-titulo, 600, none);
                     color: $color-marron-texto;
                     transform: scaleY(1.1);
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
 
                     &:hover {
                         @include transicion-4segun;
@@ -337,10 +355,16 @@
 @media screen and (max-width: 1035px) {
 
     .catalogo-pasteles {
+        row-gap: 30rem;
+
 
         &__base-grid {
-
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+
+            &__linkbox {
+
+                &__cajatext {}
+            }
         }
     }
 }
@@ -374,9 +398,7 @@
 
             &__base-titular {
 
-                &__titulo {
-                
-                }
+                &__titulo {}
             }
 
             &__base-parrafo {
@@ -391,6 +413,21 @@
     .catalogo-pasteles {
 
         &__base-grid {
+
+            &__linkbox {
+
+                &__cajatext {
+                    min-height: 0;
+
+                    &__titu {
+                        text-align: start;
+                        white-space: null;
+                        overflow: null;
+                        text-overflow: null;
+                    }
+                }
+
+            }
 
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         }
@@ -409,7 +446,7 @@
         &__base-grid {
 
             .reponsive_titulo {
-                @include flex-justify-align (flex-start,null);
+                @include flex-justify-align (flex-start, null);
                 @include fonts (3rem, $font-titulo, 600, none);
                 color: $color-marron-texto;
                 padding-left: 2%;
@@ -421,28 +458,29 @@
             padding: 20px;
             grid-template-columns: 1fr;
             @include ancho-alto (100%, auto);
-            
+
 
             &__linkbox {
                 display: flex;
 
                 &__basecard {
-                    @include ancho-alto (100%, auto);
+                    @include ancho-alto (105px, 150px);
                     overflow: hidden;
                     border-radius: 10%;
 
                     &__imagencard {
-                        @include ancho-alto (100%, 100%);
+                        @include ancho-alto (105px, 150px);
                     }
                 }
 
                 &__cajatext {
+                    @include ancho-alto (63%, auto);
                     display: flex;
                     justify-content: space-evenly;
                     flex-direction: column;
                     padding-top: 1.5rem;
                     padding-left: 5%;
-            
+
                     &__titu {
                         @include fonts (2rem, $font-titulo, 600, none);
                     }
@@ -461,6 +499,32 @@
                         @include fonts (1.5rem, $font-parrafo, 600, none);
                         color: $color-marron-texto;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .banner-pasteleria {
+        display: none;
+    }
+
+    .catalogo-pasteles {
+
+        &__base-grid {
+
+            &__linkbox {
+                display: flex;
+
+                &__cajatext {
+                    @include ancho-alto (50vw, auto);
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-direction: column;
+                    padding-top: 1.5rem;
+                    padding-left: 5%;
                 }
             }
         }
