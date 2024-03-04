@@ -149,11 +149,12 @@
     background-color: #fff;
     display: flex;
     justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
+    gap: 5rem;
 
     &__seccion-filter {
-        @include ancho-alto (20%, auto);
+        @include ancho-alto (28%, auto);
+        margin-left: 10%;
 
         &__filtrotitu {
             @include fonts (4rem, $font-titulo, 600, none);
@@ -164,15 +165,11 @@
         }
 
         .accordion {
-            @include ancho-alto (250px, auto);
+            @include ancho-alto (100%, auto);
             --bs-accordion-active-bg: none;
             --bs-border-width: none;
 
-            &-collapse {
-                border:none;
 
-            }
-        
             &-button {
                 @include fonts (2rem, $font-titulo, 600, none);
                 color: $color-marron-texto;
@@ -182,7 +179,7 @@
                     box-shadow: none;
                 }
             }
-            
+
             &-body {
                 @include fonts (1.5rem, $font-parrafo, 600, none);
 
@@ -195,17 +192,18 @@
     }
 
     &__base-grid {
-        @include ancho-alto (50%, auto);
+        @include ancho-alto (100%, auto);
         background-color: #fff;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        gap: 20px;
-        padding: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 3rem;
+        padding-left: 5%;
+        padding-right: 12%;
 
         &__linkbox {
 
             &__basecard {
-                @include ancho-alto (100%, 350px);
+                @include ancho-alto (100%, auto);
                 overflow: hidden;
                 border-radius: 3%;
 
@@ -242,6 +240,10 @@
                 &__texto {
                     @include fonts (1.5rem, $font-parrafo, 600, none);
                     color: $color-marron-texto;
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
                 }
 
                 &__precio {
@@ -254,3 +256,98 @@
 }
 
 // media queries //
+
+@media screen and (max-width: 1557px) {
+
+    .catalogo-pasteles {
+
+        &__seccion-filter {
+            margin-left: 3%;
+        }
+
+        &__base-grid {
+
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+    }
+}
+
+@media screen and (max-width: 1282px) {
+
+    .banner-pasteleria { 
+
+        &__container1 {
+
+            &__base-titular {
+
+                &__titulo {
+                    @include fonts (2.5rem, $font-titulo, 600, none);
+                    
+                }
+            }
+
+            &__base-parrafo {
+                    
+                .banner-pasteleria__container1__base-parrafo__parra {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .catalogo-pasteles {
+
+        &__base-grid {
+
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        }
+    }
+}
+
+@media screen and (max-width: 1172px) {
+
+    .catalogo-pasteles {
+
+        &__base-grid {
+
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        }
+    }
+}
+
+@media screen and (max-width: 1117px) {
+
+    .catalogo-pasteles {
+
+        &__base-grid {
+
+            grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+        }
+    }
+}
+
+@media screen and (max-width: 1035px) {
+
+    .catalogo-pasteles {
+        
+        &__base-grid {
+
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .catalogo-pasteles {
+
+        &__seccion-filter {
+            display: none; 
+        }
+
+        &__base-grid {
+
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+    }
+}
