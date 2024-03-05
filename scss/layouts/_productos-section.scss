@@ -39,8 +39,13 @@
             max-width: 315px;
 
             &:hover {
-                transform: scale(1.05);
-                transition: 0.3s ease-in-out;
+                transform: scale(1.1);
+
+                &:hover {
+                    transform: scale(1.1);
+                    @include transicion-3segun;
+                    filter: brightness(60%);
+                }
             }
         }
     }
@@ -74,3 +79,12 @@
     }
   }
 
+  @media only screen and (min-width: 1024px) and (max-width: 1380px) {
+
+    .seccion-de-productos {
+        @include paddin-left-right (13%, 13%);
+    }
+
+
+
+  }
