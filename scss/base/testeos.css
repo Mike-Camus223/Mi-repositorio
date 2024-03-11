@@ -1,0 +1,342 @@
+// grid-catalogo {
+    //     @include paddin-left-right (6%, 6%);
+    //     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    // }
+    
+    //     &__base-grid {
+    //         background-color: #fff;
+    //         display: grid;
+    //         grid-auto-rows: 45.8rem;
+    //         grid-template-columns: 3, 300px;
+    //         // gap: 3rem;
+    //         // padding-left: 5%;
+    //         // padding-right: 12%;
+    
+    //         .reponsive_titulo {
+    //             display: none;
+    //         }
+    
+    //         &__linkbox {
+    
+    //             &__basecard {
+    //                 overflow: hidden;
+    //                 border-radius: 3%;
+    
+    //                 &__imagencard {
+    
+    //                     &-muss {
+    
+    //                         object-fit: cover;
+    
+    //                         &:hover {
+    //                             transform: scale(1.1);
+    
+    //                             &:hover {
+    //                                 transform: scale(1.1);
+    //                                 @include transicion-3segun;
+    //                                 filter: brightness(60%);
+    //                             }
+    //                         }
+    //                     }
+    
+    //                     &:hover {
+    //                         transform: scale(1.1);
+    
+    //                         &:hover {
+    //                             transform: scale(1.1);
+    //                             @include transicion-3segun;
+    //                             filter: brightness(60%);
+    //                         }
+    //                     }
+    //                 }
+    //             }
+    
+    //             &__cajatext {
+    //                 padding-top: 1.5rem;
+    //                 min-height: 10rem;
+    
+    //                 &__titu {
+    //                     @include fonts (2rem, $font-titulo, 600, none);
+    //                     color: $color-marron-texto;
+    //                     transform: scaleY(1.1);
+    //                     white-space: nowrap;
+    //                     overflow: hidden;
+    //                     text-overflow: ellipsis;
+    
+    //                     &:hover {
+    //                         @include transicion-4segun;
+    //                         color: #c28296;
+    //                     }
+    //                 }
+    
+    //                 &__texto {
+    //                     @include fonts (1.5rem, $font-parrafo, 600, none);
+    //                     color: $color-marron-texto;
+    //                     overflow: hidden;
+    //                     display: -webkit-box;
+    //                     -webkit-line-clamp: 2;
+    //                     -webkit-box-orient: vertical;
+    //                 }
+    
+    //                 &__precio {
+    //                     @include fonts (1.5rem, $font-parrafo, 600, none);
+    //                     color: $color-marron-texto;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    
+    // media queries //
+    
+    // @media screen and (max-width: 1557px) {
+    
+    //     .catalogo-pasteles {
+    
+    //         &__seccion-filter {
+    //             margin-left: 3%;
+    //         }
+    
+    //         &__base-grid {
+    
+    //             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    //         }
+    //     }
+    // }
+    
+    // @media screen and (max-width: 1282px) {
+    
+    //     .banner-pasteleria {
+    
+    //         &__container1 {
+    
+    //             &__base-breadcrump {
+    //                 padding-bottom: 20px
+    //             }
+    
+    //             &__base-titular {
+    
+    //                 &__titulo {
+    //                     @include fonts (2.5rem, $font-titulo, 600, none);
+    
+    //                 }
+    //             }
+    
+    //             &__base-parrafo {
+    
+    //                 .banner-pasteleria__container1__base-parrafo__parra {
+    //                     font-size: 15px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    
+    //     .catalogo-pasteles {
+    
+    //         &__base-grid {
+    
+    //             grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    //         }
+    //     }
+    // }
+    
+    // @media screen and (max-width: 1172px) {
+    
+    //     .catalogo-pasteles {
+    
+    //         &__base-grid {
+    
+    //             grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    //         }
+    //     }
+    // }
+    
+    // @media screen and (max-width: 1117px) {
+    
+    //     .catalogo-pasteles {
+    
+    //         &__base-grid {
+    
+    //             grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    //         }
+    //     }
+    // }
+    
+    // @media screen and (max-width: 1035px) {
+    
+    //     .catalogo-pasteles {
+    //         row-gap: 30rem;
+    
+    
+    //         &__base-grid {
+    //             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    
+    //             &__linkbox {
+    
+    //                 &__cajatext {}
+    //             }
+    //         }
+    //     }
+    // }
+    
+    // @media screen and (max-width: 991px) {
+    
+    //     .catalogo-pasteles {
+    
+    
+    //         &__seccion-filter {
+    //             display: none;
+    //         }
+    
+    //         &__base-grid {
+    //             padding-left: 5%;
+    //             padding-right: 5%;
+    //             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    //         }
+    //     }
+    // }
+    
+    // @media screen and (max-width: 793px) {
+    
+    //     .banner-pasteleria {
+    
+    //         &__container1 {
+    
+    //             &__base-breadcrump {
+    //                 padding-bottom: 20px
+    //             }
+    
+    //             &__base-titular {
+    
+    //                 &__titulo {}
+    //             }
+    
+    //             &__base-parrafo {
+    
+    //                 .banner-pasteleria__container1__base-parrafo__parra {
+    //                     font-size: 14px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    
+    //     .catalogo-pasteles {
+    
+    //         &__base-grid {
+    
+    //             &__linkbox {
+    
+    //                 &__cajatext {
+    //                     min-height: 0;
+    
+    //                     &__titu {
+    //                         text-align: start;
+    //                         white-space: null;
+    //                         overflow: null;
+    //                         text-overflow: null;
+    //                     }
+    //                 }
+    
+    //             }
+    
+    //             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    //         }
+    //     }
+    // }
+    
+    // @media screen and (max-width: 767px) {
+    
+    //     .banner-pasteleria {
+    //         display: none;
+    //     }
+    
+    //     .catalogo-pasteles {
+    //         padding: 0;
+    
+    //         &__base-grid {
+    
+    //             .reponsive_titulo {
+    //                 @include flex-justify-align (flex-start, null);
+    //                 @include fonts (3rem, $font-titulo, 600, none);
+    //                 color: $color-marron-texto;
+    //                 padding-left: 2%;
+    //                 padding-top: 3rem;
+    //                 transform: scaleY(1.3);
+    //             }
+    
+    
+    //             padding: 20px;
+    //             grid-template-columns: 1fr;
+    //             @include ancho-alto (100%, auto);
+    
+    
+    //             &__linkbox {
+    //                 display: flex;
+    
+    //                 &__basecard {
+    //                     @include ancho-alto (105px, 150px);
+    //                     overflow: hidden;
+    //                     border-radius: 10%;
+    
+    //                     &__imagencard {
+    //                         @include ancho-alto (105px, 150px);
+    //                     }
+    //                 }
+    
+    //                 &__cajatext {
+    //                     @include ancho-alto (63%, auto);
+    //                     display: flex;
+    //                     justify-content: space-evenly;
+    //                     flex-direction: column;
+    //                     padding-top: 1.5rem;
+    //                     padding-left: 5%;
+    
+    //                     &__titu {
+    //                         @include fonts (2rem, $font-titulo, 600, none);
+    //                     }
+    
+    //                     &__texto {
+    //                         @include fonts (1.5rem, $font-parrafo, 600, none);
+    //                         color: $color-marron-texto;
+    //                         overflow: hidden;
+    //                         display: -webkit-box;
+    //                         -webkit-line-clamp: 2;
+    //                         -webkit-box-orient: vertical;
+    //                         width: 100%;
+    //                     }
+    
+    //                     &__precio {
+    //                         @include fonts (1.5rem, $font-parrafo, 600, none);
+    //                         color: $color-marron-texto;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    
+    // @media screen and (max-width: 330px) {
+    
+    //     .banner-pasteleria {
+    //         display: none;
+    //     }
+    
+    //     .catalogo-pasteles {
+    
+    //         &__base-grid {
+    
+    //             &__linkbox {
+    //                 display: flex;
+    
+    //                 &__cajatext {
+    //                     @include ancho-alto (50vw, auto);
+    //                     display: flex;
+    //                     justify-content: space-evenly;
+    //                     flex-direction: column;
+    //                     padding-top: 1.5rem;
+    //                     padding-left: 5%;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }

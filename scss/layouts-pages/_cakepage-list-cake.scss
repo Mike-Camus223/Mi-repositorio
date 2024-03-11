@@ -3,144 +3,147 @@
 // Banner //
 
 .banner-pasteleria {
-    display: flex;
-    background-color: $color-banners;
-    @include ancho-alto (100%, 330px);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 338px;
+    max-width: none;
 
     &__container1 {
-        @include ancho-alto (50%, null);
-        @include flex-justify-align (flex-start, flex-end);
-        flex-direction: column;
-        @include paddings-all (20px, 20px, null, 60px);
+        grid-column: span 6;
+        background-color: $color-banners;
 
-        &__base-breadcrump {
-            @include ancho-alto (70%, null);
-            @include flex-justify-align (flex-start, flex-start);
-            flex-direction: column;
-            padding-bottom: 30px;
+        &__solidbase {
+            @include ancho-alto (70%, 100%);
+            margin-left: auto;
+            
+            &__base-breadcrump {
+                padding: 20px 60px 0 25px;
+                
+                .breadcrumb {
+                    @include fonts (20px, $font-parrafo, 600, none);
+                    transform: scaleY(0.97);
 
-            .breadcrumb {
-                @include fonts (20px, $font-parrafo, 600, none);
-                transform: scaleY(0.97);
+                    &-one {
+                        color: $color-marron-texto;
+                        position: relative;
 
-                &-one {
-                    color: $color-marron-texto;
-                    position: relative;
+                        &:hover {
 
-                    &:hover {
+                            &::before {
+                                visibility: visible;
+                                transform: scaleX(1);
+                            }
+                        }
 
                         &::before {
-                            visibility: visible;
-                            transform: scaleX(1);
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            bottom: 0;
+                            left: 0;
+                            background-color: #fff;
+                            visibility: hidden;
+                            transform: scaleX(0);
+                            transition: all 0.3s ease-in-out;
                         }
-                    }
 
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        width: 100%;
-                        height: 2px;
-                        bottom: 0;
-                        left: 0;
-                        background-color: #fff;
-                        visibility: hidden;
-                        transform: scaleX(0);
-                        transition: all 0.3s ease-in-out;
-                    }
+                        &__blank {
+                            &__hov {
+                                &:hover {
+                                    transition: all 0.3s ease-in-out;
+                                    color: #fff;
+                                }
+                            }
+                        }
 
-                    &__blank {
-                        &__hov {
-                            &:hover {
-                                transition: all 0.3s ease-in-out;
-                                color: #fff;
+                        &__dos {
+
+                            &__do {
+                                cursor: default;
                             }
                         }
                     }
 
-                    &__dos {
+                    &-two {
+                        color: $color-marron-texto;
+                        position: relative;
 
-                        &__do {
-                            cursor: default;
+                        &:hover {
+
+                            &::before {
+                                visibility: visible;
+                                transform: scaleX(1);
+                            }
                         }
-                    }
-                }
-
-                &-two {
-                    color: $color-marron-texto;
-                    position: relative;
-
-                    &:hover {
 
                         &::before {
-                            visibility: visible;
-                            transform: scaleX(1);
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
+                            bottom: 0;
+                            left: 0;
+                            background-color: $color-marron-texto;
+                            visibility: hidden;
+                            transform: scaleX(0);
+                            transition: all 0.3s ease-in-out;
+                        }
+
+                        &__dos {
+
+                            &__do {
+                                cursor: default;
+                            }
                         }
                     }
 
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        width: 100%;
-                        height: 2px;
-                        bottom: 0;
-                        left: 0;
-                        background-color: $color-marron-texto;
-                        visibility: hidden;
-                        transform: scaleX(0);
-                        transition: all 0.3s ease-in-out;
-                    }
-
-                    &__dos {
-
-                        &__do {
-                            cursor: default;
-                        }
+                    &-divider {
+                        @include margin-left-right (5px, 5px);
+                        color: $color-marron-texto;
+                        font-size: medium;
                     }
                 }
+            }
 
-                &-divider {
-                    @include margin-left-right (5px, 5px);
+            &__base-titular {
+                padding: 0 60px 0 20px;
+                display: inline-block;
+
+                &__titulo {
+                    @include fonts (3.5rem, $font-titulo, 600, none);
+                    transform: scaleY(1.3);
                     color: $color-marron-texto;
-                    font-size: medium;
+                    padding-top: 20px;
                 }
             }
-        }
 
-        &__base-titular {
-            @include flex-justify-align (flex-start, flex-start);
-            flex-direction: column;
-            @include ancho-alto (70%, null);
+            &__base-parrafo {
+                padding: 0 60px 0 20px;
+                display: inline-block;
 
-            &__titulo {
-                @include fonts (3.5rem, $font-titulo, 600, none);
-                transform: scaleY(1.3);
-                color: $color-marron-texto;
-                padding-bottom: 19px;
-            }
-        }
-
-        &__base-parrafo {
-            @include ancho-alto (70%, null);
-            @include flex-justify-align (flex-start, flex-end);
-            flex-direction: column;
-
-            &__parra {
-                @include fonts (1.7rem, $font-parrafo, 600, none);
-                color: $color-marron-texto;
-                text-align: start;
+                &__parra {
+                    @include fonts (18px, $font-parrafo, 500, none);
+                    color: $color-marron-texto;
+                    text-align: start;
+                    padding-top: 30px;
+                }
             }
         }
     }
 
     &__container2 {
-        @include ancho-alto (50%, null);
+        grid-column: span 6;
 
         &__imagenbanner {
             @include ancho-alto (100%, 100%);
             object-fit: cover;
+
         }
     }
 }
+
+
 
 // Seccion Catalogo //
 
@@ -148,12 +151,18 @@
     background-color: #fff;
     display: flex;
     justify-content: center;
-    padding: 30px;
-    gap: 5rem;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    gap: 2rem;
+    max-width: 1352px;
 
     &__seccion-filter {
-        @include ancho-alto (28%, auto);
-        margin-left: 10%;
+        @include ancho-alto (25%, auto);
+
+
+        &::before {
+            box-sizing: border-box;
+        }
 
         &__filtrotitu {
             @include fonts (4rem, $font-titulo, 600, none);
@@ -189,342 +198,314 @@
             }
         }
     }
+}
 
-    &__base-grid {
+// seccion grid // 
 
-        .reponsive_titulo {
-            display: none;
+.grid-catalogo {
+    @include ancho-alto (80%, null);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    @include paddin-left-right (6%, 6%);
+    overflow: hidden;
+
+    .titulo-media {
+        display: none;
+    }
+
+    &__card {
+        grid-column: span 2;
+        border-radius: 3%;
+        min-width: none;
+
+        &__cajaima {
+            @include ancho-alto (100%, 306px);
+            overflow: hidden;
+            border-top-right-radius: 3%;
+            border-top-left-radius: 3%;
+
+            &__imagen {
+                @include ancho-alto (100%, 306px);
+                border-top-right-radius: 3%;
+                border-top-left-radius: 3%;
+
+
+                &:hover {
+                    transform: scale(1.1);
+                    @include transicion-3segun;
+                    ;
+                    filter: brightness(60%);
+                }
+            }
         }
 
-        @include ancho-alto (100%, auto);
-        background-color: #fff;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-        gap: 3rem;
-        padding-left: 5%;
-        padding-right: 12%;
+        &__cajatexto {
+            @include ancho-alto (auto, null);
+            padding: 20px;
 
-        &__linkbox {
+            &__titul {
+                @include fonts (2rem, $font-titulo, 600, none);
+                color: $color-marron-texto;
+            }
 
-            &__basecard {
-                @include ancho-alto (100%, 70%);
+            &__parraf {
+                @include fonts (1.5rem, $font-parrafo, 600, none);
+                color: $color-marron-texto;
                 overflow: hidden;
-                border-radius: 3%;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
 
-                &__imagencard {
-                    @include ancho-alto (100%, 100%);
+            &__precio {
+                @include fonts (1.5rem, $font-parrafo, 600, none);
+                color: $color-marron-texto;
+            }
+        }
+    }
+}
 
-                    &-muss {
-                        @include ancho-alto (100%, 100%);
-                        object-fit: cover;
+@media screen and (max-width: 1353px) {
 
-                        &:hover {
-                            transform: scale(1.1);
+    .banner-pasteleria {
 
-                            &:hover {
-                                transform: scale(1.1);
-                                @include transicion-3segun;
-                                filter: brightness(60%);
-                            }
-                        }
+        &__container1 {
+
+            &__solidbase {
+                @include ancho-alto (100%, 100%);
+
+                &__base-titular {
+
+                    &__titulo {
+                        @include fonts (3rem, $font-titulo, 600, none);
+                        transform: scaleY(1.3);
+                        color: $color-marron-texto;
                     }
-
-                    &:hover {
-                        transform: scale(1.1);
-
-                        &:hover {
-                            transform: scale(1.1);
-                            @include transicion-3segun;
-                            filter: brightness(60%);
-                        }
+                }
+    
+                &__base-parrafo {
+    
+                    &__parra {
+                        @include fonts (1.7rem, $font-parrafo, 600, none);
+                        color: $color-marron-texto;
+                        text-align: start;
                     }
                 }
             }
+        }
+    }
 
-            &__cajatext {
-                padding-top: 1.5rem;
-                min-height: 10rem;
+    .grid-catalogo {
+        @include paddin-left-right (0, 0);
+        grid-template-columns: repeat(150px, 1fr);
+    }
+}
 
-                &__titu {
-                    @include fonts (2rem, $font-titulo, 600, none);
-                    color: $color-marron-texto;
-                    transform: scaleY(1.1);
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
+@media screen and (max-width: 1015px) {
+    .catalogo-pasteles {
+        &__seccion-filter {
+            display: none;
+        }
+    }
 
-                    &:hover {
-                        @include transicion-4segun;
-                        color: #c28296;
+    .grid-catalogo {
+        @include ancho-alto (100%, null);
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        @include paddin-left-right (3%, 3%);
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .catalogo-pasteles {
+        &__seccion-filter {
+            display: none;
+        }
+    }
+
+    .banner-pasteleria {
+
+        &__container1 {
+
+            &__solidbase {
+                @include ancho-alto (100%, 100%);
+
+                &__base-titular {
+
+                    &__titulo {
+                        @include fonts (2.5rem, $font-titulo, 600, none);
                     }
                 }
+    
+                &__base-parrafo {
+    
+                    &__parra {
+                        @include fonts (1.6rem, $font-parrafo, 600, none);
+                    }
+                }
+            }
+        }
+    }
 
-                &__texto {
-                    @include fonts (1.5rem, $font-parrafo, 600, none);
-                    color: $color-marron-texto;
+    .grid-catalogo {
+        @include ancho-alto (100%, null);
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        @include paddin-left-right (0, 0);
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .catalogo-pasteles {
+        &__seccion-filter {
+            display: none;
+        }
+    }
+
+    .grid-catalogo {
+        @include ancho-alto (100%, null);
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        @include paddin-left-right (0, 0);
+
+        &__card {
+            box-shadow: none;
+            border-radius: 5%;
+
+            &__cajaima {
+
+                &__imagen {
+                    object-fit: center;
+                    border-radius: 5%;
+                    overflow: hidden;
+                }
+            }
+
+            &__cajatexto {
+
+                &__titul {
                     overflow: hidden;
                     display: -webkit-box;
-                    -webkit-line-clamp: 2;
+                    -webkit-line-clamp: 1;
                     -webkit-box-orient: vertical;
                 }
+            }
 
-                &__precio {
-                    @include fonts (1.5rem, $font-parrafo, 600, none);
-                    color: $color-marron-texto;
+            .mousse {
+                @include ancho-alto (100%, 100%);
+                object-fit: cover;
+
+
+                &:hover {
+                    transform: scale(1.1);
+                    @include transicion-3segun;
+                    ;
+                    filter: brightness(60%);
                 }
             }
-        }
-    }
-}
-
-// media queries //
-
-@media screen and (max-width: 1557px) {
-
-    .catalogo-pasteles {
-
-        &__seccion-filter {
-            margin-left: 3%;
-        }
-
-        &__base-grid {
-
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
-    }
-}
-
-@media screen and (max-width: 1282px) {
-
-    .banner-pasteleria {
-
-        &__container1 {
-
-            &__base-breadcrump {
-                padding-bottom: 20px
-            }
-
-            &__base-titular {
-
-                &__titulo {
-                    @include fonts (2.5rem, $font-titulo, 600, none);
-
-                }
-            }
-
-            &__base-parrafo {
-
-                .banner-pasteleria__container1__base-parrafo__parra {
-                    font-size: 15px;
-                }
-            }
-        }
-    }
-
-    .catalogo-pasteles {
-
-        &__base-grid {
-
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        }
-    }
-}
-
-@media screen and (max-width: 1172px) {
-
-    .catalogo-pasteles {
-
-        &__base-grid {
-
-            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-        }
-    }
-}
-
-@media screen and (max-width: 1117px) {
-
-    .catalogo-pasteles {
-
-        &__base-grid {
-
-            grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
-        }
-    }
-}
-
-@media screen and (max-width: 1035px) {
-
-    .catalogo-pasteles {
-        row-gap: 30rem;
-
-
-        &__base-grid {
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-
-            &__linkbox {
-
-                &__cajatext {}
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 991px) {
-
-    .catalogo-pasteles {
-
-
-        &__seccion-filter {
-            display: none;
-        }
-
-        &__base-grid {
-            padding-left: 5%;
-            padding-right: 5%;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
-    }
-}
-
-@media screen and (max-width: 793px) {
-
-    .banner-pasteleria {
-
-        &__container1 {
-
-            &__base-breadcrump {
-                padding-bottom: 20px
-            }
-
-            &__base-titular {
-
-                &__titulo {}
-            }
-
-            &__base-parrafo {
-
-                .banner-pasteleria__container1__base-parrafo__parra {
-                    font-size: 14px;
-                }
-            }
-        }
-    }
-
-    .catalogo-pasteles {
-
-        &__base-grid {
-
-            &__linkbox {
-
-                &__cajatext {
-                    min-height: 0;
-
-                    &__titu {
-                        text-align: start;
-                        white-space: null;
-                        overflow: null;
-                        text-overflow: null;
-                    }
-                }
-
-            }
-
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         }
     }
 }
 
 @media screen and (max-width: 767px) {
-
     .banner-pasteleria {
         display: none;
     }
 
     .catalogo-pasteles {
-        padding: 0;
+        &__seccion-filter {
+            display: none;
+        }
+    }
 
-        &__base-grid {
+    .grid-catalogo {
+        grid-template-columns: 1fr;
+        @include ancho-alto (100%, auto);
+        @include paddin-left-right (3%, 3%);
 
-            .reponsive_titulo {
-                @include flex-justify-align (flex-start, null);
-                @include fonts (3rem, $font-titulo, 600, none);
-                color: $color-marron-texto;
-                padding-left: 2%;
-                padding-top: 3rem;
-                transform: scaleY(1.3);
+        .titulo-media {
+            @include flex-justify-align (flex-start, null);
+            @include fonts (3rem, $font-titulo, 600, none);
+            color: $color-marron-texto;
+            padding-left: 0;
+            padding-top: 1rem;
+            transform: scaleY(1.3);
+        }
+
+        &__card {
+            display: flex;
+            box-shadow: none;
+            border-radius: 5%;
+
+            &__cajaima {
+                @include ancho-alto (100%, 150px);
+                border-radius: 5%;
+
+                &__imagen {
+                    @include ancho-alto (100%, 150px);
+                    object-fit: center;
+                    border-radius: 5%;
+                    overflow: hidden;
+                }
             }
 
+            &__cajatexto {
+                @include ancho-alto (280vw, auto);
 
-            padding: 20px;
-            grid-template-columns: 1fr;
-            @include ancho-alto (100%, auto);
-
-
-            &__linkbox {
-                display: flex;
-
-                &__basecard {
-                    @include ancho-alto (105px, 150px);
+                &__titul {
                     overflow: hidden;
-                    border-radius: 10%;
-
-                    &__imagencard {
-                        @include ancho-alto (105px, 150px);
-                    }
-                }
-
-                &__cajatext {
-                    @include ancho-alto (63%, auto);
-                    display: flex;
-                    justify-content: space-evenly;
-                    flex-direction: column;
-                    padding-top: 1.5rem;
-                    padding-left: 5%;
-
-                    &__titu {
-                        @include fonts (2rem, $font-titulo, 600, none);
-                    }
-
-                    &__texto {
-                        @include fonts (1.5rem, $font-parrafo, 600, none);
-                        color: $color-marron-texto;
-                        overflow: hidden;
-                        display: -webkit-box;
-                        -webkit-line-clamp: 2;
-                        -webkit-box-orient: vertical;
-                        width: 100%;
-                    }
-
-                    &__precio {
-                        @include fonts (1.5rem, $font-parrafo, 600, none);
-                        color: $color-marron-texto;
-                    }
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
                 }
             }
         }
     }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 426px) {
 
-    .banner-pasteleria {
-        display: none;
-    }
+    .grid-catalogo {
+        grid-template-columns: 1fr;
+        @include ancho-alto (100%, auto);
+        @include paddin-left-right (3%, 3%);
 
-    .catalogo-pasteles {
+        .titulo-media {
+            @include flex-justify-align (flex-start, null);
+            @include fonts (3rem, $font-titulo, 600, none);
+            color: $color-marron-texto;
+            padding-left: 0;
+            padding-top: 1rem;
+            transform: scaleY(1.3);
+        }
 
-        &__base-grid {
+        &__card {
+            display: flex;
+            box-shadow: none;
 
-            &__linkbox {
+
+            &__cajaima {
+                @include ancho-alto (50rem, 193px);
+                border-radius: 5%;
+
+                &__imagen {
+                    border-radius: 5%;
+                    @include ancho-alto (100%, 100%);
+                }
+            }
+
+            &__cajatexto {
                 display: flex;
+                flex-direction: column;
+                @include ancho-alto (300vw, auto);
+                padding: 0 20px;
+                justify-content: space-evenly;
 
-                &__cajatext {
-                    @include ancho-alto (50vw, auto);
+                &__titul {
+                    overflow: hidden;
                     display: flex;
-                    justify-content: space-evenly;
-                    flex-direction: column;
-                    padding-top: 1.5rem;
-                    padding-left: 5%;
+                    -webkit-line-clamp: none;
+                    -webkit-box-orient: none;
                 }
             }
         }
