@@ -11,14 +11,14 @@
     &__container1 {
         grid-column: span 6;
         background-color: $color-banners;
-
+        
         &__solidbase {
             @include ancho-alto (70%, 100%);
             margin-left: auto;
-            
+
             &__base-breadcrump {
                 padding: 20px 60px 0 25px;
-                
+
                 .breadcrumb {
                     @include fonts (20px, $font-parrafo, 600, none);
                     transform: scaleY(0.97);
@@ -268,6 +268,8 @@
     }
 }
 
+// mediaqueries //
+
 @media screen and (max-width: 1353px) {
 
     .banner-pasteleria {
@@ -285,9 +287,9 @@
                         color: $color-marron-texto;
                     }
                 }
-    
+
                 &__base-parrafo {
-    
+
                     &__parra {
                         @include fonts (1.7rem, $font-parrafo, 600, none);
                         color: $color-marron-texto;
@@ -338,9 +340,9 @@
                         @include fonts (2.5rem, $font-titulo, 600, none);
                     }
                 }
-    
+
                 &__base-parrafo {
-    
+
                     &__parra {
                         @include fonts (1.6rem, $font-parrafo, 600, none);
                     }

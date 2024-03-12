@@ -1,6 +1,6 @@
 // colores de fondo //
 
-$color-principal: #CE5A67; 
+$color-principal: #CE5A67;
 $color-secundario: #bdffe9;
 $color-terciario: #addbff;
 $color-pri-secun: #9a6e79;
@@ -12,7 +12,18 @@ $color-banners: #ffc0cb;
 // patrones de colores //
 
 $patron-anuncio-escala-de-rosas: linear-gradient(to right, #E97777 5%, #FF9F9F 5% 10%, #E97777 10% 15%, #FF9F9F 15% 20%, #E97777 20% 25%, #FF9F9F 25% 30%, #E97777 30% 35%, #FF9F9F 35% 40%, #E97777 40% 45%, #FF9F9F 45% 50%, #E97777 50% 55%, #FF9F9F 55% 60%, #E97777 60% 65%, #FF9F9F 65% 70%, #E97777 70% 75%, #FF9F9F 75% 80%, #E97777 80% 85%, #FF9F9F 85% 90%, #E97777 90% 95%, #FF9F9F 95% 100%);
-
+$patron-banner-rosa: radial-gradient(50% 50% at 100% 0, #FFC0CB 0% 5%, #B6728D 6% 15%, #FFC0CB 16% 25%, #B6728D 26% 35%, #FFC0CB 36% 45%,
+        #B6728D 46% 55%, #FFC0CB 56% 65%, #B6728D 66% 75%, #FFC0CB 76% 85%, #B6728D 86% 95%,
+        #0000 96%),
+    radial-gradient(50% 50% at 0 100%, #FFC0CB 0% 5%, #B6728D 6% 15%, #FFC0CB 16% 25%, #B6728D 26% 35%, #FFC0CB 36% 45%,
+        #B6728D 46% 55%, #FFC0CB 56% 65%, #B6728D 66% 75%, #FFC0CB 76% 85%, #B6728D 86% 95%,
+        #0000 96%),
+    radial-gradient(50% 50%, #FFC0CB 0% 5%, #B6728D 6% 15%, #FFC0CB 16% 25%, #B6728D 26% 35%, #FFC0CB 36% 45%,
+        #B6728D 46% 55%, #FFC0CB 56% 65%, #B6728D 66% 75%, #FFC0CB 76% 85%, #B6728D 86% 95%,
+        #0000 96%),
+    radial-gradient(50% 50%, #FFC0CB 0% 5%, #B6728D 6% 15%, #FFC0CB 16% 25%, #B6728D 26% 35%, #FFC0CB 36% 45%,
+        #B6728D 46% 55%, #FFC0CB 56% 65%, #B6728D 66% 75%, #FFC0CB 76% 85%, #B6728D 86% 95%,
+        #0000 96%) 54px 54px;
 // transform //
 
 $letras-especiales-aplastadas: scaleY(0.97);
@@ -24,13 +35,12 @@ $suave-o-semilento: 0.2s ease;
 // backgrounds //
 
 $seccion-newsletter-background: conic-gradient(#ffffff 25%, #0000 0) 0 0/calc(2*48px) calc(48px/9.5),
-conic-gradient(#ffffff 25%, #0000 0) 0 0/calc(48px/9.5) calc(2*48px),
-repeating-conic-gradient(#0000 0 25%, #ffffff 0 50%) 48px 0 /calc(2*48px) calc(2*48px),
-radial-gradient(50% 50%, #ffdae3 98%, #ffffff) 0 0/48px 48px;
+    conic-gradient(#ffffff 25%, #0000 0) 0 0/calc(48px/9.5) calc(2*48px),
+    repeating-conic-gradient(#0000 0 25%, #ffffff 0 50%) 48px 0 /calc(2*48px) calc(2*48px),
+    radial-gradient(50% 50%, #ffdae3 98%, #ffffff) 0 0/48px 48px;
 
 // box-shadows //
 
 $se: 0px 6px 14px -3px rgba(66, 68, 90, 1);
 $see: 0px 6px 14px -3px rgba(66, 68, 90, 1);
 $seee: 0px 6px 14px -3px rgba(66, 68, 90, 1);
-

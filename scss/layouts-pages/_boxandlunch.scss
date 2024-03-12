@@ -1,6 +1,7 @@
-// sandwich page //
+// box and launch page //
+// banner
 
-.banner-sandwicheria {
+.banner-boxalaunch {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 338px;
@@ -8,7 +9,7 @@
 
     &__container1 {
         grid-column: span 6;
-        background-color: #ECB390;
+        background-color: #B47B84;
 
         &__solidbase {
             @include ancho-alto (70%, 100%);
@@ -22,7 +23,7 @@
                     transform: scaleY(0.97);
 
                     &-one {
-                        color: $color-marron-texto;
+                        color: #58333e;
                         position: relative;
 
                         &:hover {
@@ -48,6 +49,7 @@
 
                         &__blank {
                             &__hov {
+                                color: #58333e;
                                 &:hover {
                                     transition: all 0.3s ease-in-out;
                                     color: #fff;
@@ -64,7 +66,7 @@
                     }
 
                     &-two {
-                        color: $color-marron-texto;
+                        color: #58333e;
                         position: relative;
 
                         &:hover {
@@ -82,7 +84,7 @@
                             height: 2px;
                             bottom: 0;
                             left: 0;
-                            background-color: $color-marron-texto;
+                            background-color: #58333e;
                             visibility: hidden;
                             transform: scaleX(0);
                             transition: all 0.3s ease-in-out;
@@ -98,7 +100,7 @@
 
                     &-divider {
                         @include margin-left-right (5px, 5px);
-                        color: $color-marron-texto;
+                        color: #58333e;
                         font-size: medium;
                     }
                 }
@@ -111,7 +113,7 @@
                 &__titulo {
                     @include fonts (3.5rem, $font-titulo, 600, none);
                     transform: scaleY(1.3);
-                    color: $color-marron-texto;
+                    color: #58333e;
                     padding-top: 20px;
                 }
             }
@@ -122,7 +124,7 @@
 
                 &__parra {
                     @include fonts (18px, $font-parrafo, 500, none);
-                    color: $color-marron-texto;
+                    color: #58333e;
                     text-align: start;
                     padding-top: 30px;
                 }
@@ -140,9 +142,9 @@
     }
 }
 
-// Seccion Catalogo Sandwich // 
+// Seccion grid boxalaunch //
 
-.catalogo-sandwiches {
+.catalogo-boxalaunch {
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -197,7 +199,7 @@
 
 // seccion grid // 
 
-.grid-catalogo-sand {
+.grid-boxanlaunch {
     @include ancho-alto (80%, null);
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -266,7 +268,7 @@
 
 @media screen and (max-width: 1353px) {
 
-    .banner-sandwicheria {
+    .banner-boxalaunch {
 
         &__container1 {
 
@@ -294,20 +296,20 @@
         }
     }
 
-    .grid-catalogo-sand {
+    .grid-boxanlaunch {
         @include paddin-left-right (0, 0);
         grid-template-columns: repeat(150px, 1fr);
     }
 }
 
 @media screen and (max-width: 1015px) {
-    .catalogo-sandwiches {
+    .catalogo-boxalaunch {
         &__seccion-filter {
             display: none;
         }
     }
 
-    .grid-catalogo-sand {
+    .grid-boxanlaunch {
         @include ancho-alto (100%, null);
         grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
         @include paddin-left-right (3%, 3%);
@@ -315,13 +317,13 @@
 }
 
 @media screen and (max-width: 912px) {
-    .catalogo-sandwiches {
+    .catalogo-boxalaunch {
         &__seccion-filter {
             display: none;
         }
     }
 
-    .banner-sandwicheria {
+    .banner-boxalaunch {
 
         &__container1 {
 
@@ -345,7 +347,7 @@
         }
     }
 
-    .grid-catalogo-sand {
+    .grid-boxanlaunch {
         @include ancho-alto (100%, null);
         grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
         @include paddin-left-right (0, 0);
@@ -353,13 +355,13 @@
 }
 
 @media screen and (max-width: 799px) {
-    .catalogo-sandwiches {
+    .catalogo-boxalaunch {
         &__seccion-filter {
             display: none;
         }
     }
 
-    .grid-catalogo-sand {
+    .grid-boxanlaunch {
         @include ancho-alto (100%, null);
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
         @include paddin-left-right (0, 0);
@@ -401,17 +403,17 @@
 }
 
 @media screen and (max-width: 767px) {
-    .banner-sandwicheria {
+    .banner-boxalaunch {
         display: none;
     }
 
-    .catalogo-sandwiches {
+    .catalogo-boxalaunch {
         &__seccion-filter {
             display: none;
         }
     }
 
-    .grid-catalogo-sand {
+    .grid-boxanlaunch {
         grid-template-columns: 1fr;
         @include ancho-alto (100%, auto);
         @include paddin-left-right (3%, 3%);
@@ -457,7 +459,7 @@
 
 @media screen and (max-width: 426px) {
 
-    .grid-catalogo-sand {
+    .grid-boxanlaunch {
         grid-template-columns: 1fr;
         @include ancho-alto (100%, auto);
         @include paddin-left-right (3%, 3%);
@@ -503,3 +505,4 @@
         }
     }
 }
+
