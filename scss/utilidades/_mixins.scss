@@ -173,3 +173,11 @@
     -o-transition: color 0.4s ease-in-out;
     transition: color 0.4s ease-in-out;
 }
+
+@mixin transicion-button-3s {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}

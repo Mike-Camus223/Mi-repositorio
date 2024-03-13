@@ -236,7 +236,6 @@
                 &:hover {
                     transform: scale(1.1);
                     @include transicion-3segun;
-                    ;
                     filter: brightness(60%);
                 }
             }
