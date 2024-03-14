@@ -164,8 +164,8 @@
             place-items: center;
             position: relative;
             text-align: center;
-    
-    
+
+
             &__imagen {
                 max-width: 100%;
                 max-height: auto;
@@ -183,7 +183,7 @@
 
         &__duocontainer {
             display: grid;
-            
+
             &__container1 {
 
                 &__titu {
@@ -195,7 +195,7 @@
                     @include ancho-alto (70%, auto);
                     @include fonts (1.5rem, $font-parrafo, 600, none);
                 }
-                
+
                 &__button {
                     @include ancho-alto (190px, 50px);
                 }
@@ -203,7 +203,7 @@
 
             &__container2 {
                 grid-column: 6 span;
-    
+
                 &__imagen {
                     @include ancho-alto (100%, 50rem);
                     object-fit: cover;
@@ -216,10 +216,10 @@
             background-color: #F3D7CA;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-    
+
             &__container1 {
                 grid-column: 6 span;
-    
+
                 &__imagen {
                     @include ancho-alto (100%, 50rem);
                     object-fit: cover;
@@ -227,7 +227,7 @@
             }
 
             &__container2 {
-                
+
                 &__titu {
                     @include ancho-alto (auto, auto);
                     @include fonts (2.5rem, $font-titulo, 600, none);
@@ -240,7 +240,7 @@
 
                 &__button {
                     @include ancho-alto (190px, 50px);
-                    
+
                 }
             }
         }
@@ -258,8 +258,8 @@
             place-items: center;
             position: relative;
             text-align: center;
-    
-    
+
+
             &__imagen {
                 max-width: 100%;
                 max-height: auto;
@@ -278,21 +278,21 @@
         &__duocontainer {
             display: flex;
             flex-direction: column-reverse;
-            
+
             &__container1 {
                 padding: 30px 0 30px 0;
 
                 &__titu {
                     @include ancho-alto (auto, auto);
                     @include fonts (2.5rem, $font-titulo, 600, none);
-                    
+
                 }
 
                 &__parrafo {
                     @include ancho-alto (70%, auto);
                     @include fonts (1.5rem, $font-parrafo, 600, none);
                 }
-                
+
                 &__button {
                     @include ancho-alto (170px, 40px);
                 }
@@ -300,7 +300,7 @@
 
             &__container2 {
                 grid-column: 6 span;
-    
+
                 &__imagen {
                     @include ancho-alto (100%, 40rem);
                     object-fit: cover;
@@ -312,9 +312,9 @@
         &__duocontainer2 {
             display: flex;
             flex-direction: column;
-    
+
             &__container1 {
-            
+
                 &__imagen {
                     @include ancho-alto (100%, 40rem);
                     object-fit: cover;
@@ -323,7 +323,7 @@
 
             &__container2 {
                 padding-bottom: 30px;
-                
+
                 &__titu {
                     @include ancho-alto (auto, auto);
                     @include fonts (2.5rem, $font-titulo, 600, none);
@@ -342,9 +342,34 @@
         }
     }
 }
-    
-
-    
 
 
-    
+@media screen and (max-width: 314px) {
+
+    .seccion-acercade {
+
+        &__banner {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-column: 475px;
+            place-items: center;
+            position: relative;
+            text-align: center;
+
+
+            &__imagen {
+                max-width: 100%;
+                max-height: auto;
+                grid-column: span 12;
+                @include ancho-alto (100%, 127px);
+                object-fit: cover;
+                filter: brightness(60%);
+            }
+
+            &__titulo {
+                @include position-relative (absolute, 45%, 0, 0, 0, null);
+                @include fonts (2rem, $font-titulo, 200, none);
+            }
+        }
+    }
+}
