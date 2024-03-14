@@ -1,0 +1,357 @@
+// diversas paginas de las ubicaciones //
+
+.sec-altopaler {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 630px;
+    max-width: none;
+
+    &__contenedor1 {
+        grid-column: 6 span;
+        background-color: #FFC5C5;
+        padding: 20px 50px 20px 20px;
+        @include flex-justify-align (center, flex-start);
+        flex-direction: column;
+
+        &__titu {
+            @include fonts (4.7rem, $font-titulo, 600, none);
+            transform: scaleY(1.1);
+            color: $color-marron-texto;
+            @include ancho-alto (60%, auto);
+            margin-left: 40%;
+            margin-bottom: 20px;
+        }
+
+        &__masinfo {
+            @include ancho-alto (60%, auto);
+            @include fonts (2.3rem, $font-titulo, 600, none);
+            margin-left: 40%;
+            padding: 10px 0 10px 0;
+            color: $color-marron-texto;
+        }
+
+        &__parrafo {
+            @include fonts (1.7rem, $font-parrafo, 600, none);
+            color: $color-marron-texto;
+            @include ancho-alto (60%, auto);
+            margin-left: 40%;
+            
+        }
+
+        &__info {
+            @include fonts (2rem, $font-parrafo, 600, none);
+            @include ancho-alto (60%, auto);
+            color: $color-marron-texto;
+            margin-left: 40%;
+            padding-bottom: 20px;
+
+            &__nav {
+
+                &__ul {
+                    display: block;
+                    column-count: 2;
+                    padding: 0;
+
+                    &__li {
+                        text-align: start;
+                    }
+                }
+            }
+        }
+
+        &__botones {
+            @include ancho-alto (60%, auto);
+            margin-left: 40%;
+        }
+    }
+
+    &__contenedor2 {
+        grid-column: 6 span;
+
+        &__foto {
+            @include ancho-alto (100%, 100%);
+            object-fit: cover;
+
+        }
+    }
+}
+
+.sec-map {
+
+    &__base {
+        @include fondo-maps-color-piel;
+
+        &__contenedor {
+            @include flex-justify-align (center, center);
+            flex-direction: column;
+            @include ancho-alto (100%, 75rem);
+
+            &__titu {
+                @include fonts (5rem, $font-titulo, 600, none);
+                color: $color-marron-texto;
+                transform: scaleY(1.1);
+                padding-bottom: 2rem;
+            }
+
+            &__borde {
+                border: 20px double #89B9AD;
+                @include ancho-alto (60%, 450px);
+
+                &__mapa {
+                    @include ancho-alto (100%, 100%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1071px) {
+
+    .sec-altopaler {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 630px;
+        max-width: none;
+    
+        &__contenedor1 {
+            
+    
+            &__titu {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                
+                
+            }
+    
+            &__masinfo {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                
+            }
+    
+            &__parrafo {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+            }
+    
+            &__info {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+    
+                &__nav {
+    
+                    &__ul {
+                        
+    
+                        &__li {
+                            
+                        }
+                    }
+                }
+            }
+    
+            &__botones {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                
+            }
+        }
+    
+        &__contenedor2 {
+            
+    
+            &__foto {
+                
+    
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 881px) {
+
+    .sec-altopaler {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 630px;
+        max-width: none;
+    
+        &__contenedor1 {
+            
+    
+            &__titu {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                @include fonts (4rem, $font-titulo, 600, none);
+                
+                
+            }
+    
+            &__masinfo {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                @include fonts (2.3rem, $font-titulo, 600, none);
+                
+            }
+    
+            &__parrafo {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                @include fonts (1.6rem, $font-parrafo, 600, none);
+            }
+    
+            &__info {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                @include fonts (1.6rem, $font-parrafo, 600, none);
+            
+                &__nav {
+    
+                    &__ul {
+                        
+    
+                        &__li {
+                            
+                        }
+                    }
+                }
+            }
+    
+            &__botones {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                
+            }
+        }
+    
+        &__contenedor2 {
+            
+    
+            &__foto {
+                
+    
+            }
+        }
+    }
+
+    .sec-map {
+
+        &__base {
+            
+            &__contenedor {
+                @include flex-justify-align (center, center);
+                flex-direction: column;
+                @include ancho-alto (100%, 75rem);
+    
+                &__titu {
+                    @include fonts (4rem, $font-titulo, 600, none);
+                    color: $color-marron-texto;
+                    transform: scaleY(1.1);
+                    padding-bottom: 4rem;
+                }
+    
+                &__borde {
+                    border: 20px double #89B9AD;
+                    @include ancho-alto (80%, 450px);
+    
+                    &__mapa {
+                        @include ancho-alto (100%, 100%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .sec-altopaler {
+        display: flex;
+        flex-direction: column-reverse;
+
+    
+        &__contenedor1 {
+            
+    
+            &__titu {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                @include fonts (4rem, $font-titulo, 600, none);
+                
+                
+            }
+    
+            &__masinfo {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                @include fonts (2.3rem, $font-titulo, 600, none);
+                
+            }
+    
+            &__parrafo {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                @include fonts (1.6rem, $font-parrafo, 600, none);
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 4;
+                overflow: hidden;
+            }
+    
+            &__info {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                @include fonts (1.6rem, $font-parrafo, 600, none);
+            
+                &__nav {
+    
+                    &__ul {
+                        
+    
+                        &__li {
+                            
+                        }
+                    }
+                }
+            }
+    
+            &__botones {
+                margin-left: 5%;
+                @include ancho-alto (80%, auto);
+                
+            }
+        }
+    }
+
+    .sec-map {
+
+        &__base {
+            
+            &__contenedor {
+
+                &__titu {
+                    @include fonts (2.8rem, $font-titulo, 600, none);
+                    padding-bottom: 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 339px) {
+
+    .sec-map {
+
+        &__base {
+            
+            &__contenedor {
+
+                &__titu {
+                    @include fonts (2rem, $font-titulo, 600, none);
+                    padding-bottom: 4rem;
+                }
+            }
+        }
+    }
+
+}

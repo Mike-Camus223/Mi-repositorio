@@ -181,3 +181,21 @@
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
+
+@mixin fondo-maps-color-piel {
+    background: 
+    conic-gradient(#FFEBD8 25%, #0000 0) 0 0/calc(2*74px) calc(74px/9.5),
+    conic-gradient(#FFEBD8 25%, #0000 0) 0 0/calc(74px/9.5) calc(2*74px),
+    repeating-conic-gradient(#0000 0 25%, #FFEBD8 0 50%) 74px 0 /calc(2*74px) calc(2*74px),
+    radial-gradient(50% 50%, #E2D1C0 98%, #FFEBD8) 0 0/74px 74px;
+}
+
+@mixin fondo-maps-color-verde {
+    background:
+		  conic-gradient(#F2C18D 25%,#0000 0) 0 0/calc(2*37px) calc(37px/9.5),
+		  conic-gradient(#F2C18D 25%,#0000 0) 0 0/calc(37px/9.5) calc(2*37px),
+		  repeating-conic-gradient(#0000 0 25%,#F2C18D 0 50%) 
+		   37px 0 /calc(2*37px) calc(2*37px),
+		  radial-gradient(50% 50%,#F6F193 98%,#F2C18D) 
+		   0 0/37px 37px;
+}
