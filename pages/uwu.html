@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Contacto</title>
+<style>
+.sec-contactos__base__containertwo {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sec-contactos__base__containertwo input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.sec-contactos__base__containertwo label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.sec-contactos__base__containertwo input:focus + label,
+.sec-contactos__base__containertwo input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #666;
+}
+</style>
+</head>
+<body>
+
+<section class="sec-contactos">
+    <div class="sec-contactos__base">
+        <div class="sec-contactos__base__container">
+            <h2 class="sec-contactos__base__container__titu">Formulario de Contacto</h2>
+        </div>
+        <div class="sec-contactos__base__containertwo">
+            <input class="sec-contactos__base__containertwo__input" type="text" placeholder=" " id="nombre" name="nombre" required>
+            <label for="nombre">Nombre</label>
+        </div>
+        <div class="sec-contactos__base__containertwo">
+            <input class="sec-contactos__base__containertwo__input" type="text" placeholder=" " id="apellidos" name="apellidos" required>
+            <label for="apellidos">Apellidos</label>
+        </div>
+        <div class="sec-contactos__base__containertwo">
+            <input class="sec-contactos__base__containertwo__input" type="text" placeholder=" " id="telefono" name="telefono" required>
+            <label for="telefono">Teléfono</label>
+        </div>
+        <div class="sec-contactos__base__containertwo">
+            <input class="sec-contactos__base__containertwo__input" type="text" placeholder=" " id="e-mail" name="e-mail" required>
+            <label for="e-mail">Correo electrónico (E-mail)</label>
+        </div>
+        <div class="sec-contactos__base__containerthree">
+            <label for="titulo-lista">Localidad</label>
+            <select aria-placeholder="Localidad" class="sec-contactos__base__containerthree__lista">
+                <option value="Palermo" class="square-bac">Palermo</option>
+                <option value="Recoleta" class="square-bac">Recoleta</option>
+                <option value="Microcentro" class="square-bac">Microcentro</option>
+                <option value="San Telmo" class="square-bac">San Telmo</option>
+                <option value="La Boca" class="square-bac">La Boca</option>
+                <option value="Puerto Madero" class="square-bac">Puerto Madero</option>
+                <option value="Belgrano" class="square-bac">Belgrano</option>
+                <option value="Caballito" class="square-bac">Caballito</option>
+                <option value="Boedo" class="square-bac">Boedo</option>
+                <option value="Villa Crespo" class="square-bac">Villa Crespo</option>
+                <option value="Colegiales" class="square-bac">Colegiales</option>
+                <option value="Barracas" class="square-bac">Barracas</option>
+                <option value="Parque Patricios" class="square-bac">Parque Patricios</option>
+                <option value="Villa Lugano" class="square-bac">Villa Lugano</option>
+                <option value="Coghlan" class="square-bac">Coghlan</option>
+                <option value="Saavedra" class="square-bac">Saavedra</option>
+                <option value="Monte Castro" class="square-bac">Monte Castro</option>
+                <option value="Versalles" class="square-bac">Versalles</option>
+                <option value="General Mitre" class="square-bac">General Mitre</option>
+            </select>
+        </div>
+        <div class="sec-contactos__base__containerfourth">
+            <textarea class="sec-contactos__base__containerfourth__textcaja" name="caja-text-mensaje" id="miTextarea" cols="30" rows="10"></textarea>
+            <br><br>
+            <input class="sec-contactos__base__containerfourth__boton" type="submit" value="Enviar">
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
+
+
+
+<style>
+    .sec-contactos__base__containertwo {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .sec-contactos__base__containertwo input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .sec-contactos__base__containertwo label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .sec-contactos__base__containertwo input:focus + label,
+  .sec-contactos__base__containertwo input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #666;
+  }
+
+  .sec-contactos__base__containertwo .labelape {
+    position: absolute;
+    top: 50%;
+    left: 52.8%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .sec-contactos__base__containertwo input:focus + .labelape,
+  .sec-contactos__base__containertwo input:not(:placeholder-shown) + .labelape {
+    top: -10px;
+    left: 52.8%;
+    font-size: 12px;
+    color: #666;
+  }
+
+  //sada//
+
+  .sec-contactos__base__containertwov2 {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .sec-contactos__base__containertwov2 input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .sec-contactos__base__containertwov2 label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .sec-contactos__base__containertwov2 input:focus + label,
+  .sec-contactos__base__containertwov2 input:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #666;
+  }
+
+  .sec-contactos__base__containertwov2 .label2 {
+    position: absolute;
+    top: 50%;
+    left: 52.8%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+
+  .sec-contactos__base__containertwov2 input:focus + .label2,
+  .sec-contactos__base__containertwov2 input:not(:placeholder-shown) + .label2 {
+    top: -10px;
+    left: 52.8%;
+    font-size: 12px;
+    color: #666;
+  }
+</style>

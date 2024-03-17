@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasteleria Katyka - Contactanos</title>
+    <title>Pasteleria Katyka - Visitenos Alto Palermo</title>
     <!-- Carga de links: Bootstrap, css , fonts e iconos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/stylespri.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
@@ -60,20 +60,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="navbar-pc__left-item dropdown">
-                        <a class="navbar-pc__link" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Visitenos
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <ul class="navbar-pc__dropdown-menu dropdown-menu">
-                            <li class="navbar-pc__dropdown-item"><a class="dropdown-item" href="#">Proximamente!</a>
-                            </li>
-                            <li class="navbar-pc__dropdown-item"><a class="dropdown-item" href="#">Proximamente!</a>
-                            </li>
-                            <li class="navbar-pc__dropdown-item"><a class="dropdown-item" href="#">Proximamente!</a>
-                            </li>
-                        </ul>
+                    <li class="navbar-pc__right-item">
+                        <a class="navbar-pc__link" aria-current="page" href="../pages/visitenos.html">Visitenos</a>
                     </li>
                 </ul>
             </nav>
@@ -302,8 +290,61 @@
     <!-- Fin Header -->
     <!-- Comienzo Main -->
     <main class="main-content">
-        <section>
-
+        <section class="sec-contact-banner">
+            <div class="sec-contact-banner__banner">
+                <img class="sec-contact-banner__banner__imagen"
+                    src="../assets/logos_y_menus/pasteleria-contacto-banner2.jpg" alt="Banner Contactos Katykas">
+                <h1 class="sec-contact-banner__banner__titulo">Contacto</h1>
+            </div>
+        </section>
+        <section class="sec-contactos">
+            <div class="sec-contactos__base">
+                <div class="sec-contactos__base__container">
+                    <h2 class="sec-contactos__base__container__titu">Formulario de Contacto</h2>
+                </div>
+                <div class="sec-contactos__base__containertwo">
+                    <input class="sec-contactos__base__containertwo__input" type="text" placeholder=" " id="nombre" name="nombre" required>
+                    <label class="sec-contactos__base__containertwo__input__labelapeone" for="nombre">Nombre</label>
+                    <input class="sec-contactos__base__containertwo__input" type="text" placeholder=" " id="apellidos" name="apellidos" required>
+                    <label class="sec-contactos__base__containertwo__input__labelape" for="apellidos">Apellidos</label>
+                </div>
+                <div class="sec-contactos__base__containertwov2">
+                    <input class="sec-contactos__base__containertwov2__input" type="text" placeholder=" " id="telefono" name="telefono" required>
+                    <label class="sec-contactos__base__containertwov2__input__labelapeone" for="telefono">Teléfono</label>
+                    <input class="sec-contactos__base__containertwov2__input" type="text" placeholder=" " id="e-mail" name="e-mail" required>
+                    <label class="sec-contactos__base__containertwov2__input__labelape" for="e-mail">E-mail</label>
+                </div>
+                <div class="sec-contactos__base__containerthree">
+                    <label for="titulo-lista">Localidad</label>
+                    <select aria-placeholder="Localidad" class="sec-contactos__base__containerthree__lista">
+                        <option value="Palermo" class="square-bac">Palermo</option>
+                        <option value="Recoleta" class="square-bac">Recoleta</option>
+                        <option value="Microcentro" class="square-bac">Microcentro</option>
+                        <option value="San Telmo" class="square-bac">San Telmo</option>
+                        <option value="La Boca" class="square-bac">La Boca</option>
+                        <option value="Puerto Madero" class="square-bac">Puerto Madero</option>
+                        <option value="Belgrano" class="square-bac">Belgrano</option>
+                        <option value="Caballito" class="square-bac">Caballito</option>
+                        <option value="Boedo" class="square-bac">Boedo</option>
+                        <option value="Villa Crespo" class="square-bac">Villa Crespo</option>
+                        <option value="Colegiales" class="square-bac">Colegiales</option>
+                        <option value="Barracas" class="square-bac">Barracas</option>
+                        <option value="Parque Patricios" class="square-bac">Parque Patricios</option>
+                        <option value="Villa Lugano" class="square-bac">Villa Lugano</option>
+                        <option value="Coghlan" class="square-bac">Coghlan</option>
+                        <option value="Saavedra" class="square-bac">Saavedra</option>
+                        <option value="Monte Castro" class="square-bac">Monte Castro</option>
+                        <option value="Versalles" class="square-bac">Versalles</option>
+                        <option value="General Mitre" class="square-bac">General Mitre</option>
+                    </select>
+                </div>
+                <div class="sec-contactos__base__containerfourth">
+                    <textarea class="sec-contactos__base__containerfourth__textcaja" name="caja-text-mensaje"
+                    id="miTextarea" cols="30" rows="10"></textarea>
+                    <br><br>
+                    <input class="sec-contactos__base__containerfourth__boton" type="submit" value="Enviar">
+                </div>
+            </div>
         </section>
         <!-- inicio de seccion productos -->
         <section class="seccion-de-productos">

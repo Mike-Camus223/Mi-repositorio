@@ -1,0 +1,253 @@
+// pagina contactos //
+
+.sec-contact-banner {
+
+    &__banner {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column: 400px;
+        place-items: center;
+        position: relative;
+        text-align: center;
+
+
+        &__imagen {
+            max-width: 100%;
+            max-height: auto;
+            grid-column: span 12;
+            @include ancho-alto (100%, 340px);
+            object-fit: cover;
+            filter: brightness(50%);
+        }
+
+        &__titulo {
+            @include position-relative (absolute, 49%, 0, 41%, 0, null);
+            @include fonts (10rem, $font-parrafo, 300, none);
+            transform: translate(-40%, -35%);
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
+
+
+.sec-contactos {
+    @include ancho-alto (100%, 70rem);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 38px, #D4BCBC 38px, #D4BCBC 76px);
+    background-color: #E8E8F1;
+    @include flex-justify-align (center, center);
+
+    &__base {
+        @include flex-justify-align (start, left);
+        flex-direction: column;
+        @include ancho-alto (50%, 60rem);
+        gap: 10px;
+        background:
+            conic-gradient(#FFFFFF 25%, #0000 0) 0 0/calc(2*38px) calc(38px/9.5),
+            conic-gradient(#FFFFFF 25%, #0000 0) 0 0/calc(38px/9.5) calc(2*38px),
+            repeating-conic-gradient(#0000 0 25%, #FFFFFF 0 50%) 38px 0 /calc(2*38px) calc(2*38px),
+            radial-gradient(50% 50%, #F2DEDC 98%, #FFFFFF) 0 0/38px 38px;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(66, 68, 90, 1);
+        box-shadow: 0px 0px 15px 0px rgba(66, 68, 90, 1);
+        border-radius: 10px;
+        padding: 3%;
+
+        &__container {
+            padding-bottom: 1.5rem;
+
+            &__titu {
+                @include fonts (5rem, $font-titulo, 600, none);
+                color: $color-marron-texto;
+            }
+        }
+
+        &__containertwo {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            
+            &__input {
+                @include ancho-alto (40%, 40px);
+                @include fonts (2rem, $font-parrafo, 400, none);
+                color: $color-marron-texto;
+                background-color: transparent;
+                border: none;
+                transition: all 0.3s ease;
+                outline: none;
+                border-bottom: 2px solid $color-marron-texto;
+                
+                &:focus {
+                    outline: none;
+                    border-bottom: 2px solid #b65e7a;
+                    @include transicion-button-3s;
+                }
+
+                &__labelapeone {
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    transform: translateY(-50%);
+                    color: $color-marron-texto;
+                    font-weight: 600;
+                    font-size: 16px;
+                    transition: all 0.3s ease;
+                    pointer-events: none;
+                }
+
+                &:focus+&__labelapeone,
+                &:not(:placeholder-shown)+&__labelapeone {
+                    top: -10px;
+                    left: 10px;
+                    font-size: 12px;
+                    color: $color-marron-texto;
+                }
+
+                &__labelape {
+                    position: absolute;
+                    top: 50%;
+                    left: 44%;
+                    transform: translateY(-50%);
+                    color: $color-marron-texto;
+                    font-weight: 600;
+                    font-size: 16px;
+                    transition: all 0.3s ease;
+                    pointer-events: none;
+                }
+
+                &:focus+&__labelape,
+                &:not(:placeholder-shown)+&__labelape {
+                    top: -10px;
+                    left: 44%;
+                    font-size: 12px;
+                    color: $color-marron-texto;
+                }
+            }
+        }
+
+        &__containertwov2 {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+
+            &__input {
+                @include ancho-alto (40%, 40px);
+                @include fonts (2rem, $font-parrafo, 400, none);
+                color: $color-marron-texto;
+                background-color: transparent;
+                border: none;
+                transition: all 0.3s ease;
+                outline: none;
+                border-bottom: 2px solid $color-marron-texto;
+
+                &:focus {
+                    outline: none;
+                    border-bottom: 2px solid #b65e7a;
+                    @include transicion-button-3s;
+                }
+
+                &__labelapeone {
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    transform: translateY(-50%);
+                    color: $color-marron-texto;
+                    font-weight: 600;
+                    font-size: 16px;
+                    transition: all 0.3s ease;
+                    pointer-events: none;
+                }
+
+                &:focus+&__labelapeone,
+                &:not(:placeholder-shown)+&__labelapeone {
+                    top: -10px;
+                    left: 10px;
+                    font-size: 12px;
+                    color: $color-marron-texto;
+                }
+
+                &__labelape {
+                    position: absolute;
+                    top: 50%;
+                    left: 44%;
+                    transform: translateY(-50%);
+                    color: $color-marron-texto;
+                    font-weight: 600;
+                    font-size: 16px;
+                    transition: all 0.3s ease;
+                    pointer-events: none;
+                }
+
+                &:focus+&__labelape,
+                &:not(:placeholder-shown)+&__labelape {
+                    top: -10px;
+                    left: 44%;
+                    font-size: 12px;
+                    color: $color-marron-texto;
+                }
+            }
+        }
+
+        &__containerthree {
+            border: none;
+            @include fonts (2rem, $font-parrafo, 600, none);
+            color: $color-marron-texto;
+
+            &__lista {
+                border: none;
+                @include ancho-alto (70%, auto);
+                background-color: transparent;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        &__containerfourth {
+            @include ancho-alto (100%, 30%);
+
+            &__textcaja {
+                @include ancho-alto (82.6%, null);
+                @include fonts (2rem, $font-parrafo, 400, none);
+                -webkit-box-shadow: inset 0px 0px 8px -1px rgba(66, 68, 90, 1);
+                -moz-box-shadow: inset 0px 0px 8px -1px rgba(66, 68, 90, 1);
+                box-shadow: inset 0px 0px 8px -1px rgba(66, 68, 90, 1);
+                border: none;
+                border-radius: 10px;
+                color: $color-marron-texto;
+                max-height: 100%;
+                min-height: 40%;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            &__boton {
+                @include ancho-alto (25rem, 50px);
+                @include fonts (2rem, $font-parrafo, 600, none);
+                color: $color-marron-texto;
+                border-radius: 10px;
+                border: 2px solid $color-marron-texto;
+                background-color: transparent;
+
+                &:hover {
+                    color: #b65e7a;
+                    border: 2px solid #b65e7a;
+                    @include transicion-button-3s;
+                }
+            }
+        }
+    }
+}
+
+#miTextarea {
+    padding: 10px;
+}
+
