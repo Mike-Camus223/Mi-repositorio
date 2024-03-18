@@ -16,14 +16,14 @@
             max-width: 100%;
             max-height: auto;
             grid-column: span 12;
-            @include ancho-alto (100%, 400px);
+            @include ancho-alto (100%, 340px);
             object-fit: cover;
             filter: brightness(60%);
         }
 
         &__titulo {
-            @include position-relative (absolute, 45%, 0, 0, 0, null);
-            @include fonts (6rem, $font-titulo, 200, none);
+            @include position-relative (absolute, 36%, 0, 0, 0, null);
+            @include fonts (8rem, $font-parrafo, 200, none);
             transform: translate(-40%, -35%);
             text-align: center;
             color: white;
@@ -160,7 +160,7 @@
         &__banner {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            grid-column: 475px;
+            grid-column: 400px;
             place-items: center;
             position: relative;
             text-align: center;
@@ -176,8 +176,8 @@
             }
 
             &__titulo {
-                @include position-relative (absolute, 45%, 0, 0, 0, null);
-                @include fonts (5rem, $font-titulo, 200, none);
+                @include position-relative (absolute, 36%, 0, 0, 0, null);
+                @include fonts (7rem, $font-parrafo, 300, none);
             }
         }
 
@@ -254,7 +254,7 @@
         &__banner {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            grid-column: 475px;
+            grid-column: 400px;
             place-items: center;
             position: relative;
             text-align: center;
@@ -270,8 +270,8 @@
             }
 
             &__titulo {
-                @include position-relative (absolute, 45%, 0, 0, 0, null);
-                @include fonts (3rem, $font-titulo, 200, none);
+                @include position-relative (absolute, 30%, 0, 0, 0, null);
+                @include fonts (4rem, $font-parrafo, 300, none);
             }
         }
 
@@ -344,14 +344,14 @@
 }
 
 
-@media screen and (max-width: 314px) {
+@media screen and (max-width: 389px) {
 
     .seccion-acercade {
 
         &__banner {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            grid-column: 475px;
+            grid-column: 400px;
             place-items: center;
             position: relative;
             text-align: center;
@@ -367,8 +367,8 @@
             }
 
             &__titulo {
-                @include position-relative (absolute, 45%, 0, 0, 0, null);
-                @include fonts (2rem, $font-titulo, 200, none);
+                @include position-relative (absolute, 36%, 0, 0, 0, null);
+                @include fonts (2.8rem, $font-parrafo, 300, none);
             }
         }
     }
