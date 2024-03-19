@@ -21,7 +21,7 @@
         }
 
         &__titulo {
-            @include position-relative (absolute, 49%, 0, 41%, 0, null);
+            @include position-relative (absolute, 49%, 0, 45%, 0, null);
             @include fonts (10rem, $font-parrafo, 300, none);
             transform: translate(-40%, -35%);
             text-align: center;
@@ -34,8 +34,7 @@
 
 .sec-contactos {
     @include ancho-alto (100%, 70rem);
-    background-image: repeating-linear-gradient(45deg, transparent, transparent 38px, #D4BCBC 38px, #D4BCBC 76px);
-    background-color: #E8E8F1;
+    @include fondo-rayas-contactov2;
     @include flex-justify-align (center, center);
 
     &__base {
@@ -43,14 +42,7 @@
         flex-direction: column;
         @include ancho-alto (50%, 60rem);
         gap: 10px;
-        background:
-            conic-gradient(#FFFFFF 25%, #0000 0) 0 0/calc(2*38px) calc(38px/9.5),
-            conic-gradient(#FFFFFF 25%, #0000 0) 0 0/calc(38px/9.5) calc(2*38px),
-            repeating-conic-gradient(#0000 0 25%, #FFFFFF 0 50%) 38px 0 /calc(2*38px) calc(2*38px),
-            radial-gradient(50% 50%, #F2DEDC 98%, #FFFFFF) 0 0/38px 38px;
-        -webkit-box-shadow: 0px 0px 15px 0px rgba(66, 68, 90, 1);
-        -moz-box-shadow: 0px 0px 15px 0px rgba(66, 68, 90, 1);
-        box-shadow: 0px 0px 15px 0px rgba(66, 68, 90, 1);
+        @include fondo-circulos-contacto;
         border-radius: 10px;
         padding: 3%;
 
@@ -222,9 +214,7 @@
             &__textcaja {
                 @include ancho-alto (82%, null);
                 @include fonts (1.6rem, $font-parrafo, 400, none);
-                -webkit-box-shadow: inset 0px 0px 8px -1px rgba(66, 68, 90, 1);
-                -moz-box-shadow: inset 0px 0px 8px -1px rgba(66, 68, 90, 1);
-                box-shadow: inset 0px 0px 8px -1px rgba(66, 68, 90, 1);
+                @include box-shadow2;
                 border: none;
                 border-radius: 10px;
                 color: $color-marron-texto;

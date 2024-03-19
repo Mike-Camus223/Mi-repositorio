@@ -1,90 +1,149 @@
 // seccion de inicio de sesion // 
 
-.seccion-login {
-    display: flex;
+.sec-login {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: none;
 
-    &__container {
-        @include ancho-alto (40%, 778px);
-        margin-left: 5rem;
+    &__containerpri {
+        grid-column: span 6;
+        @include fondo-rayas-contactov2;
+        @include flex-justify-align (center, center);
 
-        .carou-login-item {
+        &__base {
+            @include flex-justify-align (center, center);
+            @include ancho-alto (80%, 500px);
+            @include box-shadow-login;
+            @include fondo-circulos-contacto;
+            flex-direction: column;
+            gap: 30px;
 
-            &__imagen {
-                @include ancho-alto (40%, 779px);
+            &__cont1 {
+                
+                &__titu {
+                    @include fonts (4rem, $font-titulo, 600, none);
+                    color: $color-marron-texto;
+                    transform: scaleY(1.1);
+                }
+            }
 
+            &__cont2 {
+                @include flex-justify-align (center, center);
+                flex-direction: column;
+                position: relative;
+                width: 100%;
+                margin-bottom: 5px;
+                display: flex;
+                gap: 20px;
+
+                &__input {
+                    @include ancho-alto (55%, 40px);
+                    @include fonts (1.7rem, $font-parrafo, 400, none);
+                    color: $color-marron-texto;
+                    background-color: transparent;
+                    border: none;
+                    transition: all 0.3s ease;
+                    border-bottom: 2px solid $color-marron-texto;
+
+                    &:focus {
+                        outline: none;
+                        border-bottom: 2px solid #b65e7a;
+                        @include transicion-button-3s;
+                    }
+
+                    &__labelapeone {
+                        position: absolute;
+                        top: 20%;
+                        left: 23%;
+                        transform: translateY(-50%);
+                        color: $color-marron-texto;
+                        font-weight: 600;
+                        font-size: 16px;
+                        transition: all 0.3s ease;
+                        pointer-events: none;
+                    }
+
+                    &:focus+&__labelapeone,
+                    &:not(:placeholder-shown)+&__labelapeone {
+                        top: -10px;
+                        left: 23%;
+                        font-size: 12px;
+                        color: $color-marron-texto;
+                    }
+
+                    &__labelape {
+                        position: absolute;
+                        top: 80%;
+                        left: 23%;
+                        transform: translateY(-50%);
+                        color: $color-marron-texto;
+                        font-weight: 600;
+                        font-size: 16px;
+                        transition: all 0.3s ease;
+                        pointer-events: none;
+                    }
+    
+                    &:focus+&__labelape,
+                    &:not(:placeholder-shown)+&__labelape {
+                        top: 55px;
+                        left: 23%;
+                        font-size: 12px;
+                        color: $color-marron-texto;
+                    }
+                }
+            }
+
+            &__cont3 {
+                @include ancho-alto (55%, auto);
+                @include flex-justify-align (center, flex-end);
+                flex-direction: column;
+                gap: 10px;
+
+                &__button {
+                    @include ancho-alto (23rem, 5rem);
+                    @include fonts (1.8rem, $font-parrafo, 600, none);
+                    color: $color-marron-texto;
+                    border-radius: 10px;
+                    border: 2px solid $color-marron-texto;
+                    background-color: transparent;
+
+                    &:hover {
+                        color: #b65e7a;
+                        border: 2px solid #b65e7a;
+                        @include transicion-button-3s;
+                    }
+                }
+
+                &__contra {
+                    @include fonts (1.5rem, $font-parrafo, 600, none);
+                    color: $color-marron-texto;
+
+                    &:hover {
+                        color: #b65e7a;
+                        @include transicion-4segun;
+                    }
+                }
+
+                &__creacue {
+                    @include fonts (1.5rem, $font-parrafo, 600, none);
+                    color: $color-marron-texto;
+
+                    &:hover {
+                        color: #b65e7a;
+                        @include transicion-4segun;
+                    }
+                }
             }
         }
     }
 
-    &__formulario {
-        @include ancho-alto (60%, 778px);
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        &__caja {
-            @include ancho-alto (700px, 500px);
-            @include box-shadow-login;
-            border-radius: 2%;
-            @include flex-justify-align (center, center);
-            flex-direction: column;
+    &__containerpri2 {
+        grid-column: span 6;
 
-            h1 {
-                @include fonts (3.5rem, $font-titulo, 600, none);
-                transform: scaleY(1.2);
-                color: $color-marron-texto;
-            }
-
-            &__username {
-                @include fonts (1.5rem, $font-parrafo, 600, none);
-
-                .input-box {
-                    @include ancho-alto (300px, 40px);
-                    background-color: transparent;
-                    border: none;
-                    border-bottom: 2px solid $color-marron-texto;
-
-                    &:focus {
-                        -webkit-transition: all 0.4s ease-out;
-                        -moz-transition: all 0.4s ease-out;
-                        -ms-transition: all 0.4s ease-out;
-                        -o-transition: all 0.4s ease-out;
-                        transition: all 0.4s ease-out;
-                        border-bottom: 2px solid green;
-                    }
-                }
-            }
-
-            &__contrasena {
-                @include fonts (1.5rem, $font-parrafo, 600, none);
-
-                .input-box {
-                    @include ancho-alto (300px, 40px);
-                    background-color: transparent;
-                    border: none;
-                    border-bottom: 2px solid $color-marron-texto;
-
-
-                    &:focus {
-                        -webkit-transition: all 0.4s ease-out;
-                        -moz-transition: all 0.4s ease-out;
-                        -ms-transition: all 0.4s ease-out;
-                        -o-transition: all 0.4s ease-out;
-                        transition: all 0.4s ease-out;
-                        border-bottom: 2px solid green;
-
-                        
-                    }
-
-                    &::after {
-                        border: none;
-                    }
-                }
-            }
+        &__ima {
+            @include ancho-alto (100%, 700px);
+            object-fit: cover;
         }
-
-
-
-
     }
 }

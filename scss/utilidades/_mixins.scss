@@ -156,6 +156,12 @@
     box-shadow: $seee;
 }
 
+@mixin box-shadow2 {
+    -webkit-box-shadow: inset 0px 0px 8px -1px rgba(66, 68, 90, 1);
+    -moz-box-shadow: inset 0px 0px 8px -1px rgba(66, 68, 90, 1);
+    box-shadow: inset 0px 0px 8px -1px rgba(66, 68, 90, 1);
+}
+
 // transiciones //
 
 @mixin transicion-3segun {
@@ -183,19 +189,46 @@
 }
 
 @mixin fondo-maps-color-piel {
-    background: 
-    conic-gradient(#FFEBD8 25%, #0000 0) 0 0/calc(2*74px) calc(74px/9.5),
-    conic-gradient(#FFEBD8 25%, #0000 0) 0 0/calc(74px/9.5) calc(2*74px),
-    repeating-conic-gradient(#0000 0 25%, #FFEBD8 0 50%) 74px 0 /calc(2*74px) calc(2*74px),
-    radial-gradient(50% 50%, #E2D1C0 98%, #FFEBD8) 0 0/74px 74px;
+    background:
+        conic-gradient(#FFEBD8 25%, #0000 0) 0 0/calc(2*74px) calc(74px/9.5),
+        conic-gradient(#FFEBD8 25%, #0000 0) 0 0/calc(74px/9.5) calc(2*74px),
+        repeating-conic-gradient(#0000 0 25%, #FFEBD8 0 50%) 74px 0 /calc(2*74px) calc(2*74px),
+        radial-gradient(50% 50%, #E2D1C0 98%, #FFEBD8) 0 0/74px 74px;
 }
 
 @mixin fondo-maps-color-verde {
     background:
-		  conic-gradient(#F2C18D 25%,#0000 0) 0 0/calc(2*37px) calc(37px/9.5),
-		  conic-gradient(#F2C18D 25%,#0000 0) 0 0/calc(37px/9.5) calc(2*37px),
-		  repeating-conic-gradient(#0000 0 25%,#F2C18D 0 50%) 
-		   37px 0 /calc(2*37px) calc(2*37px),
-		  radial-gradient(50% 50%,#F6F193 98%,#F2C18D) 
-		   0 0/37px 37px;
+        conic-gradient(#F2C18D 25%, #0000 0) 0 0/calc(2*37px) calc(37px/9.5),
+        conic-gradient(#F2C18D 25%, #0000 0) 0 0/calc(37px/9.5) calc(2*37px),
+        repeating-conic-gradient(#0000 0 25%, #F2C18D 0 50%) 37px 0 /calc(2*37px) calc(2*37px),
+        radial-gradient(50% 50%, #F6F193 98%, #F2C18D) 0 0/37px 37px;
+}
+
+@mixin fondo-circulos-contacto {
+    background:
+        conic-gradient(#FFFFFF 25%, #0000 0) 0 0/calc(2*38px) calc(38px/9.5),
+        conic-gradient(#FFFFFF 25%, #0000 0) 0 0/calc(38px/9.5) calc(2*38px),
+        repeating-conic-gradient(#0000 0 25%, #FFFFFF 0 50%) 38px 0 /calc(2*38px) calc(2*38px),
+        radial-gradient(50% 50%, #F2DEDC 98%, #FFFFFF) 0 0/38px 38px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 15px 0px rgba(66, 68, 90, 1);
+}
+
+@mixin fondo-circulos-contactov2 {
+    background:
+        conic-gradient(#FFECEC 25%, #0000 0) 0 0/calc(2*32px) calc(32px/9.5),
+        conic-gradient(#FFECEC 25%, #0000 0) 0 0/calc(32px/9.5) calc(2*32px),
+        repeating-conic-gradient(#0000 0 25%, #FFECEC 0 50%) 32px 0 /calc(2*32px) calc(2*32px),
+        radial-gradient(50% 50%, #FFBABA 98%, #FFECEC) 0 0/32px 32px;
+}
+
+@mixin fondo-rayas-contacto {
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 38px, #D4BCBC 38px, #D4BCBC 76px);
+    background-color: #E8E8F1;
+}
+
+@mixin fondo-rayas-contactov2 {
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 32px, #FFBABA 32px, #FFBABA 64px);
+    background-color: #FFECEC;
 }

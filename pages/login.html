@@ -33,7 +33,8 @@
               <i class="fas fa-chevron-down"></i>
             </a>
             <ul class="navbar-pc__dropdown-menu dropdown-menu">
-              <li class="navbar-pc__dropdown-item"><a class="dropdown-item" href="../pages/pagina-pasteleria.html">Pasteleria</a></li>
+              <li class="navbar-pc__dropdown-item"><a class="dropdown-item"
+                  href="../pages/pagina-pasteleria.html">Pasteleria</a></li>
               <li class="navbar-pc__dropdown-item"><a class="dropdown-item" href="#">Sandwiches de
                   Miga</a>
               </li>
@@ -289,46 +290,46 @@
   <!-- Fin Header -->
   <!-- seccion de inicio de sesion -->
   <main class="main-content">
-    <section class="seccion-login">
-      <div class="seccion-login__container">
-        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-login" data-bs-ride="carousel">
+    <section class="sec-login">
+      <form class="sec-login__containerpri" action="input">
+        <div class="sec-login__containerpri__base">
+          <div class="sec-login__containerpri__base__cont1">
+            <h1 class="sec-login__containerpri__base__cont1__titu">Iniciar Sesión</h1>
+          </div>
+          <div class="sec-login__containerpri__base__cont2">
+            <div class="sec-login__containerpri__base__cont2">
+              <input class="sec-login__containerpri__base__cont2__input" type="text" placeholder=" " id="usuario"
+                name="usuario" required>
+              <label class="sec-login__containerpri__base__cont2__input__labelapeone" for="usuario">Correo Electrónico</label>
+              <input class="sec-login__containerpri__base__cont2__input" type="password" placeholder=" " id="password"
+                name="password" required>
+              <label class="sec-login__containerpri__base__cont2__input__labelape" for="label-password">Contraseña</label>
+            </div>
+          </div>
+          <div class="sec-login__containerpri__base__cont3">
+            <input class="sec-login__containerpri__base__cont3__button" type="button" value="Iniciar Seccion">
+            <a class="sec-login__containerpri__base__cont3__contra" href="#">¿Has olvidado tu contraseña?</a>
+            <a class="sec-login__containerpri__base__cont3__creacue" href="#">Crear una Cuenta</a>
+          </div>
+        </div>
+      </form>
+      <div class="sec-login__containerpri2">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active carou-login-item" data-bs-interval="10000">
-              <img src="../assets/logos_y_menus/katyka-logo-original.jpg" class="d-block w-100 carou-login-item__imagen"
-                alt="Katyka Delicias Artesanales">
+            <div class="carousel-item active">
+              <img src="../assets/logos_y_menus/katyka-logo-original.jpg"
+                class="d-block w-100 sec-login__containerpri2__ima" alt="Logo Katyka">
             </div>
-            <div class="carousel-item carou-login-item" data-bs-interval="10000">
-              <img src="../assets/cakes_and_more/pastel-choco.png" class="d-block w-100 carou-login-item__imagen"
-                alt="Pastel de chocolate carousel">
+            <div class="carousel-item">
+              <img src="../assets/logos_y_menus/pasteleria-edificio2.jpg"
+                class="d-block w-100 sec-login__containerpri2__ima" alt="Edificio Pasteleria">
             </div>
-            <div class="carousel-item carou-login-item" data-bs-interval="10000">
-              <img src="../assets/cakes_and_more/pastel-crema.png" class="d-block w-100 carou-login-item__imagen"
-               alt="Pastel de crema">
+            <div class="carousel-item">
+              <img src="../assets/logos_y_menus/acerca-de-ima2.webp" class="d-block w-100 sec-login__containerpri2__ima"
+                alt="Pasteleros">
             </div>
           </div>
         </div>
-      </div>
-      <div class="seccion-login__formulario">
-        <form class="seccion-login__formulario__caja" action="post">
-          <h1 class="seccion-login__formulario__titular">Inicio de Sesion</h1>
-          <div class="seccion-login__formulario__caja__username">
-            <label>Nombre de Usuario:</label>
-            <input class="input-box" type="text" required>
-          </div>
-          <div class="seccion-login__formulario__caja__contrasena">
-            <label>Contraseña:</label>
-            <input class="input-box" type="password" required>
-          </div>
-          <button type="button" class="btn btn-outline-primary">Iniciar Sesion</button>
-          <div class="seccion-login__formulario__caja__recordar">
-            <a href="#">¿Olvidades tu Contraseña?</a>
-          </div>
-          <div class="seccion-login__formulario__caja__registro">
-            <a href="#">
-              <h2>Registrate</h2>
-            </a>
-          </div>
-        </form>
       </div>
     </section>
     <!-- fin de inicio de sesion -->
