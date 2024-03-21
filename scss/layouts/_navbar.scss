@@ -157,13 +157,15 @@
 
 .cantop {
   @include flex-justify-align (start, end);
+  @include fondo-circulos-contactov2;
 
   &-body {
     @include flex-justify-align (flex-start, flex-start);
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     max-height:  11rem;
     @include box-shadow-login;
+    background-color: #fff;
 
     &-title {
       @include fonts (3rem, $font-titulo, 600, none);
@@ -197,6 +199,7 @@
 }
 
 .canendup {
+  @include fondo-circulos-contacto;
   &__header {
     &__title {
       @include fonts (2rem, $font-titulo, 600, none);
@@ -207,6 +210,7 @@
 }
 
 .canend {
+  @include fondo-circulos-contactov2;
   &__header {
     &__title {
       @include fonts (2rem, $font-titulo, 600, none);
@@ -229,6 +233,22 @@
 }
 
 @media screen and (max-width: 1279px) {
+
+  .cantop {
+  
+    &-body {
+      width: 350px;
+      max-height: 10rem;
+      
+      &-title {
+        @include fonts (2.5rem, $font-titulo, 600, none);
+      }
+  
+      &__bar {
+        @include fonts (1.8rem, $font-parrafo, 400, none);
+      }
+    }
+  }
 
   .nav-pc {
 

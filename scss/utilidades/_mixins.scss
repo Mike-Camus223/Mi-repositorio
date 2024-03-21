@@ -190,10 +190,10 @@
 
 @mixin fondo-maps-color-piel {
     background:
-        conic-gradient(#FFEBD8 25%, #0000 0) 0 0/calc(2*74px) calc(74px/9.5),
-        conic-gradient(#FFEBD8 25%, #0000 0) 0 0/calc(74px/9.5) calc(2*74px),
-        repeating-conic-gradient(#0000 0 25%, #FFEBD8 0 50%) 74px 0 /calc(2*74px) calc(2*74px),
-        radial-gradient(50% 50%, #E2D1C0 98%, #FFEBD8) 0 0/74px 74px;
+        conic-gradient(#FFEBD8 25%, #0000 0) 0 0/calc(2*32px) calc(32px/9.5),
+        conic-gradient(#FFEBD8 25%, #0000 0) 0 0/calc(32px/9.5) calc(2*32px),
+        repeating-conic-gradient(#0000 0 25%, #FFEBD8 0 50%) 32px 0 /calc(2*32px) calc(2*32px),
+        radial-gradient(50% 50%, #E2D1C0 98%, #FFEBD8) 0 0/32px 32px;
 }
 
 @mixin fondo-maps-color-verde {

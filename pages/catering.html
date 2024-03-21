@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Katyka - Catering</title>
+    <!-- Carga de links: Bootstrap, css , fonts e iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="navbar-anuncio">
+            <a class="navbar-anuncio__letra" href="../pages/pagina-pasteleria.html">OFERTAS Y DESCUENTOS 2024!</a>
+        </div>
+        <div class="nav-pc">
+            <nav class="nav-pc__baseone">
+                <ul class="nav-pc__baseone__left">
+                    <li class="nav-pc__baseone__left-item dropdown">
+                        <a class="nav-pc__baseone__left__link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="nav-pc__baseone__left__dropdown-menu dropdown-menu">
+                            <li class="nav-pc__baseone__left__dropdown-item"><a class="dropdown-item"
+                                    href="../pages/pagina-pasteleria.html">Pasteleria</a></li>
+                            <li class="nav-pc__baseone__left__dropdown-item"><a class="dropdown-item"
+                                    href="../pages/pagina-sandwiches-miga.html">Sandwiches de
+                                    Miga</a>
+                            </li>
+                            <li class="nav-pc__baseone__left__dropdown-item"><a class="dropdown-item"
+                                    href="../pages/pagina-boxandlaunch.html">Box y Desayunos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-pc__baseone__left__right-item">
+                        <a class="nav-pc__baseone__left__link" aria-current="page"
+                            href="../pages/visitenos.html">Visitenos</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="nav-pc__logo" href="../index.html">
+                <img class="nav-pc__logo__img" src="../assets/logos_y_menus/circle-logo.png" alt="logo katyka">
+            </a>
+            <nav class="nav-pc__basetwo">
+                <ul class="nav-pc__basetwo__right">
+                    <li class="nav-pc__basetwo__right-item dropdown">
+                        <a class="nav-pc__basetwo__right__link" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ¿Quienes somos?
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="nav-pc__basetwo__right__dropdown-menu dropdown-menu">
+                            <li class="nav-pc__basetwo__right__dropdown-item"><a class="dropdown-item"
+                                    href="../pages/acercade.html">Acerca de Nosotros</a>
+                            </li>
+                            <li class="nav-pc__basetwo__right__dropdown-item"><a class="dropdown-item"
+                                    href="../pages/contactanos.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-pc__basetwo__right-item">
+                        <a class="nav-pc__basetwo__link" aria-current="page" href="../pages/catering.html">Catering</a>
+                    </li>
+                </ul>
+                <ul class="nav-pc__basetwo__icon">
+                    <button class="nav-pc__basetwo__icon__logi">
+                        <a class="nav-link" aria-current="page" href="../pages/login.html">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.7477 14.5313C18.0722 13.7867 18.9737 12.3601 18.9737 10.7377C18.9737 8.33929 17.022 6.37988 14.6158 6.37988C12.2174 6.37988 10.2579 8.33146 10.2579 10.7377C10.2579 12.3679 11.1593 13.7867 12.4839 14.5313C9.7877 15.4248 7.83594 17.972 7.83594 20.9661H9.40351C9.40351 18.0896 11.7393 15.7539 14.6158 15.7539C17.4923 15.7539 19.8279 18.0896 19.8279 20.9661H21.3954C21.3954 17.972 19.4439 15.4326 16.7477 14.5313ZM14.6158 7.94745C16.152 7.94745 17.4061 9.20146 17.4061 10.7377C17.4061 12.2739 16.152 13.528 14.6158 13.528C13.0796 13.528 11.8255 12.2739 11.8255 10.7377C11.8255 9.20146 13.0796 7.94745 14.6158 7.94745Z"
+                                    fill="#000"></path>
+                                <circle cx="14.5" cy="14.5" r="13.75" stroke="#000" stroke-width="1.5">
+                                </circle>
+                            </svg>
+                        </a>
+                    </button>
+                    <button class="btn nav-pc__basetwo__icon__searchb" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                        <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.1726 7.83789C10.3333 7.83789 8.0293 10.1479 8.0293 12.9809C8.0293 15.8201 10.3394 18.124 13.1726 18.124C14.385 18.124 15.5003 17.7012 16.3802 16.9955L20.5471 21.1623L21.4051 20.3043L17.2316 16.131C17.9088 15.2598 18.3134 14.1664 18.3158 12.9816L18.3158 12.9809C18.3158 10.1418 16.0057 7.83789 13.1726 7.83789ZM9.2404 12.9809C9.2404 10.8152 11.0067 9.04897 13.1726 9.04897C15.3384 9.04897 17.1047 10.8152 17.1047 12.9809C17.1047 15.1467 15.3384 16.9129 13.1726 16.9129C11.0067 16.9129 9.2404 15.1467 9.2404 12.9809Z"
+                                fill="#000"></path>
+                            <path
+                                d="M16.3802 16.9955L16.4863 16.8895L16.3912 16.7944L16.2863 16.8785L16.3802 16.9955ZM20.5471 21.1623L20.4411 21.2683L20.5471 21.3744L20.6532 21.2683L20.5471 21.1623ZM21.4051 20.3043L21.5112 20.4104L21.6173 20.3043L21.5112 20.1982L21.4051 20.3043ZM17.2316 16.131L17.1132 16.0389L17.032 16.1435L17.1256 16.2371L17.2316 16.131ZM18.3158 12.9816L18.1658 12.9812V12.9813L18.3158 12.9816ZM18.3158 12.9809L18.4658 12.9814V12.9809H18.3158ZM8.1793 12.9809C8.1793 10.2306 10.4163 7.98789 13.1726 7.98789V7.68789C10.2504 7.68789 7.8793 10.0651 7.8793 12.9809H8.1793ZM13.1726 17.974C10.4221 17.974 8.1793 15.7371 8.1793 12.9809H7.8793C7.8793 15.9031 10.2567 18.274 13.1726 18.274V17.974ZM16.2863 16.8785C15.432 17.5637 14.3495 17.974 13.1726 17.974V18.274C14.4205 18.274 15.5687 17.8387 16.474 17.1125L16.2863 16.8785ZM20.6532 21.0562L16.4863 16.8895L16.2741 17.1016L20.4411 21.2683L20.6532 21.0562ZM21.2991 20.1982L20.4411 21.0562L20.6532 21.2683L21.5112 20.4104L21.2991 20.1982ZM17.1256 16.2371L21.2991 20.4104L21.5112 20.1982L17.3377 16.0249L17.1256 16.2371ZM18.1658 12.9813C18.1634 14.1316 17.7708 15.193 17.1132 16.0389L17.3501 16.2231C18.0469 15.3267 18.4633 14.2012 18.4658 12.9819L18.1658 12.9813ZM18.1658 12.9805L18.1658 12.9812L18.4658 12.982L18.4658 12.9814L18.1658 12.9805ZM13.1726 7.98789C15.923 7.98789 18.1658 10.2248 18.1658 12.9809H18.4658C18.4658 10.0588 16.0885 7.68789 13.1726 7.68789V7.98789ZM13.1726 8.89897C10.9239 8.89897 9.0904 10.7324 9.0904 12.9809H9.3904C9.3904 10.8981 11.0896 9.19897 13.1726 9.19897V8.89897ZM17.2547 12.9809C17.2547 10.7324 15.4213 8.89897 13.1726 8.89897V9.19897C15.2556 9.19897 16.9547 10.8981 16.9547 12.9809H17.2547ZM13.1726 17.0629C15.4213 17.0629 17.2547 15.2295 17.2547 12.9809H16.9547C16.9547 15.0638 15.2556 16.7629 13.1726 16.7629V17.0629ZM9.0904 12.9809C9.0904 15.2295 10.9239 17.0629 13.1726 17.0629V16.7629C11.0896 16.7629 9.3904 15.0638 9.3904 12.9809H9.0904Z"
+                                fill="#000"></path>
+                            <circle cx="14.6895" cy="14.5" r="13.75" stroke="#000" stroke-width="1.5">
+                            </circle>
+                        </svg>
+                    </button>
+                    <div class="offcanvas offcanvas-top cantop" tabindex="-1" id="offcanvasTop"
+                        aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasTopLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body cantop-body">
+                            <h5 class="cantop-body-title" id="offcanvasTopLabel">Busqueda</h5>
+                            <div>
+                                <a class="cantop-body__search" href="#">
+                                    <i class="fa-solid fa-magnifying-glass cantop-body__search__ico"></i>
+                                    <input class="cantop-body__bar" type="search" name="search-bar-top"
+                                        placeholder="Buscar" id="search-bar-top">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn nav-pc__basetwo__icon__carrito" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.4267 22.8238C12.2665 22.8238 12.9472 22.143 12.9472 21.3032C12.9472 20.4634 12.2665 19.7827 11.4267 19.7827C10.587 19.7827 9.90625 20.4634 9.90625 21.3032C9.90625 22.143 10.587 22.8238 11.4267 22.8238Z"
+                                fill="#000"></path>
+                            <path
+                                d="M17.5734 22.8238C18.4132 22.8238 19.0939 22.143 19.0939 21.3032C19.0939 20.4634 18.4132 19.7827 17.5734 19.7827C16.7336 19.7827 16.0527 20.4634 16.0527 21.3032C16.0527 22.143 16.7336 22.8238 17.5734 22.8238Z"
+                                fill="#000"></path>
+                            <path
+                                d="M8.65168 7.83789H7.05273L7.54662 10.4322L8.63599 16.1538L9.00435 18.0819L9.12203 18.7168H20.338L21.9134 10.4322H9.13772L8.65168 7.83789ZM20.0322 11.9997L19.0525 17.1492H10.4309L9.45116 11.9997H20.0322Z"
+                                fill="#000"></path>
+                            <circle cx="14.5" cy="14.5" r="13.7" stroke="#000" stroke-width="1.5">
+                            </circle>
+                        </svg>
+                    </button>
+                    <div class="offcanvas offcanvas-end canendup" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header canendup__header">
+                            <h3 class="offcanvas-title canendup__header__title" id="offcanvasRightLabel">Sus Productos:
+                            </h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="div" style="background-color: purple; color:#fff; height: 10rem;">
+                                <h4>Seccion de Productos del Carrito</h4>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <!-- navbar-mobile //  -->
+        <div class="navbar-mobile">
+            <nav class="navbar navbar-expand-xlg">
+                <div class="container-fluid">
+                    <a class="navbar-brand mx-auto" href="../index.html">
+                        <img src="../assets/logos_y_menus/logo_kattyka2.png" alt="Logo-kattyka">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="boton-barrita" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <div class="search-button">
+                            <button class="search-button__button" id="search-button">
+                                <svg width="30" height="29" viewBox="0 0 30 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.1726 7.83789C10.3333 7.83789 8.0293 10.1479 8.0293 12.9809C8.0293 15.8201 10.3394 18.124 13.1726 18.124C14.385 18.124 15.5003 17.7012 16.3802 16.9955L20.5471 21.1623L21.4051 20.3043L17.2316 16.131C17.9088 15.2598 18.3134 14.1664 18.3158 12.9816L18.3158 12.9809C18.3158 10.1418 16.0057 7.83789 13.1726 7.83789ZM9.2404 12.9809C9.2404 10.8152 11.0067 9.04897 13.1726 9.04897C15.3384 9.04897 17.1047 10.8152 17.1047 12.9809C17.1047 15.1467 15.3384 16.9129 13.1726 16.9129C11.0067 16.9129 9.2404 15.1467 9.2404 12.9809Z"
+                                        fill="#000"></path>
+                                    <path
+                                        d="M16.3802 16.9955L16.4863 16.8895L16.3912 16.7944L16.2863 16.8785L16.3802 16.9955ZM20.5471 21.1623L20.4411 21.2683L20.5471 21.3744L20.6532 21.2683L20.5471 21.1623ZM21.4051 20.3043L21.5112 20.4104L21.6173 20.3043L21.5112 20.1982L21.4051 20.3043ZM17.2316 16.131L17.1132 16.0389L17.032 16.1435L17.1256 16.2371L17.2316 16.131ZM18.3158 12.9816L18.1658 12.9812V12.9813L18.3158 12.9816ZM18.3158 12.9809L18.4658 12.9814V12.9809H18.3158ZM8.1793 12.9809C8.1793 10.2306 10.4163 7.98789 13.1726 7.98789V7.68789C10.2504 7.68789 7.8793 10.0651 7.8793 12.9809H8.1793ZM13.1726 17.974C10.4221 17.974 8.1793 15.7371 8.1793 12.9809H7.8793C7.8793 15.9031 10.2567 18.274 13.1726 18.274V17.974ZM16.2863 16.8785C15.432 17.5637 14.3495 17.974 13.1726 17.974V18.274C14.4205 18.274 15.5687 17.8387 16.474 17.1125L16.2863 16.8785ZM20.6532 21.0562L16.4863 16.8895L16.2741 17.1016L20.4411 21.2683L20.6532 21.0562ZM21.2991 20.1982L20.4411 21.0562L20.6532 21.2683L21.5112 20.4104L21.2991 20.1982ZM17.1256 16.2371L21.2991 20.4104L21.5112 20.1982L17.3377 16.0249L17.1256 16.2371ZM18.1658 12.9813C18.1634 14.1316 17.7708 15.193 17.1132 16.0389L17.3501 16.2231C18.0469 15.3267 18.4633 14.2012 18.4658 12.9819L18.1658 12.9813ZM18.1658 12.9805L18.1658 12.9812L18.4658 12.982L18.4658 12.9814L18.1658 12.9805ZM13.1726 7.98789C15.923 7.98789 18.1658 10.2248 18.1658 12.9809H18.4658C18.4658 10.0588 16.0885 7.68789 13.1726 7.68789V7.98789ZM13.1726 8.89897C10.9239 8.89897 9.0904 10.7324 9.0904 12.9809H9.3904C9.3904 10.8981 11.0896 9.19897 13.1726 9.19897V8.89897ZM17.2547 12.9809C17.2547 10.7324 15.4213 8.89897 13.1726 8.89897V9.19897C15.2556 9.19897 16.9547 10.8981 16.9547 12.9809H17.2547ZM13.1726 17.0629C15.4213 17.0629 17.2547 15.2295 17.2547 12.9809H16.9547C16.9547 15.0638 15.2556 16.7629 13.1726 16.7629V17.0629ZM9.0904 12.9809C9.0904 15.2295 10.9239 17.0629 13.1726 17.0629V16.7629C11.0896 16.7629 9.3904 15.0638 9.3904 12.9809H9.0904Z"
+                                        fill="#000"></path>
+                                    <circle cx="14.6895" cy="14.5" r="13.75" stroke="#000" stroke-width="1.5">
+                                    </circle>
+                                </svg>
+                            </button>
+                            <input class="search-button__search-bar" type="text" id="search-input" placeholder="Buscar">
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Productos
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../pages/pagina-pasteleria.html">Pasteleria</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../pages/pagina-sandwiches-miga.html">Sandwiches
+                                            de Miga</a></li>
+                                    <li><a class="dropdown-item" href="../pages/pagina-boxandlaunch.html">Box y
+                                            Desayunos</a></li>
+                                </ul>
+                            </li>
+                            <hr class="hr" />
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" aria-current="page"
+                                    href="../pages/visitenos.html">Visitenos</a>
+                            </li>
+                            <hr class="hr" />
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    ¿Quienes somos?
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../pages/acercade.html">Acerca de Nosotros</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="../pages/contactanos.html">Contacto</a></li>
+                                </ul>
+                            </li>
+                            <hr class="hr" />
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/catering.html">Catering</a>
+                            </li>
+                            <li class="nav-item">
+                                <div class="login-icono">
+                                    <a href="../pages/login.html">
+                                        <svg class="login-icono__icon" width="29" height="29" viewBox="0 0 29 29"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.7477 14.5313C18.0722 13.7867 18.9737 12.3601 18.9737 10.7377C18.9737 8.33929 17.022 6.37988 14.6158 6.37988C12.2174 6.37988 10.2579 8.33146 10.2579 10.7377C10.2579 12.3679 11.1593 13.7867 12.4839 14.5313C9.7877 15.4248 7.83594 17.972 7.83594 20.9661H9.40351C9.40351 18.0896 11.7393 15.7539 14.6158 15.7539C17.4923 15.7539 19.8279 18.0896 19.8279 20.9661H21.3954C21.3954 17.972 19.4439 15.4326 16.7477 14.5313ZM14.6158 7.94745C16.152 7.94745 17.4061 9.20146 17.4061 10.7377C17.4061 12.2739 16.152 13.528 14.6158 13.528C13.0796 13.528 11.8255 12.2739 11.8255 10.7377C11.8255 9.20146 13.0796 7.94745 14.6158 7.94745Z"
+                                                fill="#000"></path>
+                                            <circle cx="14.5" cy="14.5" r="13.75" stroke="#000" stroke-width="1.5">
+                                            </circle>
+                                        </svg>
+                                    </a>
+                                    <a class="login-icono__link" href="../pages/login.html">Iniciar Sesion</a>
+                                </div>
+                            </li>
+                            <button class="btn carrito-mobile" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.4267 22.8238C12.2665 22.8238 12.9472 22.143 12.9472 21.3032C12.9472 20.4634 12.2665 19.7827 11.4267 19.7827C10.587 19.7827 9.90625 20.4634 9.90625 21.3032C9.90625 22.143 10.587 22.8238 11.4267 22.8238Z"
+                                        fill="#000"></path>
+                                    <path
+                                        d="M17.5734 22.8238C18.4132 22.8238 19.0939 22.143 19.0939 21.3032C19.0939 20.4634 18.4132 19.7827 17.5734 19.7827C16.7336 19.7827 16.0527 20.4634 16.0527 21.3032C16.0527 22.143 16.7336 22.8238 17.5734 22.8238Z"
+                                        fill="#000"></path>
+                                    <path
+                                        d="M8.65168 7.83789H7.05273L7.54662 10.4322L8.63599 16.1538L9.00435 18.0819L9.12203 18.7168H20.338L21.9134 10.4322H9.13772L8.65168 7.83789ZM20.0322 11.9997L19.0525 17.1492H10.4309L9.45116 11.9997H20.0322Z"
+                                        fill="#000"></path>
+                                    <circle cx="14.5" cy="14.5" r="13.7" stroke="#000" stroke-width="1.5">
+                                    </circle>
+                                </svg>
+                            </button>
+                            <div class="offcanvas offcanvas-bottom canend" tabindex="-1" id="offcanvasBottom"
+                                aria-labelledby="offcanvasBottomLabel">
+                                <div class="offcanvas-header canend__header">
+                                    <h3 class="offcanvas-title canend__header__title" id="offcanvasBottomLabel">Sus
+                                        Productos:</h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body small">
+                                    <div class="div" style="background-color: purple; color:#fff; height: 10rem;">
+                                        <h4>Seccion de Productos del Carrito</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Fin Header -->
+    <!-- Comienzo Main -->
+    <main class="main-content">
+        <section class="seccion-acercade">
+            <div class="seccion-acercade__banner">
+                <img class="seccion-acercade__banner__imagen" src="../assets/logos_y_menus/catering-banner.jpg"
+                    alt="Banner Acerca de Katyka">
+                <h1 class="seccion-acercade__banner__titulo">Regalos y Eventos</h1>
+            </div>
+            <div class="sec-paginacatering__duocontainer2">
+                <div class="sec-paginacatering__duocontainer2__container1">
+                    <img class="sec-paginacatering__duocontainer2__container1__imagen"
+                        src="../assets/logos_y_menus/catering-div1.jpg" alt="Pasteleria katyka">
+                </div>
+                <div class="sec-paginacatering__duocontainer2__container2">
+                    <h2 class="sec-paginacatering__duocontainer2__container2__titu">Catering y Eventos</h2>
+                    <p class="sec-paginacatering__duocontainer2__container2__parrafo">En Katyka's Delicias Artesanales,
+                        ofrecemos un catering completo con una amplia variedad de delicias artesanales, desde pasteles
+                        personalizados hasta bocaditos salados, dulces, cupcakes y chocolates con formas encantadoras.
+                        Nuestro equipo profesional se encarga de cada detalle para que tu evento sea un éxito.
+                        Contáctanos y déjanos endulzar tu próxima celebración.
+                    </p>
+                    <a href="#">
+                        <button type="button" class="sec-paginacatering__duocontainer2__container2__button">
+                            REALIZAR PEDIDO
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="sec-paginacatering__duocontainer">
+                <div class="sec-paginacatering__duocontainer__container1">
+                    <h2 class="sec-paginacatering__duocontainer__container1__titu">Eventos Empresariales</h2>
+                    <p class="sec-paginacatering__duocontainer__container1__parrafo">Los clásicos de Katyka's Delicias
+                        Artesanales son
+                        los regalos más sabrosos, ya sea que quieras alegrarle el día a alguien o impresionar a un socio
+                        corporativo. Nuestro equipo de catering y eventos está listo para ayudarlo a iniciar su pedido:
+                        desde estilos, colores y tamaños personalizados hasta empaques personalizados, podemos
+                        encontrarle el regalo perfecto. ¡Llena el formulario para comenzar!
+                    </p>
+                    <a href="#">
+                        <button type="button" class="sec-paginacatering__duocontainer__container1__button">HACER FORMULARIO
+                        </button>
+                    </a>
+                </div>
+                <div class="sec-paginacatering__duocontainer__container2">
+                    <img class="sec-paginacatering__duocontainer__container2__imagen"
+                        src="../assets/logos_y_menus/catering-div2.jpg" alt="Pasteleria katyka">
+                </div>
+            </div>
+        </section>
+        <!-- inicio de seccion productos -->
+        <section class="seccion-de-productos">
+            <div class="seccion-de-productos-titulares">
+                <h2 class="seccion-de-productos-titulares__titulo">Categorías</h2>
+                <p class="seccion-de-productos-titulares__texto">Tenemos varios productos para diferentes ocasiones.</p>
+            </div>
+            <div class="seccion-productos">
+                <div>
+                    <article class="seccion-productos__items">
+                        <a href="../pages/pagina-pasteleria.html">
+                            <img class="seccion-productos__items__imagen" src="../assets/cakes_and_more/sslide1.png"
+                                alt="Pasteleria">
+                        </a>
+                    </article>
+                    <a href="../pages/pagina-pasteleria.html">
+                        <h2 class="seccion-productos__titulo">Pasteleria</h2>
+                    </a>
+                </div>
+                <div>
+                    <article class="seccion-productos__items">
+                        <a href="../pages/pagina-sandwiches-miga.html">
+                            <img class="seccion-productos__items__imagen" src="../assets/sandwichs/sand2.jpg"
+                                alt="Pasteleria">
+                        </a>
+                    </article>
+                    <a href="../pages/pagina-sandwiches-miga.html">
+                        <h2 class="seccion-productos__titulo">Sandwiches de Miga</h2>
+                    </a>
+                </div>
+                <div>
+                    <article class="seccion-productos__items">
+                        <a href="../pages/pagina-boxandlaunch.html">
+                            <img class="seccion-productos__items__imagen" src="../assets/box_and_launchs/box6.webp"
+                                alt="Pasteleria">
+                        </a>
+                    </article>
+                    <a href="../pages/pagina-boxandlaunch.html">
+                        <h2 class="seccion-productos__titulo">Box & Lunch</h2>
+                    </a>
+                </div>
+                <div>
+                    <article class="seccion-productos__items">
+                        <a href="#">
+                            <img class="seccion-productos__items__imagen" src="../assets/cakes_and_more/sslide4.png"
+                                alt="Pasteleria">
+                        </a>
+                    </article>
+                    <a href="#">
+                        <h2 class="seccion-productos__titulo">Cupcakes y Postrecillos</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- fin de seccion de productos -->
+    </main>
+    <!-- inicio footer -->
+    <footer>
+        <div class="footer-cuerpo">
+            <div class="footer-cuerpo__item-1">
+                <img class="footer-cuerpo__item-1__imagen" src="../assets/logos_y_menus/logo-katyka-blanco.png"
+                    alt="Logo pasteleria Katyka">
+                <div class="footer-cuerpo__item-1__container">
+                    <a href="#">
+                        <span class="footer-cuerpo__item-1__container__link">Acerca de Nosotros</span>
+                    </a>
+                    <div class="vr"
+                        style="color: #fff; height: 2rem; margin-left: 1rem; margin-right: 1rem; margin-top: 1rem;">
+                    </div>
+                    <a href="#">
+                        <span class="footer-cuerpo__item-1__container__link">Contacto</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-cuerpo__item-2">
+                <h4 class="footer-cuerpo__item-2__tituredes">Siguenos en Nuestras Redes:</h4>
+                <div class="footer-cuerpo__item-2__redes">
+                    <a class="footer-cuerpo__item-2__redes__icon" href="https://www.facebook.com/?locale=es_LA">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a class="footer-cuerpo__item-2__redes__icon" href="https://www.instagram.com/">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a class="footer-cuerpo__item-2__redes__icon" href="https://twitter.com/?lang=es">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                    <a class="footer-cuerpo__item-2__redes__icon" href="https://ar.pinterest.com/">
+                        <i class="fa-brands fa-square-pinterest"></i>
+                    </a>
+                </div>
+                <div class="footer-cuerpo__item-2__info">
+                    <ul>
+                        <li class="footer-cuerpo__item-2__info__icons">
+                            <i class="fa-brands fa-whatsapp"></i> +01 1112345678
+                        </li>
+                        <li class="footer-cuerpo__item-2__info__icons">
+                            <i class="fa-regular fa-envelope"></i> Katyka-mail@mail.com
+                        </li>
+                        <li class="footer-cuerpo__item-2__info__icons">
+                            <i class="fa-solid fa-location-dot"></i> Av. avenida 1234
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <h5 class="copyright__texto">© KATYKA 2024. All rights reserved.</h5>
+        </div>
+    </footer>
+    <!-- Scripts Necesarios -->
+    <script src="https://kit.fontawesome.com/373dade425.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
