@@ -1,15 +1,15 @@
 // anuncio navbar //
 
-.anuncio {
+.navbar-anuncio {
   @include position-relative (fixed, 0, null, 0, 0, 1000);
   @include flex (flex, center, center, null);
   @include anuncio-barra ($patron-anuncio-escala-de-rosas, null, 0.6rem, 3rem);
-  box-shadow: inset 0px 0px 32px -1px rgba(0,0,0,0.48);
+  box-shadow: inset 0px 0px 32px -1px rgba(0, 0, 0, 0.48);
 
   &__letra {
     @include anuncio-letra (0, medium, scaleY(0.9), 400, #fff);
     @include fonts (large, $font-parrafo, 500, null);
-    
+
     &:hover {
       color: #F6FDC3;
       transition: .25s ease;
@@ -17,75 +17,207 @@
   }
 }
 
-// navbar //
-
-.navbar-pc {
-  @include position-relative (fixed, 3rem, null, 0, 0, 1000);
+.nav-pc {
+  @include ancho-alto (100%, 6rem);
   background-color: #fff;
-  @include medida-navbar (space-around, center, 0);
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  @include position-relative (fixed, 3rem, null, 0, 0, 1000);
+  height: 8rem;
+  @include flex-justify-align (space-between, center);
 
-  &__left {
-    @include links-flex-tamano-espacio (flex, large, 1.5rem);
+  &__baseone {
+    margin-left: 10%;
 
-    &-item:hover .dropdown-menu {
-      display: block;
+    &__left {
+      @include flex-justify-align (flex-start, center);
+      @include fonts (1.6rem, $font-parrafo, 400, none);
+      padding: 0;
+      margin: 0;
+      gap: 20px;
+
+      &-item:hover .dropdown-menu {
+        display: block;
+      }
+
+      &__dropdown-menu {
+        font-size: 1.6rem;
+        animation: .5s slideup;
+      }
+
+      &__link:hover {
+        @include flecha-color-transfor-transi (#ff6969, rotate(180deg), .25s ease);
+
+        & i.fa-chevron-down {
+          @include flecha-color-transfor-transi (#ff6969, rotate(180deg), .25s ease);
+        }
+      }
+
+      &__link:focus {
+        color: #ff6969;
+
+        & i.fa-chevron-down {
+          @include flecha-color-transfor-transi (#ff6969, rotate(270deg), .25s ease);
+        }
+      }
+
     }
   }
 
   &__logo {
-    width: 11rem;
+    @include flex-justify-align (center, center);
+    @include ancho-alto (11rem, 11rem);
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 45%;
+
+    &__img {
+      width: 9rem;
+      border-radius: 50%;
+    }
   }
 
-  &__base {
-    @include medida-navbar (null, null, null);
+  &__basetwo {
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+    gap: 20px;
 
-    & .social-icons {
-      @include links-flex-tamano-espacio (flex, null, 1rem);
+    &__link {
 
       &:hover {
         color: #ff6969;
+        transition: .25s ease;
+      }
+    }
+
+    &__right {
+      display: flex;
+      @include fonts (1.6rem, $font-parrafo, 400, none);
+      padding: 0;
+      margin: 0;
+      gap: 20px;
+
+      &-item:hover .dropdown-menu {
+        display: block;
       }
 
-      .carrito {
-        border: 0;
+      &:hover {
+        color: #ff6969;
+        @include transicion-4segun;
+      }
+
+      &__dropdown-menu {
+        font-size: 1.6rem;
+        animation: .5s slideup;
+      }
+
+      &__link:hover {
+        @include flecha-color-transfor-transi (#ff6969, rotate(180deg), .25s ease);
+
+        & i.fa-chevron-down {
+          @include flecha-color-transfor-transi (#ff6969, rotate(180deg), .25s ease);
+        }
+      }
+
+      &__link:focus {
+        color: #ff6969;
+
+        & i.fa-chevron-down {
+          @include flecha-color-transfor-transi (#ff6969, rotate(270deg), .25s ease);
+        }
+      }
+
+    }
+
+    &__icon {
+      @include links-flex-tamano-espacio (flex, null, 1rem);
+      padding: 0;
+      margin: 0;
+
+      &__logi {
         padding: 0;
+        margin: 0;
+        background-color: transparent;
+        border: none;
       }
-    }
-  }
 
-  &__right {
-    @include links-flex-tamano-espacio (flex, large, 1.5rem);
+      &__searchb {
+        padding: 0;
+        margin: 0;
+      }
 
-    &-item:hover .dropdown-menu {
-      display: block;
-    }
-  }
-
-  &__dropdown-menu {
-    font-size: large;
-    animation: .5s slideup;
-  }
-
-  &__link:hover {
-    @include flecha-color-transfor-transi (#ff6969, rotate(180deg), .25s ease);
-
-    & i.fa-chevron-down {
-      @include flecha-color-transfor-transi (#ff6969, rotate(180deg), .25s ease);
-    }
-  }
-
-  &__link:focus {
-    color: #ff6969;
-
-    & i.fa-chevron-down {
-      @include flecha-color-transfor-transi (#ff6969, rotate(270deg), .25s ease);
+      &__carrito {
+        padding: 0;
+        margin: 0;
+      }
     }
   }
 }
 
-.main-content {
-  margin-top: 13.8rem;
+.cantop {
+  @include flex-justify-align (start, end);
+
+  &-body {
+    @include flex-justify-align (flex-start, flex-start);
+    flex-direction: column;
+    width: 400px;
+    max-height:  11rem;
+    @include box-shadow-login;
+
+    &-title {
+      @include fonts (3rem, $font-titulo, 600, none);
+      color: $color-marron-texto,
+    }
+
+    &__search {
+      display: flex;
+      gap: 20px;
+      align-items: flex-end;
+      flex-direction: row-reverse;
+      
+      &__ico {
+        font-size: 2rem;
+        padding-bottom: 5px;
+      }
+    }
+
+    &__bar {
+      @include ancho-alto (28rem, 40px);
+      @include fonts (2rem, $font-parrafo, 400, none);
+      color: $color-marron-texto;
+      border: none;
+      border-bottom: 2px solid $color-marron-texto;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.canendup {
+  &__header {
+    &__title {
+      @include fonts (2rem, $font-titulo, 600, none);
+      color: $color-marron-texto;
+      transform: scaleY(1.1);
+    }
+  }
+}
+
+.canend {
+  &__header {
+    &__title {
+      @include fonts (2rem, $font-titulo, 600, none);
+      color: $color-marron-texto;
+      transform: scaleY(1.1);
+    }
+  }
+}
+
+.offcanvas-top {
+  max-height: 10vh;
 }
 
 // media queries //
@@ -96,17 +228,42 @@
   }
 }
 
-@media (max-width: 174px) {
+@media screen and (max-width: 1279px) {
 
-  .navbar-collapse.show {
-    top: 0;
-    max-height: 100vh;
+  .nav-pc {
+
+    &__baseone {
+
+      &__left {
+        @include fonts (1.45rem, $font-parrafo, 400, none);
+
+        &__dropdown-menu {
+          font-size: 1.45rem;
+          animation: .5s slideup;
+        }
+      }
+    }
+
+    &__basetwo {
+      margin-right: 1.5%;
+
+      &__right {
+        @include fonts (1.45rem, $font-parrafo, 400, none);
+
+        &__dropdown-menu {
+          font-size: 1.45rem;
+          animation: .5s slideup;
+        }
+      }
+    }
   }
+
+
 }
 
-@media only screen and (min-width: 20px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
 
-  .navbar-pc {
+  .nav-pc {
     display: none;
   }
 
@@ -118,7 +275,7 @@
     display: flex;
     @include position-relative (fixed, 0, null, 0, 0, 1001);
     background-color: #fff;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 
     &-brand {
       & img {
@@ -252,4 +409,3 @@
     margin-top: 8.2rem;
   }
 }
-

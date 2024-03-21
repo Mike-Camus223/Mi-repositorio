@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     max-width: none;
+    min-height: 700px;
 
     &__containerpri {
         grid-column: span 6;
@@ -140,6 +141,7 @@
 
     &__containerpri2 {
         grid-column: span 6;
+        min-height: 700px;
 
         &__ima {
             @include ancho-alto (100%, 700px);
