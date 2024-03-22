@@ -73,18 +73,18 @@
                 border: none;
                 transition: all 0.3s ease;
                 outline: none;
-                border-bottom: 2px solid $color-marron-texto;
+                border-bottom: 1.8px solid $color-marron-texto;
 
                 &:focus {
                     outline: none;
-                    border-bottom: 2px solid #b65e7a;
+                    border-bottom: 1.8px solid #b65e7a;
                     @include transicion-button-3s;
                 }
 
                 &__labelapeone {
                     position: absolute;
                     top: 50%;
-                    left: 10%;
+                    left: 9%;
                     transform: translateY(-50%);
                     color: $color-marron-texto;
                     font-weight: 600;
@@ -96,7 +96,7 @@
                 &:focus+&__labelapeone,
                 &:not(:placeholder-shown)+&__labelapeone {
                     top: -10px;
-                    left: 10%;
+                    left: 9%;
                     font-size: 12px;
                     color: $color-marron-texto;
                 }
@@ -104,7 +104,7 @@
                 &__labelape {
                     position: absolute;
                     top: 50%;
-                    left: 52.5%;
+                    left: 51.4%;
                     transform: translateY(-50%);
                     color: $color-marron-texto;
                     font-weight: 600;
@@ -116,7 +116,7 @@
                 &:focus+&__labelape,
                 &:not(:placeholder-shown)+&__labelape {
                     top: -10px;
-                    left: 52.5%;
+                    left: 51.4%;
                     font-size: 12px;
                     color: $color-marron-texto;
                 }
@@ -139,18 +139,18 @@
                 border: none;
                 transition: all 0.3s ease;
                 outline: none;
-                border-bottom: 2px solid $color-marron-texto;
+                border-bottom: 1.8px solid $color-marron-texto;
 
                 &:focus {
                     outline: none;
-                    border-bottom: 2px solid #b65e7a;
+                    border-bottom: 1.8px solid #b65e7a;
                     @include transicion-button-3s;
                 }
 
                 &__labelapeone {
                     position: absolute;
                     top: 50%;
-                    left: 10%;
+                    left: 9%;
                     transform: translateY(-50%);
                     color: $color-marron-texto;
                     font-weight: 600;
@@ -162,7 +162,7 @@
                 &:focus+&__labelapeone,
                 &:not(:placeholder-shown)+&__labelapeone {
                     top: -10px;
-                    left: 10%;
+                    left: 9%;
                     font-size: 12px;
                     color: $color-marron-texto;
                 }
@@ -170,7 +170,7 @@
                 &__labelape {
                     position: absolute;
                     top: 50%;
-                    left: 52.5%;
+                    left: 51.4%;
                     transform: translateY(-50%);
                     color: $color-marron-texto;
                     font-weight: 600;
@@ -182,7 +182,7 @@
                 &:focus+&__labelape,
                 &:not(:placeholder-shown)+&__labelape {
                     top: -10px;
-                    left: 52.5%;
+                    left: 51.4%;
                     font-size: 12px;
                     color: $color-marron-texto;
                 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pasteleria Katyka - Iniciar Sesion</title>
+  <title>Pasteleria Katyka - Registrate</title>
   <!-- Carga de links: Bootstrap, css , fonts e iconos -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -262,45 +262,67 @@
   <!-- Fin Header -->
   <!-- seccion de inicio de sesion -->
   <main class="main-content">
-    <section class="seccion-login">
-      <div class="seccion-login__container">
+    <section class="sec-register">
+      <form method="post" class="sec-register__containerpri" action="#">
+        <div class="sec-register__containerpri__base">
+          <div class="sec-register__containerpri__base__cont1">
+            <h1 class="sec-register__containerpri__base__cont1__titu">Crea tu cuenta</h1>
+          </div>
+          <div class="sec-register__containerpri__base__cont4">
+            <input class="sec-register__containerpri__base__cont4__input" type="text" placeholder=" " id="usuario"
+              name="usuario" required>
+            <label class="sec-register__containerpri__base__cont4__input__labelapeone" for="usuario">
+              Nombre</label>
+            <input class="sec-register__containerpri__base__cont4__input" type="text" placeholder=" " id="usuario"
+              name="usuario" required>
+            <label class="sec-register__containerpri__base__cont4__input__labelape" for="usuario">
+              Apellido</label>
+          </div>
+          <div class="sec-register__containerpri__base__cont2">
+            <input class="sec-register__containerpri__base__cont2__input" type="email" placeholder=" " id="usuario"
+              name="usuario" required>
+            <label class="sec-register__containerpri__base__cont2__input__labelapeone" for="usuario">Correo
+              Electrónico</label>
+          </div>
+          <div class="sec-register__containerpri__base__cont5">
+            <label class="sec-register__containerpri__base__cont5__label" for="fecha_nacimiento">Fecha de Nacimiento</label>
+            <input class="sec-register__containerpri__base__cont5__fecha" type="date" id="fecha_nacimiento" name="fecha_nacimiento" max="9999-12-31">
+          </div>
+          <div class="sec-register__containerpri__base__cont4">
+            <input class="sec-register__containerpri__base__cont4__input" type="password" placeholder=" " id="usuario"
+              name="usuario" required>
+            <label class="sec-register__containerpri__base__cont4__input__labelapeone" for="usuario">
+              Contraseña</label>
+            <input class="sec-register__containerpri__base__cont4__input" type="password" placeholder=" " id="usuario"
+              name="usuario" required>
+            <label class="sec-register__containerpri__base__cont4__input__labelape" for="usuario">
+              Confirmar Contraseña</label>
+          </div>
+          <div class="sec-register__containerpri__base__cont3">
+            <input class="sec-register__containerpri__base__cont3__button" type="button" value="Crear Cuenta">
+            <p class="sec-register__containerpri__base__cont3__contra" href="#">Si ya tienes una cuenta,
+              <a class="sec-register__containerpri__base__cont3__link" href="./login.html">inicia sesión aquí</a>
+            </p>
+          </div>
+        </div>
+      </form>
+      <div class="sec-register__containerpri2">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img src="../assets/logos_y_menus/katyka-logo-original.jpg" class="d-block w-100"
-                alt="Katyka Delicias Artesanales">
+            <div class="carousel-item active">
+              <img src="../assets/logos_y_menus/crear-cuen-4.jpg"
+                class="d-block w-100 sec-register__containerpri2__ima__one" alt="Logo Katyka">
             </div>
-            <div class="carousel-item" data-bs-interval="10000">
-              <img src="../assets/cakes_and_more/pastel-choco.png" class="d-block w-100"
-                alt="Pastel de chocolate carousel">
+            <div class="carousel-item">
+              <img src="../assets/logos_y_menus/crear-cuen-2.jpg"
+                class="d-block w-100 sec-register__containerpri2__ima" alt="Edificio Pasteleria">
             </div>
-            <div class="carousel-item" data-bs-interval="10000">
-              <img src="../assets/cakes_and_more/pastel-crema.png" class="d-block w-100" alt="Pastel de crema">
+            <div class="carousel-item">
+              <img src="../assets/logos_y_menus/crear-cuen-1.jpg"
+                class="d-block w-100 sec-register__containerpri2__ima" alt="Pasteleros">
             </div>
           </div>
         </div>
-      </div>
-      <div class="seccion-login__formulario">
-        <h1>Inicio de Sesion</h1>
-        <form action="post">
-          <div class="formulario__username">
-            <label>Nombre de Usuario:</label>
-            <input type="text" required>
-          </div>
-          <div class="formulario__contrasena">
-            <label>Contraseña:</label>
-            <input type="password" required>
-          </div>
-          <button type="button" class="btn btn-outline-primary btn-lg">Iniciar Sesion</button>
-          <div class="formulario__recordar">
-            <a href="#">¿Olvidades tu Contraseña?</a>
-          </div>
-          <div class="formulario__registro">
-            <a href="#">
-              <h2>Registrate</h2>
-            </a>
-          </div>
-        </form>
       </div>
     </section>
     <!-- fin de inicio de sesion -->

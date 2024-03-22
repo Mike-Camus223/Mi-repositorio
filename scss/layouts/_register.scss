@@ -1,0 +1,462 @@
+// pagina de registro //
+
+.sec-register {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    max-width: none;
+    min-height: 750px;
+
+    &__containerpri {
+        grid-column: span 6;
+        @include fondo-rayas-contactov2;
+        @include flex-justify-align (center, center);
+
+        &__base {
+            @include flex-justify-align (center, center);
+            @include ancho-alto (70%, 650px);
+            @include box-shadow-login;
+            @include fondo-circulos-contacto;
+            flex-direction: column;
+            gap: 30px;
+
+            &__cont1 {
+
+                &__titu {
+                    @include fonts (4rem, $font-titulo, 600, none);
+                    color: $color-marron-texto;
+                    transform: scaleY(1.1);
+                }
+            }
+
+            &__cont2 {
+                @include flex-justify-align (center, center);
+                flex-direction: column;
+                position: relative;
+                width: 100%;
+                margin-bottom: 0;
+                display: flex;
+                gap: 20px;
+
+                &__input {
+                    @include ancho-alto (88%, 40px);
+                    @include fonts (1.7rem, $font-parrafo, 400, none);
+                    color: $color-marron-texto;
+                    background-color: transparent;
+                    border: none;
+                    transition: all 0.3s ease;
+                    border-bottom: 1.8px solid $color-marron-texto;
+
+                    &:focus {
+                        outline: none;
+                        border-bottom: 1.8px solid #b65e7a;
+                        @include transicion-button-3s;
+                    }
+
+                    &__labelapeone {
+                        position: absolute;
+                        top: 55%;
+                        left: 6%;
+                        transform: translateY(-50%);
+                        color: $color-marron-texto;
+                        font-weight: 600;
+                        font-size: 16px;
+                        transition: all 0.3s ease;
+                        pointer-events: none;
+                    }
+
+                    &:focus+&__labelapeone,
+                    &:not(:placeholder-shown)+&__labelapeone {
+                        top: -4px;
+                        left: 6%;
+                        font-size: 12px;
+                        color: $color-marron-texto;
+                    }
+                }
+            }
+
+            &__cont4 {
+                @include ancho-alto (88%, 40px);
+                @include flex-justify-align (center, center);
+                flex-direction: row;
+                position: relative;
+                width: 100%;
+                margin-bottom: 0;
+                display: flex;
+                gap: 20px;
+
+                &__input {
+                    @include ancho-alto (42.6%, 40px);
+                    @include fonts (1.7rem, $font-parrafo, 400, none);
+                    color: $color-marron-texto;
+                    background-color: transparent;
+                    border: none;
+                    transition: all 0.3s ease;
+                    border-bottom: 1.8px solid $color-marron-texto;
+
+                    &:focus {
+                        outline: none;
+                        border-bottom: 1.8px solid #b65e7a;
+                        @include transicion-button-3s;
+                    }
+
+                    &__labelapeone {
+                        position: absolute;
+                        top: 55%;
+                        left: 6%;
+                        transform: translateY(-50%);
+                        color: $color-marron-texto;
+                        font-weight: 600;
+                        font-size: 16px;
+                        transition: all 0.3s ease;
+                        pointer-events: none;
+                    }
+
+                    &:focus+&__labelapeone,
+                    &:not(:placeholder-shown)+&__labelapeone {
+                        top: -4px;
+                        left: 6%;
+                        font-size: 12px;
+                        color: $color-marron-texto;
+                    }
+
+                    &__labelape {
+                        position: absolute;
+                        top: 55%;
+                        left: 51.8%;
+                        transform: translateY(-50%);
+                        color: $color-marron-texto;
+                        font-weight: 600;
+                        font-size: 16px;
+                        transition: all 0.3s ease;
+                        pointer-events: none;
+                    }
+
+                    &:focus+&__labelape,
+                    &:not(:placeholder-shown)+&__labelape {
+                        top: -4px;
+                        left: 51.8%;
+                        font-size: 12px;
+                        color: $color-marron-texto;
+                    }
+                }
+            }
+
+            &__cont3 {
+                @include ancho-alto (88%, auto);
+                @include flex-justify-align (center, flex-end);
+                flex-direction: column;
+                gap: 10px;
+
+                &__button {
+                    @include ancho-alto (35%, 6rem);
+                    @include fonts (1.8rem, $font-parrafo, 600, none);
+                    color: $color-marron-texto;
+                    border-radius: 10px;
+                    border: 2px solid $color-marron-texto;
+                    background-color: transparent;
+                    margin-bottom: 3%;
+                    margin-top: 5%;
+
+                    &:hover {
+                        color: #b65e7a;
+                        border: 2px solid #b65e7a;
+                        @include transicion-button-3s;
+                    }
+                }
+
+                &__contra {
+                    @include fonts (1.5rem, $font-parrafo, 600, none);
+                    color: $color-marron-texto;
+                }
+
+                &__link {
+                    @include fonts (1.5rem, $font-parrafo, 600, none);
+                    color: purple;
+
+                    &:hover {
+                        color: #b65e7a;
+                        @include transicion-button-3s;
+                    }
+                }
+            }
+
+            &__cont5 {
+                @include ancho-alto (88%, 60px);
+                display: flex;
+                align-items: end;
+                flex-direction: column;
+
+                &__fecha {
+                    @include ancho-alto (100%, 40px);
+                    @include fonts (1.5rem, $font-parrafo, 600, none);
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: 1.8px solid $color-marron-texto;
+                    color: $color-marron-texto;
+                    text-transform: uppercase;
+
+                    &:focus {
+                        outline: none;
+                        border-bottom: 1.8px solid #b65e7a;
+                        @include transicion-button-3s;
+                    }
+                }
+
+                &__label {
+                    @include ancho-alto (100%, auto);
+                    @include flex-justify-align (start, null);
+                    @include fonts (1.4rem, $font-parrafo, 600, none);
+                    color: $color-marron-texto;
+
+                }
+            }
+        }
+    }
+
+    &__containerpri2 {
+        grid-column: span 6;
+        min-height: 700px;
+
+        &__ima {
+            @include ancho-alto (100%, 750px);
+            object-fit: cover;
+
+            &__one {
+                @include ancho-alto (100%, 750px);
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+// media querie // 
+
+@media screen and (max-width: 1240px) {
+
+    .sec-register {
+        &__containerpri {
+            grid-column: span 7;
+
+            &__base {
+                @include ancho-alto (90%, 650px);
+
+                &__cont1 {
+
+                    &__titu {
+                        @include fonts (4rem, $font-titulo, 600, none);
+                    }
+                }
+            }
+        }
+
+        &__containerpri2 {
+            grid-column: span 5;
+            min-height: 700px;
+
+            &__ima {
+                @include ancho-alto (100%, 750px);
+                object-fit: cover;
+
+                &__one {
+                    @include ancho-alto (100%, 750px);
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 989px) {
+
+    .sec-register {
+        
+        &__containerpri {
+            grid-column: span 7;
+
+            &__base {
+                @include ancho-alto (90%, 650px);
+    
+                &__cont1 {
+
+                    &__titu {
+                        @include fonts (2.5rem, $font-titulo, 600, none);
+                        color: $color-marron-texto;
+                        transform: scaleY(1.1);
+                        margin-bottom: 0;
+                    }
+                }
+
+                &__cont2 {
+                    
+                    &__input {
+                        @include ancho-alto (88%, 40px);
+                        @include fonts (1.5rem, $font-parrafo, 400, none);
+                        
+                        &__labelapeone {
+                            position: absolute;
+                            top: 55%;
+                            left: 6%;
+                            transform: translateY(-50%);
+                            color: $color-marron-texto;
+                            font-weight: 600;
+                            font-size: 15px;
+                            transition: all 0.3s ease;
+                            pointer-events: none;
+                        }
+
+                        &:focus+&__labelapeone,
+                        &:not(:placeholder-shown)+&__labelapeone {
+                            top: -5px;
+                            left: 6%;
+                            font-size: 12px;
+                            color: $color-marron-texto;
+                        }
+                    }
+                }
+
+                &__cont4 {
+                    @include ancho-alto (88%, 100px);
+                    @include flex-justify-align (end, center);
+                    flex-direction: column;
+                    position: relative;
+                    width: 100%;
+                    margin-bottom: 0;
+                    display: flex;
+                    gap: 20px;
+
+                    &__input {
+                        @include ancho-alto (88%, 40px);
+                        @include fonts (1.5rem, $font-parrafo, 400, none);
+                        color: $color-marron-texto;
+                        
+                        &__labelapeone {
+                            position: absolute;
+                            top: 20%;
+                            left: 6%;
+                            transform: translateY(-50%);
+                            color: $color-marron-texto;
+                            font-weight: 600;
+                            font-size: 15px;
+                            transition: all 0.3s ease;
+                            pointer-events: none;
+                        }
+
+                        &:focus+&__labelapeone,
+                        &:not(:placeholder-shown)+&__labelapeone {
+                            top: -5px;
+                            left: 6%;
+                            font-size: 12px;
+                            color: $color-marron-texto;
+                        }
+
+                        &__labelape {
+                            position: absolute;
+                            top: 81%;
+                            left: 6%;
+                            transform: translateY(-50%);
+                            color: $color-marron-texto;
+                            font-weight: 600;
+                            font-size: 15px;
+                            transition: all 0.3s ease;
+                            pointer-events: none;
+                        }
+
+                        &:focus+&__labelape,
+                        &:not(:placeholder-shown)+&__labelape {
+                            top: 55px;
+                            left: 6%;
+                            font-size: 12px;
+                            color: $color-marron-texto;
+                        }
+                    }
+                }
+
+                &__cont3 {
+                    @include ancho-alto (88%, auto);
+ 
+                    &__button {
+                        @include ancho-alto (45%, 6rem);
+                        @include fonts (1.6rem, $font-parrafo, 600, none);
+                        color: $color-marron-texto;
+                        margin-bottom: 3%;
+                        margin-top: 5%;
+                    }
+                }
+            }
+        }
+
+
+        &__containerpri2 {
+            grid-column: span 5;
+            min-height: 700px;
+
+            &__ima {
+                @include ancho-alto (100%, 750px);
+                object-fit: cover;
+
+                &__one {
+                    @include ancho-alto (100%, 750px);
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .sec-register {
+
+        &__containerpri {
+            grid-column: span 12;
+
+        }
+
+        &__containerpri2 {
+            grid-column: span none;
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 345px) {
+
+    .sec-register {
+
+        &__containerpri {
+            grid-column: span 12;
+
+            &__base {
+
+                &__cont3 {
+            
+                    &__button {
+                        @include ancho-alto (70%, 6rem);
+                        @include fonts (1.8rem, $font-parrafo, 600, none);
+                        color: $color-marron-texto;
+                    }
+
+                    &__contra {
+                        @include fonts (1.5rem, $font-parrafo, 600, none);
+                        color: $color-marron-texto;
+                    }
+
+                    &__link {
+                        @include fonts (1.5rem, $font-parrafo, 600, none);
+                        color: purple;
+
+                        &:hover {
+                            color: #b65e7a;
+                            @include transicion-button-3s;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__containerpri2 {
+            grid-column: span none;
+            display: none;
+        }
+    }
+}

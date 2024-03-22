@@ -55,7 +55,7 @@
                     &__labelapeone {
                         position: absolute;
                         top: 20%;
-                        left: 19%;
+                        left: 17.5%;
                         transform: translateY(-50%);
                         color: $color-marron-texto;
                         font-weight: 600;
@@ -67,7 +67,7 @@
                     &:focus+&__labelapeone,
                     &:not(:placeholder-shown)+&__labelapeone {
                         top: -10px;
-                        left: 19%;
+                        left: 17.5%;
                         font-size: 12px;
                         color: $color-marron-texto;
                     }
@@ -75,7 +75,7 @@
                     &__labelape {
                         position: absolute;
                         top: 80%;
-                        left: 19%;
+                        left: 17.5%;
                         transform: translateY(-50%);
                         color: $color-marron-texto;
                         font-weight: 600;
@@ -87,7 +87,7 @@
                     &:focus+&__labelape,
                     &:not(:placeholder-shown)+&__labelape {
                         top: 55px;
-                        left: 19%;
+                        left: 17.5%;
                         font-size: 12px;
                         color: $color-marron-texto;
                     }
