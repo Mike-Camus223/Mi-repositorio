@@ -2877,6 +2877,7 @@ a {
   place-items: center;
   position: relative;
   text-align: center;
+  cursor: default;
 }
 .seccion-acercade__banner__imagen {
   max-width: 100%;
