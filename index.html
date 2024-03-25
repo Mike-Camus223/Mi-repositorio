@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Pasteleria Katyka's"
+        content="Descubre nuestra selección de pasteles y postres, elaborados con pasión y cuidado. Desde clásicos hasta creaciones innovadoras, satisfacemos todos tus antojos. ¡Ven y disfruta de un viaje de sabores inolvidable en Katyka's!">
+    <meta name="keywords"
+        content="Pastelería artesanal, Pasteles personalizados, Repostería gourmet, Panadería de especialidad, Postres caseros, Tortas decoradas, Cupcakes creativos, Bizcochos de alta calidad, Delicias dulces, Galletas y dulces artesanales, Tartas originales, Pan fresco y sabroso, Dulces para eventos especiales, Pasteles temáticos, Repostería saludable, Postres sin gluten, Catering de postres, Servicio de entrega de pasteles">
     <title>Pasteleria Katyka - Home</title>
     <!-- Carga de links: Bootstrap, css , fonts e iconos -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="./js/scripts.js"></script>
     <!-- @Author Michael campos dev
     primer proyecto pasteleria 05/01/2024 -->
 </head>
@@ -279,32 +284,93 @@
     <!-- Comienzo Main -->
     <main class="main-content">
         <!-- Primera parte: carousel -->
-        <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="carousel-item__img" src="./assets/cakes_and_more/slide1.jpg" class="d-block w-100"
-                        alt="..">
+        <section class="sec-carou">
+            <svg class="caja-wave" width="100%" height="100%" id="svg" viewBox="0 0 1440 490"
+                xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                        <stop offset="5%" stop-color="#43234C" id="colorStop1" class="caja-wave__gradient-transition"></stop>
+                        <stop offset="95%" stop-color="#FFCCCC" id="colorStop2" class="caja-wave__gradient-transition"></stop>
+                    </linearGradient>
+                </defs>
+                <path
+                    d="M 0,500 L 0,125 C 60.41794871794872,153.42179487179487 120.83589743589744,181.84358974358975 199,177 C 277.16410256410256,172.15641025641025 373.0743589743589,134.04743589743592 454,150 C 534.9256410256411,165.95256410256408 600.8666666666668,235.96666666666664 685,269 C 769.1333333333332,302.03333333333336 871.4589743589743,298.0858974358975 966,323 C 1060.5410256410257,347.9141025641025 1147.2974358974361,401.6897435897436 1225,436 C 1302.7025641025639,470.3102564102564 1371.351282051282,485.1551282051282 1440,500 L 1440,500 L 0,500 Z"
+                    stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53"
+                    class="transition-all duration-300 ease-in-out delay-150 path-0" transform="rotate(-180 720 250)">
+                </path>
+                <defs>
+                    <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
+                        <stop offset="5%" stop-color="#43234c"></stop>
+                        <stop offset="95%" stop-color="#f78da7"></stop>
+                    </linearGradient>
+                </defs>
+                <path
+                    d="M 0,500 L 0,291 C 71.70256410256408,315.95000000000005 143.40512820512816,340.90000000000003 227,336 C 310.59487179487184,331.09999999999997 406.08205128205134,296.34999999999997 497,311 C 587.9179487179487,325.65000000000003 674.2666666666667,389.7 736,420 C 797.7333333333333,450.3 834.8512820512819,446.85 919,485 C 1003.1487179487181,523.15 1134.3282051282054,602.9 1229,640 C 1323.6717948717946,677.1 1381.8358974358973,671.55 1440,666 L 1440,500 L 0,500 Z"
+                    stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1"
+                    class="transition-all duration-300 ease-in-out delay-150 path-1" transform="rotate(-180 720 250)">
+                </path>
+            </svg>
+            <div id="carouselExampleInterval" class="carousel slide sec-carou__base" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active sec-carou__base__item" data-bs-interval="10000">
+                        <img src="./assets/logos_y_menus/carousel1.png" class="d-block w-100 sec-carou__base__item__img"
+                            alt="carousel katykas">
+                        <div class="caja-carousel-primary">
+                            <h2 class="caja-carousel-primary__titu">¡Nuevos Pasteles en Katyka's!</h2>
+                            <p class="caja-carousel-primary__parrafo">¡Descubre los nuevos sabores en Katykas Delicias
+                                Artesanales! Ven y prueba nuestra deliciosa
+                                gama de pasteles
+                                artesanales hoy mismo. ¡Te esperamos con sabores que te sorprenderán!
+                            </p>
+                            <a href="./pages/pagina-pasteleria.html">
+                                <input class="caja-carousel-primary__button-primario" type="button"
+                                    value="VER CATALOGO">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item sec-carou__base__item" data-bs-interval="2000">
+                        <img src="./assets/logos_y_menus/carousel2.png" class="d-block w-100 sec-carou__base__item__img"
+                            alt="carousel katykas">
+                        <div class="caja-carousel-secundary">
+                            <h2 class="caja-carousel-secundary__titu">¡Catering Empresarial de Katyka's!</h2>
+                            <p class="caja-carousel-secundary__parrafo">¡Impresiona a tus socios y clientes con nuestro
+                                exclusivo catering empresarial. Desde reuniones ejecutivas hasta eventos corporativos,
+                                ofrecemos una selección exquisita de postres artesanales que elevan el estándar de tus
+                                encuentros de negocios!
+                            </p>
+                            <a href="./pages/catering.html#catering-empresarial">
+                                <input class="caja-carousel-secundary__button-secundario" type="button"
+                                    value="CONTACTAR">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item sec-carou__base__item">
+                        <img src="./assets/logos_y_menus/carousel3.png" class="d-block w-100 sec-carou__base__item__img"
+                            alt="carousel katykas">
+                        <div class="caja-carousel-terceary">
+                            <h2 class="caja-carousel-terceary__titu">¡Cupcakes de Katyka's!</h2>
+                            <p class="caja-carousel-terceary__parrafo">Descubre una gama de cupcakes tentadores: desde
+                                los clásicos de chocolate hasta creaciones temáticas y exóticas. ¡Explora nuestro
+                                catálogo y encuentra tu favorito!
+                            </p>
+                            <a href="./pages/pagina-pasteleria.html">
+                                <input class="caja-carousel-terceary__button-terceario" type="button"
+                                    value="MÁS INFORMACIÓN">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="carousel-item__img" src="./assets/cakes_and_more/slide2-4.png" class="d-block w-100"
-                        alt="..">
-                </div>
-                <div class="carousel-item">
-                    <img class="carousel-item__img" src="./assets/cakes_and_more/slide3.png" class="d-block w-100"
-                        alt="..">
-                </div>
+                <button class="carousel-control-prev slide sec-carou__base__icono-prev" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                    <i class="fa-solid fa-circle-chevron-left slide sec-carou__base__icono-prev__icon icon-left" aria-hidden="true"></i>
+                </button>
+                <button class="carousel-control-next slide sec-carou__base__icono-next" type="button"
+                    data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                    <i class="fa-solid fa-circle-chevron-right slide sec-carou__base__icono-prev__icon icon-right"
+                        aria-hidden="true"></i>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        </section>
         <!-- fin del carousel -->
         <!-- inicio de seccion productos -->
         <section class="sec-productos">
@@ -472,6 +538,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
         </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>

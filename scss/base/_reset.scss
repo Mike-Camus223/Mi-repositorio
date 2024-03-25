@@ -23,5 +23,10 @@ a {
 
 .main-content {
     margin-top: 11rem;
-  }
-  
+}
+
+:root {
+    --carousel-nav-bottom: 120px;
+    --carousel-nav-center: 286px;
+    --carousel-dots-width: 64px;
+}
