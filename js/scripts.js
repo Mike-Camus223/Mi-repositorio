@@ -44,3 +44,44 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+// animacion fadeup //
+
+var animationActivated = false;
+
+window.addEventListener('scroll', function() {
+    var element = document.querySelector('.sec-productos ');
+    var position = element.getBoundingClientRect();
+
+    if (!animationActivated && position.top < window.innerHeight && position.bottom >= 0) {
+        element.classList.add('fade-in'); 
+        animationActivated = true; 
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.fade-up');
+
+    function checkFadeUp() {
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (sectionTop < windowHeight) {
+                section.classList.add('fade-up-show');
+            }
+        });
+    }
+
+    checkFadeUp();
+
+    window.addEventListener('scroll', checkFadeUp);
+});
+
+
+
+
+
+
+

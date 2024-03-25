@@ -1,6 +1,11 @@
 // carousel // 
 
+.zoom-animation {
+    animation: zoom-in 10s linear forwards;
+}
+
 // decoracion wave carousel //
+
 .caja-wave {
     @extend %deco-carousel;
 
@@ -13,6 +18,8 @@
 
 .sec-carou {
     @include ancho-alto (100%, 81rem);
+    opacity: 0;
+    animation: fadeUp 1s ease forwards;
 
     &__base {
 

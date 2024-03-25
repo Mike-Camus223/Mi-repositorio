@@ -64,6 +64,34 @@ a {
     -webkit-opacity: 0;
   }
 }
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-up.fade-up-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
 .sec-carou__base .caja-carousel-terceary, .sec-carou__base .caja-carousel-secundary, .sec-carou__base .caja-carousel-primary {
   width: 530px;
   height: 60rem;
@@ -776,6 +804,10 @@ a {
     margin-top: 8.2rem;
   }
 }
+.zoom-animation {
+  animation: zoom-in 10s linear forwards;
+}
+
 .caja-wave__gradient-transition {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -787,6 +819,8 @@ a {
 .sec-carou {
   width: 100%;
   height: 81rem;
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
 }
 .sec-carou__base__item {
   width: 100%;
