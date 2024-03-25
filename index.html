@@ -289,8 +289,10 @@
                 xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
-                        <stop offset="5%" stop-color="#43234C" id="colorStop1" class="caja-wave__gradient-transition"></stop>
-                        <stop offset="95%" stop-color="#FFCCCC" id="colorStop2" class="caja-wave__gradient-transition"></stop>
+                        <stop offset="5%" stop-color="#43234C" id="colorStop1" class="caja-wave__gradient-transition">
+                        </stop>
+                        <stop offset="95%" stop-color="#FFCCCC" id="colorStop2" class="caja-wave__gradient-transition">
+                        </stop>
                     </linearGradient>
                 </defs>
                 <path
@@ -362,7 +364,8 @@
                 </div>
                 <button class="carousel-control-prev slide sec-carou__base__icono-prev" type="button"
                     data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <i class="fa-solid fa-circle-chevron-left slide sec-carou__base__icono-prev__icon icon-left" aria-hidden="true"></i>
+                    <i class="fa-solid fa-circle-chevron-left slide sec-carou__base__icono-prev__icon icon-left"
+                        aria-hidden="true"></i>
                 </button>
                 <button class="carousel-control-next slide sec-carou__base__icono-next" type="button"
                     data-bs-target="#carouselExampleInterval" data-bs-slide="next">
@@ -427,25 +430,24 @@
         </section>
         <!-- fin de seccion de productos -->
         <!-- inicio de seccion de Catering -->
-        <section class="seccion-catering" id="catering">
-            <div class="seccion-catering__item-1">
-                <div class="contenedor-catering">
-                    <img class="contenedor-catering__imagen" src="./assets/logos_y_menus/catering-fondo.png"
-                        alt="catering">
+        <section class="seccion-catering__base" id="catering">
+            <div class="seccion-catering__duocontainer2">
+                <div class="seccion-catering__duocontainer2__container1">
+                    <img class="seccion-catering__duocontainer2__container1__imagen"
+                        src="./assets/logos_y_menus/catering-fondo.png" alt="Pasteleria katyka">
                 </div>
-            </div>
-            <div class="seccion-catering__item-2">
-                <div class="contenedor-catering-dos">
-                    <h2 class="contenedor-catering-dos__titulo">Catering, Regalos y Eventos.</h2>
-                    <p class="contenedor-catering-dos__texto">Nuestro equipo de catering, regalos y eventos está listo
+                <div class="seccion-catering__duocontainer2__container2">
+                    <h2 class="seccion-catering__duocontainer2__container2__titu">¡Catering, Regalos y Eventos!</h2>
+                    <p class="seccion-catering__duocontainer2__container2__parrafo">Nuestro equipo de catering,
+                        regalos y eventos está listo
                         para llenar su evento o celebración con una selección personalizada de las mejores creaciones de
-                        Katyka Delicias Artesanales. ¡Ninguna ocasión es demasiado grande o demasiado pequeña.!</p>
-                    <div class="d-grid gap-2 col-6 mx-auto contenedor-catering-dos__boton">
-                        <a href="./pages/catering.html">
-                            <button type="button"
-                                class="btn btn-primary btn-lg contenedor-catering-dos__boton-prime">Consultar</button>
-                        </a>
-                    </div>
+                        Katyka Delicias Artesanales. ¡Ninguna ocasión es demasiado grande o demasiado pequeña!
+                    </p>
+                    <a href="./pages/catering.html">
+                        <button type="button" class="seccion-catering__duocontainer2__container2__button-cuarto">
+                            CONSULTAR
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -542,4 +544,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

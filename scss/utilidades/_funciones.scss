@@ -34,6 +34,24 @@
     }
 }
 
+@each $nombreprime, $nombreprimetwo, $colored in $colores-anuncio-carousel {
+    .seccion-catering__duocontainer2__container2__button-#{$nombreprime} {
+
+        @include ancho-alto (230px, 60px);
+        border-radius: 10px;
+        background-color: $nombreprimetwo;
+        @include fonts (2rem, $font-parrafo, 600, none);
+        color: #fff;
+        border: none;
+        @include transicion-button-3s;
+
+        &:hover {
+            transform: scale(1.1);
+            background-color: $colored;
+        }
+    }
+}
+
 @each $nombre-color, $color in $colores-botones-carousel {
     .caja-carousel-primary__button-#{$nombre-color} {
         @include ancho-alto (23rem, 6.3rem);
