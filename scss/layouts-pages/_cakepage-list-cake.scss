@@ -3,6 +3,7 @@
 // Banner //
 
 .banner-pasteleria {
+    @include animacion-fadeup-start-primer;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 338px;
@@ -148,6 +149,7 @@
 // Seccion Catalogo //
 
 .catalogo-pasteles {
+    @include animacion-fadeup-start;
     background-color: #fff;
     display: flex;
     justify-content: center;

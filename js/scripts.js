@@ -48,40 +48,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // animacion fadeup //
 
-var animationActivated = false;
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll('.fadeup');
 
-window.addEventListener('scroll', function() {
-    var element = document.querySelector('.sec-productos ');
-    var position = element.getBoundingClientRect();
+  function checkVisibility() {
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      const triggerPoint = windowHeight * 0.9;
+      
+      if (sectionTop < triggerPoint) {
+        section.classList.add('active');
+      } else {
+        section.classList.remove('active');
+      }
+    });
+  }
 
-    if (!animationActivated && position.top < window.innerHeight && position.bottom >= 0) {
-        element.classList.add('fade-in'); 
-        animationActivated = true; 
-    }
+  window.addEventListener('scroll', checkVisibility);
+  checkVisibility(); // Check visibility on page load
 });
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    const sections = document.querySelectorAll('.fade-up');
-
-    function checkFadeUp() {
-        sections.forEach(section => {
-            const sectionTop = section.getBoundingClientRect().top;
-            const windowHeight = window.innerHeight;
-            if (sectionTop < windowHeight) {
-                section.classList.add('fade-up-show');
-            }
-        });
-    }
-
-    checkFadeUp();
-
-    window.addEventListener('scroll', checkFadeUp);
-});
-
-
-
-
-
-
-

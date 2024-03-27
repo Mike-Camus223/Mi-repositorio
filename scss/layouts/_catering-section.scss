@@ -1,9 +1,12 @@
 // // seccion de catering //
 
-
-
 .seccion-catering {
-
+    
+    &__base {
+        @include animacion-fadeup-start;
+        margin-bottom: 0px;
+    }
+    
     &__duocontainer2 {
         background-color: #ffc0cb;
         display: grid;

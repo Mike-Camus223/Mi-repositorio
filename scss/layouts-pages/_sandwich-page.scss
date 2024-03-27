@@ -1,6 +1,7 @@
 // sandwich page //
 
 .banner-sandwicheria {
+    @include animacion-fadeup-start-primer;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 338px;
@@ -143,6 +144,7 @@
 // Seccion Catalogo Sandwich // 
 
 .catalogo-sandwiches {
+    @include animacion-fadeup-start;
     background-color: #fff;
     display: flex;
     justify-content: center;

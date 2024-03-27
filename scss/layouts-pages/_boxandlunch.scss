@@ -2,6 +2,7 @@
 // banner
 
 .banner-boxalaunch {
+    @include animacion-fadeup-start-primer;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 338px;
@@ -14,10 +15,10 @@
         &__solidbase {
             @include ancho-alto (70%, 100%);
             margin-left: auto;
-            
+
             &__base-breadcrump {
                 padding: 20px 60px 0 25px;
-                
+
                 .breadcrumb {
                     @include fonts (20px, $font-parrafo, 600, none);
                     transform: scaleY(0.97);
@@ -50,6 +51,7 @@
                         &__blank {
                             &__hov {
                                 color: #58333e;
+
                                 &:hover {
                                     transition: all 0.3s ease-in-out;
                                     color: #fff;
@@ -145,6 +147,7 @@
 // Seccion grid boxalaunch //
 
 .catalogo-boxalaunch {
+    @include animacion-fadeup-start;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -229,7 +232,7 @@
                 border-top-right-radius: 3%;
                 border-top-left-radius: 3%;
                 object-fit: cover;
-                
+
                 &:hover {
                     transform: scale(1.1);
                     @include transicion-3segun;
@@ -283,9 +286,9 @@
                         color: $color-marron-texto;
                     }
                 }
-    
+
                 &__base-parrafo {
-    
+
                     &__parra {
                         @include fonts (1.7rem, $font-parrafo, 600, none);
                         color: $color-marron-texto;
@@ -336,9 +339,9 @@
                         @include fonts (2.5rem, $font-titulo, 600, none);
                     }
                 }
-    
+
                 &__base-parrafo {
-    
+
                     &__parra {
                         @include fonts (1.6rem, $font-parrafo, 600, none);
                     }
@@ -390,7 +393,7 @@
 
             .mousse {
                 @include ancho-alto (100%, 100%);
-                
+
                 &:hover {
                     transform: scale(1.1);
                     @include transicion-3segun;
@@ -505,4 +508,3 @@
         }
     }
 }
-

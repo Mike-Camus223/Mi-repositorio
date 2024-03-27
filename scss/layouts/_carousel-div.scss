@@ -18,9 +18,9 @@
 
 .sec-carou {
     @include ancho-alto (100%, 81rem);
-    opacity: 0;
-    animation: fadeUp 1s ease forwards;
-
+    @include animacion-fadeup-start-primer;
+    margin-bottom: 0;
+    
     &__base {
 
         &__item {

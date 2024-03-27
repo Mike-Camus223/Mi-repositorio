@@ -1,12 +1,14 @@
 // seccion productos //
 
 .sec-productos {
-
+    
     &__text {
+        @include ancho-alto (100%, 200px);
         @include flex-justify-align (center, center);
+        @include animacion-fadeup-start;
         flex-direction: column;
         margin-bottom: 1.5%;
-        margin-top: 5%;
+        margin-top: 2%;
 
         &__titu {
             @include fonts (4rem, $font-titulo, 600, null);
@@ -22,6 +24,8 @@
     }
 
     &__base {
+
+        @include animacion-fadeup-start-primer;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-column-gap: 20px;
